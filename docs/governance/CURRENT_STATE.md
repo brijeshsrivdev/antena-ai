@@ -39,5 +39,9 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added positioning/go-to-market hypotheses and open-source/provider evaluation framework; no brand, segment, channel or dependency has been selected.
 - Product discovery baseline is materially expanded but remains incomplete. No user interviews, live-call tests, written provider quotes, legal opinions or load tests have been performed.
 
+- Added initial voice-stack candidate review (LiveKit Agents, Pipecat, Vocode Core and direct managed realtime API), with licence caveats and no selected provider/framework.
+- Added draft core requirements REQ-001–REQ-015 and non-functional requirement areas; thresholds and traceability remain incomplete.
+- Added system architecture options and trust-boundary draft; no architecture decision is approved.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
