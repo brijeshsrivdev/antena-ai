@@ -48,6 +48,8 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [AI profile capability governance](docs/architecture/CAPABILITY_GOVERNANCE.md)
 - [Go-to-market experiment plan](docs/business/GTM_EXPERIMENT_PLAN.md)
 
+- [Voice-agent evaluation and release gates](docs/quality/VOICE_AGENT_EVALUATION_PLAN.md)
+
 ## Non-negotiable rules
 - No product code, infrastructure code, migrations, or deployable prototypes until the owner explicitly approves the documented baseline.
 - Research claims must be sourced and distinguish verified facts, vendor claims, estimates, assumptions and hypotheses.
