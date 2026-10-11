@@ -54,4 +54,4 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added initial market-demand/segmentation review. Equal AI's reported usage and funding are treated as competitor signals, not audited market-size proof; no TAM/SAM/SOM is asserted.
 
 ## Last verified state
-A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
+As of the latest repository verification, the README and all linked documents exist on main. The current draft set covers governance, research, product scope, UX, market/competitor analysis, telephony feasibility, pricing/economics, privacy/security, architecture/API/data model, requirements/traceability, capacity and test strategy. The baseline remains incomplete and unapproved. Product implementation remains unauthorised.
