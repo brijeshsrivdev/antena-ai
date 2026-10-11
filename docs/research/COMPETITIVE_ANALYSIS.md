@@ -67,3 +67,30 @@ These are hypotheses, not confirmed market gaps.
 ## Decision impact
 
 No final decision yet. Continue telephony feasibility and customer validation before fixing MVP scope. Equal AI is a customer-experience benchmark, not a complete technical blueprint.
+
+## 8. Adjacent and direct competitors — first pass
+
+This is a shortlist, not an exhaustive market map. Vendor pages establish advertised functionality; they do not independently verify quality or availability.
+
+| Product / category | Public positioning | Relevance | What to validate |
+|---|---|---|---|
+| Equal AI | Personal assistant answers/screens calls, provides context and post-call records. | Closest direct benchmark for India-focused personal call handling. | Real setup and carrier support, pricing, quality, retention and reliability. |
+| Truecaller Assistant | Its official page says the assistant answers after a user declines a call, asks the caller why they are calling, and combines this with caller ID/spam protection. It is Premium and availability varies by country. | Strong incumbent distribution and trusted caller-ID context; direct competition for call screening. | Current India availability, supported carriers/devices, subscription price and exact feature parity. |
+| Tring / Ring | Public site positions Ring as an Indian personal AI phone assistant, including call answering, summaries, outbound calls and a voice-clone option; claims 12+ Indian languages and free core screening. | Very close feature overlap and potentially a fast-moving direct competitor. | Actual app distribution, supported call routes, consent/privacy implications of voice cloning, pricing sustainability and independent user feedback. |
+| Google Phone / OEM call screening | Caller ID, spam warnings and device-native call features; capabilities vary by device, country and OS. | Substitute for basic spam identification, often with low extra setup. | What the user can already do without a new app; regional features and whether any assistant actually speaks to callers. |
+| Carrier caller-name / CNAP services | Telecom-network caller-name presentation is a substitute for identifying unknown callers, not necessarily for conversational handling. | Reduces value of “who is calling?” alone; does not solve the full call-intent and task workflow. | Current rollout, supported operators/devices and real user experience in launch region. |
+| Cloud telephony / AI voice-agent platforms | Programmable phone numbers, SIP/media, speech and conversational agents, often built for businesses rather than personal native-number screening. | Potential infrastructure providers and alternatives for a VoIP-first product; not a direct consumer app equivalent. | Two-way media, country/number support, data processing terms, unit cost, latency, transfer and compliance. |
+
+### Useful sources
+
+- Truecaller Assistant official product page: https://www.truecaller.com/call-screening (accessed 2026-10-11).
+- Truecaller AI Call Scanner support page: https://support.truecaller.com/support/solutions/articles/81000413994-ai-call-scanner-faqs (accessed 2026-10-11). Note this is a distinct feature for identifying human vs AI-generated voice; do not confuse it with the call-answering Assistant.
+- Tring official site: https://heytring.com/ (accessed 2026-10-11). Feature and language claims are vendor claims pending independent testing.
+- TechCrunch report on Equal AI's funding and competitive landscape, dated 2026-06-11: https://techcrunch.com/2026/06/11/equal-ai-raises-30m-to-screen-calls-so-indians-dont-have-to/ . The article reports the company's growth figures and discusses Truecaller, Google and Apple as competitors; treat reported metrics as attributed company claims.
+- Android audio-input sharing guidance: https://developer.android.com/media/platform/sharing-audio-input (accessed 2026-10-11). Official guidance says ordinary apps do not generally get unrestricted cellular voice-call audio; privileged/system or accessibility conditions are special cases, so do not build the architecture on arbitrary audio capture.
+
+## 9. Updated strategic implication
+
+The feature space is already competitive. Basic spam detection and caller identity are not enough to differentiate. The promising test is whether a new product can deliver a distinctly better and trusted end-to-end workflow for a chosen segment: predictable setup, useful conversation handling, user takeover, high-quality multilingual interaction, transparent data controls and acceptable per-minute economics.
+
+Do not infer a defensible moat from adding domain profiles alone. The value must be proven through user outcomes and reliable execution. Hospitality integrations should remain a later expansion after the core call assistant is validated.
