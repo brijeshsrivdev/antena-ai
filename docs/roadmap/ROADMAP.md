@@ -61,3 +61,8 @@ See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 
 - Added a shared proposed workload table in `docs/architecture/WORKLOAD_SCENARIO_BASELINE.md`; the capacity and pricing models now point to it.
 - The alternate 10k/75k/240k-minute sensitivity cases remain distinct and explicitly labelled.
 - Normalized core requirement lifecycle wording to DRAFT. Full traceability, route feasibility, customer evidence, provider quotes, counsel review and owner approval remain exit criteria.
+
+## Requirements/scope increment — 2026-10-11
+- Expanded the traceability matrix for REQ-001–REQ-015 and NFR-001–NFR-010.
+- Added a proposed MVP scope gate matrix that treats route feasibility as a prerequisite and separates core candidates from conditional/deferred features.
+- The scope and traceability remain drafts. Customer/route/provider/legal evidence and owner approval remain outstanding.
