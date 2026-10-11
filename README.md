@@ -26,8 +26,11 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Privacy and regulatory risk register](docs/research/PRIVACY_AND_REGULATORY_RISK_REGISTER.md)
 - [Open-source/provider evaluation framework](docs/research/OPEN_SOURCE_AND_PROVIDER_EVALUATION.md)
 - [Voice-stack candidate review](docs/research/VOICE_STACK_CANDIDATE_REVIEW.md)
+- [Initial threat model](docs/security/THREAT_MODEL.md)
+- [Data inventory and lifecycle](docs/security/DATA_INVENTORY_AND_LIFECYCLE.md)
 - [Positioning and go-to-market hypotheses](docs/business/POSITIONING_AND_GO_TO_MARKET.md)
 - [System architecture options](docs/architecture/SYSTEM_ARCHITECTURE_OPTIONS.md)
+- [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 - [10,000-user capacity model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 
 ## Non-negotiable rules
