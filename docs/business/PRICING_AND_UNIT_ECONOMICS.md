@@ -29,6 +29,8 @@ Vendor-published rates are snapshots, not binding quotes. Confirm price basis, G
 
 ## 3. Illustrative usage scenarios at a ₹6/min bundled benchmark
 
+**Shared scenario reference:** The low/base/high workload inputs are documented in [WORKLOAD_SCENARIO_BASELINE.md](../architecture/WORKLOAD_SCENARIO_BASELINE.md). The figures below use that same scenario set and remain assumptions rather than a forecast.
+
 These are arithmetic scenarios, not a forecast and not our own cost estimate. Assumes the entire listed minute volume is billable connected time and ₹6/min is applicable without extra usage charges.
 
 | Scenario | Monthly active users | Calls / active user / month | Avg connected minutes / call | Connected minutes / month | Benchmark provider spend / month |
