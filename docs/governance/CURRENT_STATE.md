@@ -49,3 +49,11 @@ Latest additions:
 
 ## Last verified state
 README and linked documents must be verified against current main after this increment. Baseline remains a broad draft, incomplete and unapproved. Product implementation remains unauthorised.
+
+
+## Latest discovery increment — 2026-10-11
+- Added Android route decision analysis grounded in official CallScreeningService, CallRedirectionService and Google Play permissions guidance. It reinforces that screening/redirection APIs do not themselves provide unrestricted cellular audio access.
+- Added a provider RFP and scorecard covering exact route eligibility, all call legs, model/media components, pricing, data terms, security, support and exit requirements. No provider has been contacted and no quote has been received.
+- Added capability governance for profile allowlists, tenant-scoped Antena APIs, confirmation rules, audit, idempotency and prompt-injection boundaries.
+- Added low-cost GTM experiments for consumer and hospitality segments. No marketing experiment has run.
+- Updated README index. The baseline remains a draft; no coding or deployment is authorised.
