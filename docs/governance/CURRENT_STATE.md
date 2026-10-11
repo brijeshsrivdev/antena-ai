@@ -62,3 +62,11 @@ README and linked documents must be verified against current main after this inc
 ## Quality evaluation increment — 2026-10-11
 - Added docs/quality/VOICE_AGENT_EVALUATION_PLAN.md with synthetic-corpus design, consented controlled-call guidance, candidate latency/accuracy/route gates, security zero-tolerance cases, reproducibility metadata and pilot approval requirements.
 - The numeric thresholds are proposed starting points only. No benchmark or load test has run, and no threshold is approved.
+
+## Provider pricing evidence increment — 2026-10-11
+- Added `docs/research/PROVIDER_PRICING_EVIDENCE.md` and indexed it from README.
+- Public desk research found Ringg advertises ₹6/connected minute for a bundled voice-agent product; this does not establish support for the existing-number personal call-assistant route.
+- Exotel's published business-phone packages exclude Voice Streaming, which requires a separate quote; Exotel's documentation also says mobile-carrier forwarding charges are separate.
+- Truecaller's carrier-specific forwarding setup is evidence that this pattern exists in-market, not proof that our product can use the same route or terms.
+- Updated the cost model to clarify non-comparable price scopes. No provider has been contacted, no quote received, and no call-route test performed.
+- The baseline remains documentation-only, incomplete and unapproved. Implementation remains unauthorised.
