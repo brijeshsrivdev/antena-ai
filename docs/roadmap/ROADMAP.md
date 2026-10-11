@@ -37,3 +37,11 @@ Increase capacity against measured workloads; validate 10,000-user scenarios and
 
 ## Release gates
 Each phase requires evidence, security/privacy review, operational readiness, acceptance criteria and explicit owner approval. Legal/advocate profile is deferred; it is not a dependency for the initial release.
+
+
+## Additional discovery gates
+- Read and resolve the route implications in ANDROID_CALL_ROUTE_DECISION.md against owner-run carrier/device evidence.
+- Send the same VOICE_PROVIDER_RFP.md questionnaire to at least two candidates and retain written responses.
+- Review CAPABILITY_GOVERNANCE.md alongside API contract, threat model, data inventory and hospitality API capabilities.
+- Use GTM_EXPERIMENT_PLAN.md only after agreeing interview recruitment, route disclosure and success thresholds.
+- Review current Android/Google Play policies and India telecom/privacy rules again immediately before product implementation or distribution; this desk review is not legal advice.
