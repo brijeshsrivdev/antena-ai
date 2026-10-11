@@ -45,6 +45,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 ## Latest discovery additions
 - [Android call route constraints and decision gates](docs/research/ANDROID_CALL_ROUTE_DECISION.md)
 - [Voice provider RFP and evaluation scorecard](docs/research/VOICE_PROVIDER_RFP.md)
+- [India voice-provider pricing evidence](docs/research/PROVIDER_PRICING_EVIDENCE.md)
 - [AI profile capability governance](docs/architecture/CAPABILITY_GOVERNANCE.md)
 - [Go-to-market experiment plan](docs/business/GTM_EXPERIMENT_PLAN.md)
 
