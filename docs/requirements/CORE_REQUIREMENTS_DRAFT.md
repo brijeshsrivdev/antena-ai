@@ -1,6 +1,6 @@
 # Core Requirements Draft — Personal AI Call Assistant
 
-**Status:** DRAFT / IN_REVIEW not started. These requirements are discovery candidates, not approved implementation requirements. No code is authorised.
+**Status:** DRAFT. No formal review has started and these requirements are not approved for implementation. IDs, priorities and some acceptance thresholds remain provisional. No code is authorised.
 
 ## Requirement lifecycle note
 
