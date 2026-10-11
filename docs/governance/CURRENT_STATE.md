@@ -86,3 +86,9 @@ README and linked documents must be verified against current main after this inc
 - Linked the shared scenario reference from capacity and pricing documents. The separate 10k / 75k / 240k minute set remains labelled as alternate sensitivity analysis, not directly comparable.
 - Normalized the core requirements header to `DRAFT`, because formal review has not started. This does not approve any requirement.
 - Added `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` and linked it from README. Baseline remains incomplete; no coding or deployment is authorised.
+
+## Requirements and MVP scope increment — 2026-10-11
+- Expanded `docs/requirements/TRACEABILITY_MATRIX.md` to map REQ-001–REQ-015 and NFR-001–NFR-010 to evidence state, UX, architecture/data boundaries, risks, verification and proposed release gates.
+- Added `docs/discovery/MVP_SCOPE_AND_FEATURE_GATES.md` to distinguish core candidates, conditional features and deferred scope. It is not an approved MVP.
+- Updated `REQUIREMENTS_INDEX.md` to point to the traceability and scope-gate artefacts.
+- Remaining blockers are unchanged: customer interviews, owner-supervised route tests, comparable provider quotes, jurisdiction-specific legal review, complete measurable acceptance criteria, and owner approval.
