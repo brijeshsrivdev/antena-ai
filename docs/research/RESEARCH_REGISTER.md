@@ -9,12 +9,12 @@ Use primary sources where possible and record access dates. Separate official do
 | RES-003 | Which segments have frequent, painful call-handling problems? | P0 | IN_PROGRESS | Interview plan added; interviews and evidence matrix remain |
 | RES-004 | Which telephony providers support routing and real-time media in target regions? | P0 | IN_PROGRESS | Android/call-forwarding feasibility assessment added; carrier tests and provider comparison remain |
 | RES-005 | Which speech/model providers meet latency, quality, language, privacy and cost goals? | P0 | OPEN | Benchmark plan |
-| RES-006 | What is all-in variable cost per connected minute? | P0 | OPEN | Unit economics model |
-| RES-007 | What laws/rules apply to recording, interception, transcription, consent and personal data? | P0 | OPEN | Jurisdiction matrix/legal review |
+| RES-006 | What is all-in variable cost per connected minute? | P0 | IN_PROGRESS | Public provider benchmarks and scenarios added; written quotes and route-specific cost validation remain |
+| RES-007 | What laws/rules apply to recording, interception, transcription, consent and personal data? | P0 | IN_PROGRESS | Preliminary India issue-spotting register added; legal opinion and jurisdiction matrix remain |
 | RES-008 | What Android APIs and app-store rules constrain call routing? | P0 | OPEN | Android feasibility assessment |
 | RES-009 | Which open-source voice/media/orchestration/observability dependencies are commercially suitable? | P1 | OPEN | Licence and maintenance matrix |
 | RES-010 | What pricing supports gross margin and acquisition economics? | P1 | OPEN | Pricing hypotheses |
-| RES-011 | What workload does 10,000 users represent under low/base/high usage? | P1 | OPEN | Capacity model |
+| RES-011 | What workload does 10,000 users represent under low/base/high usage? | P1 | IN_PROGRESS | Initial low/base/high model added; user evidence, provider limits and measured peaks remain |
 | RES-012 | Which brands have acceptable trademark, domain, app-store and product-conflict risk? | P1 | OPEN | Brand screen |
 | RES-013 | Which hospitality actions can safely be exposed through Antena APIs? | P1 | OPEN | Connector permission matrix |
 | RES-014 | Which low-cost acquisition channels have evidence for this product? | P1 | OPEN | Go-to-market plan |
@@ -31,3 +31,10 @@ This is a question register, not a completed fresh market study. Mark an item co
 - RES-004 and RES-008: `docs/research/TELEPHONY_FEASIBILITY.md` distinguishes Android screening metadata, outgoing redirection, carrier forwarding and VoIP; it proposes validation criteria. It is not proof of carrier compatibility.
 - Official sources reviewed: Android CallScreeningService and CallRedirectionService API docs; Google Play sensitive permission guidance; Equal AI official pages/store listings; Twilio India Voice pricing.
 - Next: add more competitors, inspect terms/privacy in detail, define user interviews, and validate carrier/device combinations before architecture commitment.
+
+
+Additional research increment (2026-10-11):
+- Updated pricing and unit economics with public Ringg, Twilio, Exotel, Knowlarity and Equal AI references; ₹6/min is treated only as a public benchmark, not a confirmed cost quote.
+- Added preliminary India-focused privacy/regulatory issue register referencing MeitY DPDP materials, TRAI regulations, Android API docs and Google Play policy.
+- Added 10,000-registration low/base/high workload scenarios with explicit active-user and peak-factor assumptions.
+- All three workstreams remain IN_PROGRESS. No provider, price, legal conclusion, concurrency target or architecture is approved.
