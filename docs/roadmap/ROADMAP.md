@@ -48,3 +48,8 @@ Each phase requires evidence, security/privacy review, operational readiness, ac
 
 
 - Add VOICE_AGENT_EVALUATION_PLAN.md to the Phase 0 review. Approve measurable thresholds before running tests; any unauthorized action, cross-tenant access or silent call loss is a release blocker, not a trade-off to average away.
+
+## Latest desk-research updates — 2026-10-11
+- Provider pricing evidence is now separated from assumptions in `docs/research/PROVIDER_PRICING_EVIDENCE.md`. Public prices remain non-comparable; provider RFP responses are still required.
+- Competitor matrix now includes Sharyx AI Call Assistant and clarifies that Equal AI in-app pricing is offer-dependent. These findings do not replace hands-on evaluation or customer interviews.
+- No discovery exit criteria have been satisfied by these desk-research updates alone. Owner-supervised route tests, customer evidence, written quotes, legal review, and explicit approval remain outstanding.
