@@ -75,3 +75,8 @@ README and linked documents must be verified against current main after this inc
 - Updated `docs/research/COMPETITOR_MATRIX.md` with Sharyx AI Call Assistant as an adjacent Android-listed product that describes forwarding to a dedicated AI number.
 - Clarified that Equal AI's public terms describe variable paid-feature pricing; App Store ₹149/₹249 entries are not a universal subscription quote.
 - README currently indexes 40 unique documentation links, including the provider pricing evidence document. The linked docs are still drafts and the baseline is not approved.
+
+## Baseline consistency audit increment — 2026-10-11
+- Added `docs/governance/BASELINE_CONSISTENCY_AUDIT.md`, a cross-document readiness review covering 12 P0/P1 gaps.
+- Key findings: call-route feasibility and customer evidence remain unproven; provider pricing references have different scopes; cost/capacity scenarios use different workload assumptions; legal/privacy controls depend on route/provider/jurisdiction; requirement status language and traceability need normalization.
+- The audit makes no product decisions and does not authorise implementation. README indexes the audit.
