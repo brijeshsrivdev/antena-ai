@@ -26,5 +26,9 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Initial finding: Android call-screening/redirection APIs should not be assumed to expose live cellular-call audio; carrier forwarding and a cloud voice route are leading hypotheses to test, not final architecture decisions.
 - Research remains incomplete; no product code is authorised.
 
+- Expanded competitor review to include Truecaller Assistant, Tring, device-native screening, CNAP and cloud voice-agent categories.
+- Added `docs/discovery/CUSTOMER_VALIDATION_PLAN.md` with non-leading interview questions and evidence-capture guidance.
+- Updated research register: competitor, telephony and customer-segment workstreams are in progress; no interviews or hands-on carrier tests have yet been claimed.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
