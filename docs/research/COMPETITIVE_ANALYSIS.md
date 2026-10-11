@@ -94,3 +94,35 @@ This is a shortlist, not an exhaustive market map. Vendor pages establish advert
 The feature space is already competitive. Basic spam detection and caller identity are not enough to differentiate. The promising test is whether a new product can deliver a distinctly better and trusted end-to-end workflow for a chosen segment: predictable setup, useful conversation handling, user takeover, high-quality multilingual interaction, transparent data controls and acceptable per-minute economics.
 
 Do not infer a defensible moat from adding domain profiles alone. The value must be proven through user outcomes and reliable execution. Hospitality integrations should remain a later expansion after the core call assistant is validated.
+
+
+## 10. Additional current product and routing evidence
+
+### Truecaller Assistant — India carrier setup
+Truecaller's official support page describes activation instructions for Airtel, Jio, Vodafone Idea and BSNL in India. This is meaningful evidence that a carrier-forwarding-based consumer assistant can be supported on selected operator routes, but it does not guarantee compatibility with every plan, handset, SIM configuration or future operator policy.
+
+Source: https://support.truecaller.com/support/solutions/articles/81000412918-assistant-activation-in-india (accessed 2026-10-11).
+
+### Tring — public Android listing
+The Google Play listing for “Tring : Your Assistant” identifies Mavrix AI Private Limited, showed an update date of 6 September 2026 and 500+ downloads when checked. Its listing describes missed-call answering, language support, dual-SIM coverage and a voice-customization feature. These are vendor listing claims; the visible download count is a small, time-specific public signal and must not be treated as a reliable estimate of total users or traction.
+
+Source: https://play.google.com/store/apps/details?id=com.graine.callassistant (accessed 2026-10-11).
+
+### Pricing signal
+Equal AI's terms state that paid feature prices are displayed in-app and may vary by user, offer and touchpoint; therefore, a single public web price is not a dependable comparison. The India App Store listing displayed in-app purchase labels including “Gold” at ₹149 and ₹249, but this does not establish the full subscription structure, duration, entitlements or Android price. Capture those details only through legitimate current in-app review.
+
+Sources:
+- https://myequal.ai/terms-and-conditions/
+- https://apps.apple.com/in/app/equal-ai-call-assistant/id6757906431
+
+### Privacy comparison warning
+App-store “Data safety” or “App Privacy” disclosures are developer-provided summaries and may not be independently verified by the store. Compare the underlying privacy policy, terms, data retention/deletion workflow and subprocessor disclosures; do not score a product as privacy-safe based on a badge alone.
+
+## 11. Competitive conclusion and next tests
+
+1. Validate call forwarding on the actual target operators and SIM types; Equal AI and Truecaller materials do not establish identical support matrices.
+2. Capture competitor prices, included minutes/features, renewal terms and cancellation behaviour from current first-party screens where accessible.
+3. Test the full user journey and failure recovery, not just a successful demonstration call.
+4. Analyse public reviews by theme: forwarding setup, missed calls, latency, wrong answers, language, battery/data, billing, privacy and cancellation.
+5. Do not compete solely on caller ID/spam blocking. Investigate whether a specific segment values reliable conversation handling and actionable summaries enough to pay.
+6. Treat all claimed language counts, accuracy, growth and availability as vendor claims until independently tested.
