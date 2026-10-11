@@ -15,6 +15,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Customer validation plan](docs/discovery/CUSTOMER_VALIDATION_PLAN.md)
 - [Customer interview pack](docs/discovery/CUSTOMER_INTERVIEW_PACK.md)
 - [Proposed product scope and feature catalogue](docs/discovery/PRODUCT_SCOPE_AND_FEATURE_CATALOG.md)
+- [MVP scope and feature gates](docs/discovery/MVP_SCOPE_AND_FEATURE_GATES.md)
 - [UX screen inventory](docs/discovery/UX_SCREEN_INVENTORY.md)
 - [UX wireflow specification](docs/discovery/UX_WIREFLOW_SPEC.md)
 - [Decision log](docs/governance/DECISION_LOG.md)
