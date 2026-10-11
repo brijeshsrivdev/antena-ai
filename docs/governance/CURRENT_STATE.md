@@ -35,5 +35,9 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added `docs/architecture/CAPACITY_AND_SCALE_MODEL.md` with 10,000-registration scenarios. The 10× peak factor is explicitly a placeholder, not a measured target.
 - Next work: broaden competitor comparison and source validation; gather user evidence; obtain written provider quotes; complete requirements, UX, architecture, open-source, legal, marketing and go-to-market docs.
 
+- Added proposed product scope/feature catalogue and UX screen inventory. Priorities and flows remain unapproved until customer evidence and technical feasibility are complete.
+- Added positioning/go-to-market hypotheses and open-source/provider evaluation framework; no brand, segment, channel or dependency has been selected.
+- Product discovery baseline is materially expanded but remains incomplete. No user interviews, live-call tests, written provider quotes, legal opinions or load tests have been performed.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
