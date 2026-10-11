@@ -12,6 +12,8 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Handover guide](docs/governance/HANDOVER.md)
 - [Discovery plan](docs/discovery/DISCOVERY_PLAN.md)
 - [Customer validation plan](docs/discovery/CUSTOMER_VALIDATION_PLAN.md)
+- [Proposed product scope and feature catalogue](docs/discovery/PRODUCT_SCOPE_AND_FEATURE_CATALOG.md)
+- [UX screen inventory](docs/discovery/UX_SCREEN_INVENTORY.md)
 - [Decision log](docs/governance/DECISION_LOG.md)
 - [Research register](docs/research/RESEARCH_REGISTER.md)
 - [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
@@ -21,6 +23,8 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Roadmap](docs/roadmap/ROADMAP.md)
 - [Pricing and unit economics](docs/business/PRICING_AND_UNIT_ECONOMICS.md)
 - [Privacy and regulatory risk register](docs/research/PRIVACY_AND_REGULATORY_RISK_REGISTER.md)
+- [Open-source/provider evaluation framework](docs/research/OPEN_SOURCE_AND_PROVIDER_EVALUATION.md)
+- [Positioning and go-to-market hypotheses](docs/business/POSITIONING_AND_GO_TO_MARKET.md)
 - [10,000-user capacity model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 
 ## Non-negotiable rules
