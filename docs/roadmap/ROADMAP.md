@@ -53,3 +53,6 @@ Each phase requires evidence, security/privacy review, operational readiness, ac
 - Provider pricing evidence is now separated from assumptions in `docs/research/PROVIDER_PRICING_EVIDENCE.md`. Public prices remain non-comparable; provider RFP responses are still required.
 - Competitor matrix now includes Sharyx AI Call Assistant and clarifies that Equal AI in-app pricing is offer-dependent. These findings do not replace hands-on evaluation or customer interviews.
 - No discovery exit criteria have been satisfied by these desk-research updates alone. Owner-supervised route tests, customer evidence, written quotes, legal review, and explicit approval remain outstanding.
+
+## Consistency audit outcome — 2026-10-11
+See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 gaps. In particular, reconcile the two different workload scenario sets into one canonical low/base/high model; keep published price anchors separate from cost assumptions and written quotes; normalize requirement lifecycle status; and complete end-to-end traceability. This audit is a planning artifact, not evidence that the gates have passed.
