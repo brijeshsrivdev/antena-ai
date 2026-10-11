@@ -126,3 +126,9 @@ Thresholds are placeholders for owner review, not commitments.
 ## 10. Recommendation
 
 Continue discovery with carrier-mediated forwarding to a cloud realtime voice agent as the leading hypothesis, not a committed architecture. Validate it against a VoIP/SIP alternative. Do not select providers, design around unrestricted cellular audio capture, commit to pricing, or start product coding until the owner reviews the feasibility experiment and gate criteria.
+
+## Additional official Android audio guidance
+
+Android's audio-input sharing documentation states that during a voice call, an ordinary app generally does not receive the call's audio; privileged pre-installed apps with CAPTURE_AUDIO_OUTPUT are a special case, and accessibility services have specific platform treatment. This reinforces that unrestricted cellular-call audio capture is not a safe design assumption. The intended media path must be validated end-to-end.
+
+Source: https://developer.android.com/media/platform/sharing-audio-input (accessed 2026-10-11).
