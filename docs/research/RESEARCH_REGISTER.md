@@ -12,7 +12,7 @@ Use primary sources where possible and record access dates. Separate official do
 | RES-006 | What is all-in variable cost per connected minute? | P0 | IN_PROGRESS | Public provider benchmarks and scenarios added; written quotes and route-specific cost validation remain |
 | RES-007 | What laws/rules apply to recording, interception, transcription, consent and personal data? | P0 | IN_PROGRESS | Preliminary India issue-spotting register added; legal opinion and jurisdiction matrix remain |
 | RES-008 | What Android APIs and app-store rules constrain call routing? | P0 | OPEN | Android feasibility assessment |
-| RES-009 | Which open-source voice/media/orchestration/observability dependencies are commercially suitable? | P1 | IN_PROGRESS | Evaluation framework added; candidate-by-candidate licence and maintenance research remains |
+| RES-009 | Which open-source voice/media/orchestration/observability dependencies are commercially suitable? | P1 | IN_PROGRESS | Evaluation framework and initial LiveKit/Pipecat/Vocode review added; exact versions, transitive licences and test results remain |
 | RES-010 | What pricing supports gross margin and acquisition economics? | P1 | OPEN | Pricing hypotheses |
 | RES-011 | What workload does 10,000 users represent under low/base/high usage? | P1 | IN_PROGRESS | Initial low/base/high model added; user evidence, provider limits and measured peaks remain |
 | RES-012 | Which brands have acceptable trademark, domain, app-store and product-conflict risk? | P1 | OPEN | Brand screen |
@@ -44,3 +44,9 @@ Product definition increment (2026-10-11):
 - Added proposed product scope/feature catalogue and Android-first UX screen inventory; these are hypotheses, not owner-approved requirements.
 - Added preliminary positioning/go-to-market hypotheses and open-source/provider evaluation framework.
 - Still needed: detailed competitor source validation, customer interviews, provider quotes, visual wireflows, numbered requirements/acceptance criteria, API contracts, security threat model, country-specific legal review and final baseline audit.
+
+
+Further increment (2026-10-11):
+- Added `VOICE_STACK_CANDIDATE_REVIEW.md` with initial LiveKit Agents, Pipecat, Vocode Core and managed realtime API comparison; licence conclusions are limited to repository-level licence files inspected and require version pinning/transitive audit.
+- Added `CORE_REQUIREMENTS_DRAFT.md` with 15 provisional requirements and non-functional areas; unresolved thresholds are explicitly marked for later baseline review.
+- Added `SYSTEM_ARCHITECTURE_OPTIONS.md` to compare managed, custom, self-hosted and VoIP-first system shapes without committing to one.
