@@ -1,1 +1,54 @@
-docs: index expanded discovery and validation artifacts
+# Antena AI — Product Discovery Baseline
+
+> Working repository name only. Commercial brand is not approved.
+
+This repository is for discovery and specification of a reusable AI voice platform. The current direction is to investigate a MyEqual.ai-style personal AI call assistant first, then add trusted domain-specific capabilities, initially hospitality.
+
+**Phase: discovery and documentation only. Product implementation is not authorised.**
+
+## Start here
+- [Project charter](docs/governance/PROJECT_CHARTER.md)
+- [Current state](docs/governance/CURRENT_STATE.md)
+- [Handover guide](docs/governance/HANDOVER.md)
+- [Discovery plan](docs/discovery/DISCOVERY_PLAN.md)
+- [Customer validation plan](docs/discovery/CUSTOMER_VALIDATION_PLAN.md)
+- [Customer interview pack](docs/discovery/CUSTOMER_INTERVIEW_PACK.md)
+- [Proposed product scope and feature catalogue](docs/discovery/PRODUCT_SCOPE_AND_FEATURE_CATALOG.md)
+- [UX screen inventory](docs/discovery/UX_SCREEN_INVENTORY.md)
+- [UX wireflow specification](docs/discovery/UX_WIREFLOW_SPEC.md)
+- [Decision log](docs/governance/DECISION_LOG.md)
+- [Research register](docs/research/RESEARCH_REGISTER.md)
+- [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
+- [Competitor matrix](docs/research/COMPETITOR_MATRIX.md)
+- [Market demand and segmentation](docs/research/MARKET_DEMAND_AND_SEGMENTATION.md)
+- [Telephony feasibility](docs/research/TELEPHONY_FEASIBILITY.md)
+- [Telephony validation protocol](docs/research/TELEPHONY_VALIDATION_PROTOCOL.md)
+- [Requirements index](docs/requirements/REQUIREMENTS_INDEX.md)
+- [Core requirements draft](docs/requirements/CORE_REQUIREMENTS_DRAFT.md)
+- [Requirements traceability matrix](docs/requirements/TRACEABILITY_MATRIX.md)
+- [Architecture principles](docs/architecture/ARCHITECTURE_PRINCIPLES.md)
+- [Roadmap](docs/roadmap/ROADMAP.md)
+- [Pricing and unit economics](docs/business/PRICING_AND_UNIT_ECONOMICS.md)
+- [Voice cost scenario model](docs/business/COST_SCENARIO_MODEL.md)
+- [Privacy and regulatory risk register](docs/research/PRIVACY_AND_REGULATORY_RISK_REGISTER.md)
+- [Open-source/provider evaluation framework](docs/research/OPEN_SOURCE_AND_PROVIDER_EVALUATION.md)
+- [Voice-stack candidate review](docs/research/VOICE_STACK_CANDIDATE_REVIEW.md)
+- [Initial threat model](docs/security/THREAT_MODEL.md)
+- [Data inventory and lifecycle](docs/security/DATA_INVENTORY_AND_LIFECYCLE.md)
+- [Verification and test strategy](docs/quality/VERIFICATION_AND_TEST_STRATEGY.md)
+- [Positioning and go-to-market hypotheses](docs/business/POSITIONING_AND_GO_TO_MARKET.md)
+- [System architecture options](docs/architecture/SYSTEM_ARCHITECTURE_OPTIONS.md)
+- [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
+- [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)
+- [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
+
+## Non-negotiable rules
+- No product code, infrastructure code, migrations, or deployable prototypes until the owner explicitly approves the documented baseline.
+- Research claims must be sourced and distinguish verified facts, vendor claims, estimates, assumptions and hypotheses.
+- Use trusted server-configured domain connectors and domain APIs; no direct domain database access and no client-supplied arbitrary backend URLs.
+- Evaluate open-source dependencies for licence, maintenance, security, total cost and lock-in.
+- Treat 10,000 users as a target requiring workload modelling, not as a concurrency specification.
+- Keep handover and current-state documents up to date.
+
+## Decision statuses
+PROPOSED, RESEARCH_REQUIRED, EXPERIMENT_REQUIRED, DECIDED, APPROVED, DEFERRED.
