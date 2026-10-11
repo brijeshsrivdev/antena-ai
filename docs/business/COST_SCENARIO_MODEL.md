@@ -48,6 +48,8 @@ A ₹249/month tax-inclusive plan at 18% GST yields approximately ₹211.02 befo
 
 ## 5. 10,000 registered-user scenarios
 
+**Canonical planning reference:** See [Shared Workload Scenario Baseline](../architecture/WORKLOAD_SCENARIO_BASELINE.md) for the common low/base/high scenario set used for capacity comparisons. The 10k/75k/240k-minute cases below are retained as a separate sensitivity set with different per-active-user assumptions; they are not directly comparable to the shared low/base/high scenarios.
+
 10,000 registered accounts is not 10,000 concurrent calls. MAU, call minutes and peak concurrency are separate metrics.
 
 | Scenario | Registered | Assumed MAU | Active users | Minutes / active user | Monthly connected minutes |
