@@ -56,3 +56,8 @@ Each phase requires evidence, security/privacy review, operational readiness, ac
 
 ## Consistency audit outcome — 2026-10-11
 See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 gaps. In particular, reconcile the two different workload scenario sets into one canonical low/base/high model; keep published price anchors separate from cost assumptions and written quotes; normalize requirement lifecycle status; and complete end-to-end traceability. This audit is a planning artifact, not evidence that the gates have passed.
+
+## Workload and baseline consistency updates — 2026-10-11
+- Added a shared proposed workload table in `docs/architecture/WORKLOAD_SCENARIO_BASELINE.md`; the capacity and pricing models now point to it.
+- The alternate 10k/75k/240k-minute sensitivity cases remain distinct and explicitly labelled.
+- Normalized core requirement lifecycle wording to DRAFT. Full traceability, route feasibility, customer evidence, provider quotes, counsel review and owner approval remain exit criteria.
