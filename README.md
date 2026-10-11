@@ -20,6 +20,8 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Architecture principles](docs/architecture/ARCHITECTURE_PRINCIPLES.md)
 - [Roadmap](docs/roadmap/ROADMAP.md)
 - [Pricing and unit economics](docs/business/PRICING_AND_UNIT_ECONOMICS.md)
+- [Privacy and regulatory risk register](docs/research/PRIVACY_AND_REGULATORY_RISK_REGISTER.md)
+- [10,000-user capacity model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 
 ## Non-negotiable rules
 - No product code, infrastructure code, migrations, or deployable prototypes until the owner explicitly approves the documented baseline.
