@@ -8,6 +8,9 @@ Status: initial scaffold. Detailed product requirements are not baselined. Imple
 
 - [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) maps provisional requirements to UX, architecture, risks and verification; known gaps remain.
 
+- [Expanded traceability](TRACEABILITY_MATRIX.md) now includes proposed evidence states and exit gates for REQ-001–REQ-015 and NFR-001–NFR-010.
+- [MVP scope and feature gates](../discovery/MVP_SCOPE_AND_FEATURE_GATES.md) separates core candidates, conditional capabilities and deferred scope. Nothing in it is approved.
+
 ## Planned requirement domains
 - GOV: governance, approval gates and auditability
 - IDN: identity, accounts and recovery
