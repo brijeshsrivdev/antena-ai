@@ -11,16 +11,16 @@ A per-minute quote excluding telephony, an extra call leg, model usage, failed a
 
 | Source | Published anchor | Caveat |
 |---|---|---|
-| Ringg | Advertises ₹6/min for a voice-agent bundle in prior research | Not a confirmed consumer SIM-forwarding quote |
+| Ringg | Advertises ₹6 per connected minute for a bundled voice-agent offer | Not a confirmed consumer SIM-forwarding quote; caller-ID preservation, takeover and exact route eligibility remain unknown. See [provider pricing evidence](../research/PROVIDER_PRICING_EVIDENCE.md) |
 | Twilio India Voice | Pricing page lists US$0.0496/min for outbound mobile calls and US$0.0699/min for local calls; SDK/SIP rates differ | Route eligibility, currency conversion, taxes and call path matter |
-| Exotel migration article | Indicative inbound ₹0.30–0.50/min and outbound ₹0.80–1.00/min | Vendor-authored comparison; obtain direct quote |
+| Exotel public business phone plans | Published package prices/credit allocations; Voice Streaming (Agent Stream) is explicitly excluded and separately priced by sales | Not an all-in consumer assistant rate. Exotel says mobile-carrier forwarding charges are separate. See [provider pricing evidence](../research/PROVIDER_PRICING_EVIDENCE.md) |
 | MyOperator | ₹5,000/month Sedan and ₹15,000/month SUV, billed annually; AI plans custom | Business CPaaS, not equivalent to consumer per-user service |
 | OpenAI Realtime | Published model/session rates are one component | Telephony and other model/tool usage may be additional |
 
 Sources:
 - https://www.ringg.ai/pricing
 - https://www.twilio.com/en-us/voice/pricing/in
-- https://exotel.com/blog/migrate-twilio-to-exotel-voice-ai-india/
+- https://exotel.com/pricing/business-phone-system/\n- https://docs.exotel.com/business-phone-system/call-forwarding-charges\n- https://support.truecaller.com/support/solutions/articles/81000412918-assistant-activation-in-india
 - https://myoperator.com/pricing
 - https://developers.openai.com/api/docs/pricing
 
