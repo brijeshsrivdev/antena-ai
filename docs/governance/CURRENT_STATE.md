@@ -30,5 +30,10 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added `docs/discovery/CUSTOMER_VALIDATION_PLAN.md` with non-leading interview questions and evidence-capture guidance.
 - Updated research register: competitor, telephony and customer-segment workstreams are in progress; no interviews or hands-on carrier tests have yet been claimed.
 
+- Added `docs/research/PRIVACY_AND_REGULATORY_RISK_REGISTER.md` as preliminary issue-spotting, not legal advice; India DPDP phased commencement, caller notice, recording, telecom and provider terms require further review.
+- Expanded `docs/business/PRICING_AND_UNIT_ECONOMICS.md` with public provider price benchmarks and low/base/high connected-minute cost scenarios.
+- Added `docs/architecture/CAPACITY_AND_SCALE_MODEL.md` with 10,000-registration scenarios. The 10× peak factor is explicitly a placeholder, not a measured target.
+- Next work: broaden competitor comparison and source validation; gather user evidence; obtain written provider quotes; complete requirements, UX, architecture, open-source, legal, marketing and go-to-market docs.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
