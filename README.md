@@ -36,7 +36,6 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
 - [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)
 - [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
-- [10,000-user capacity model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 
 ## Non-negotiable rules
 - No product code, infrastructure code, migrations, or deployable prototypes until the owner explicitly approves the documented baseline.
