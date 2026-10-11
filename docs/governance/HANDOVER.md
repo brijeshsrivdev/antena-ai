@@ -35,3 +35,9 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Important reconciliation issue: `COST_SCENARIO_MODEL.md` uses 10k/75k/240k monthly-minute scenarios, while `CAPACITY_AND_SCALE_MODEL.md` and `PRICING_AND_UNIT_ECONOMICS.md` use 20k/150k/600k. These are based on different assumptions, not necessarily a factual contradiction, but a canonical shared workload table is needed before decisions.
 - Price assumptions (₹4/₹7/₹12), a public ₹6/min anchor and future written quotes must remain clearly distinct.
 - The audit is not an approval. Route tests, customer interviews, written quotes, legal review and final owner sign-off remain outstanding. Implementation is not authorised.
+
+## Latest increment — workload and lifecycle normalization (2026-10-11)
+- Added `docs/architecture/WORKLOAD_SCENARIO_BASELINE.md` to define one shared proposed low/base/high workload set for capacity and pricing references. Values remain assumptions; the 10k/75k/240k-minute cost sensitivity remains a separate alternate set.
+- Linked the workload baseline from `CAPACITY_AND_SCALE_MODEL.md`, `PRICING_AND_UNIT_ECONOMICS.md` and `COST_SCENARIO_MODEL.md`.
+- Normalized `CORE_REQUIREMENTS_DRAFT.md` status to DRAFT because formal review has not started.
+- Added the baseline consistency audit. Neither the shared workload assumptions nor any requirement is owner-approved; implementation remains blocked.
