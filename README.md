@@ -13,6 +13,8 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Discovery plan](docs/discovery/DISCOVERY_PLAN.md)
 - [Decision log](docs/governance/DECISION_LOG.md)
 - [Research register](docs/research/RESEARCH_REGISTER.md)
+- [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
+- [Telephony feasibility](docs/research/TELEPHONY_FEASIBILITY.md)
 - [Requirements index](docs/requirements/REQUIREMENTS_INDEX.md)
 - [Architecture principles](docs/architecture/ARCHITECTURE_PRINCIPLES.md)
 - [Roadmap](docs/roadmap/ROADMAP.md)
