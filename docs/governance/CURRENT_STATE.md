@@ -46,5 +46,8 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added initial threat model and data inventory/lifecycle draft. Both require revision against the eventual architecture and legal advice.
 - Added current source-based candidate review of LiveKit Agents, Pipecat, Vocode Core and managed realtime APIs. Repository-level licences were inspected, but transitive dependency and provider terms are not fully audited.
 
+- Added verification/test strategy and initial requirements traceability matrix. The matrix explicitly lists missing evidence and unapproved thresholds.
+- Documentation now covers product scope, UX inventory, positioning hypotheses, architecture options, security/data lifecycle, test strategy, capacity and pricing frameworks. This is a broad draft baseline, not yet a complete approved specification.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
