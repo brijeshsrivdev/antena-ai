@@ -70,3 +70,8 @@ README and linked documents must be verified against current main after this inc
 - Truecaller's carrier-specific forwarding setup is evidence that this pattern exists in-market, not proof that our product can use the same route or terms.
 - Updated the cost model to clarify non-comparable price scopes. No provider has been contacted, no quote received, and no call-route test performed.
 - The baseline remains documentation-only, incomplete and unapproved. Implementation remains unauthorised.
+
+## Competitor evidence increment — 2026-10-11
+- Updated `docs/research/COMPETITOR_MATRIX.md` with Sharyx AI Call Assistant as an adjacent Android-listed product that describes forwarding to a dedicated AI number.
+- Clarified that Equal AI's public terms describe variable paid-feature pricing; App Store ₹149/₹249 entries are not a universal subscription quote.
+- README currently indexes 40 unique documentation links, including the provider pricing evidence document. The linked docs are still drafts and the baseline is not approved.
