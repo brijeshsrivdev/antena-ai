@@ -11,6 +11,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Current state](docs/governance/CURRENT_STATE.md)
 - [Handover guide](docs/governance/HANDOVER.md)
 - [Discovery plan](docs/discovery/DISCOVERY_PLAN.md)
+- [Customer validation plan](docs/discovery/CUSTOMER_VALIDATION_PLAN.md)
 - [Decision log](docs/governance/DECISION_LOG.md)
 - [Research register](docs/research/RESEARCH_REGISTER.md)
 - [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
