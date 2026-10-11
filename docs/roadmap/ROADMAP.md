@@ -45,3 +45,6 @@ Each phase requires evidence, security/privacy review, operational readiness, ac
 - Review CAPABILITY_GOVERNANCE.md alongside API contract, threat model, data inventory and hospitality API capabilities.
 - Use GTM_EXPERIMENT_PLAN.md only after agreeing interview recruitment, route disclosure and success thresholds.
 - Review current Android/Google Play policies and India telecom/privacy rules again immediately before product implementation or distribution; this desk review is not legal advice.
+
+
+- Add VOICE_AGENT_EVALUATION_PLAN.md to the Phase 0 review. Approve measurable thresholds before running tests; any unauthorized action, cross-tenant access or silent call loss is a release blocker, not a trade-off to average away.
