@@ -42,6 +42,12 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)
 - [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 
+## Latest discovery additions
+- [Android call route constraints and decision gates](docs/research/ANDROID_CALL_ROUTE_DECISION.md)
+- [Voice provider RFP and evaluation scorecard](docs/research/VOICE_PROVIDER_RFP.md)
+- [AI profile capability governance](docs/architecture/CAPABILITY_GOVERNANCE.md)
+- [Go-to-market experiment plan](docs/business/GTM_EXPERIMENT_PLAN.md)
+
 ## Non-negotiable rules
 - No product code, infrastructure code, migrations, or deployable prototypes until the owner explicitly approves the documented baseline.
 - Research claims must be sourced and distinguish verified facts, vendor claims, estimates, assumptions and hypotheses.
