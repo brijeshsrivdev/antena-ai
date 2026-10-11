@@ -58,3 +58,8 @@ This is a question register, not a completed fresh market study. Mark an item co
 - Exotel's public business phone packages exclude Voice Streaming (Agent Stream), which is priced separately by contacting sales. Exotel documentation also states that carrier forwarding charges are separate from the Exotel bill.
 - Truecaller's India activation instructions show a forwarding-based assistant pattern and carrier-specific setup, but do not establish our product's route eligibility or provider terms.
 - No provider was contacted, no quote received and no route tested. Public prices must not be presented as comparable all-in offers.
+
+## Competitor evidence update — 2026-10-11
+- Added Sharyx AI Call Assistant as an adjacent Android-listed product; its listing describes forwarding calls to a dedicated AI number. The listing showed 500+ downloads and an initial release date in July 2026 at review time. These are store-reported signals, not active-user or quality measurements. Source: https://play.google.com/store/apps/details?id=com.sharyx.call_assistant
+- Clarified Equal AI price interpretation: official terms state paid Android features may be offered as one-time unlocks or subscriptions and displayed prices may vary by offer and purchase point. App Store ₹149/₹249 entries are not a universal subscription quote. Sources: https://myequal.ai/terms-and-conditions/ and https://apps.apple.com/in/app/equal-ai-call-assistant/id6757906431
+- The competitive picture supports testing both the exact call route and differentiated user value; it does not establish willingness to pay or a defensible moat.
