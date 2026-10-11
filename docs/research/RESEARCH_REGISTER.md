@@ -62,3 +62,8 @@ Architecture/verification increment (2026-10-11):
 - Added initial threat model and data inventory/lifecycle, requirements traceability matrix, and verification/test strategy.
 - Added product scope/feature catalogue, UX screen inventory, positioning/GTM hypotheses, architecture options and 10,000-user capacity scenarios.
 - All remain discovery drafts. No user interviews, carrier tests, provider quotes, legal opinion, benchmark runs, load tests or implementation have been performed.
+
+
+API/data model increment (2026-10-11):
+- Added conceptual API contract and data model drafts with authz, idempotency, connector boundaries, artifact separation and deletion considerations.
+- These are architecture inputs, not approved endpoint schemas, data types or migrations. Finalisation depends on the validated call route, provider terms, product scope and legal review.
