@@ -6,6 +6,8 @@ Status: initial scaffold. Detailed product requirements are not baselined. Imple
 
 - [CORE_REQUIREMENTS_DRAFT.md](CORE_REQUIREMENTS_DRAFT.md) contains provisional REQ-001 through REQ-015 and initial non-functional requirement areas. These are drafts with unapproved priorities and some intentionally unresolved thresholds; reconcile IDs and traceability before approval.
 
+- [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) maps provisional requirements to UX, architecture, risks and verification; known gaps remain.
+
 ## Planned requirement domains
 - GOV: governance, approval gates and auditability
 - IDN: identity, accounts and recovery
