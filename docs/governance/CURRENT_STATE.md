@@ -19,5 +19,12 @@ Snapshot: 2026-10-11. Repository: brijeshsrivdev/antena-ai. Default branch: main
 ## Open questions
 Target segment, launch geography, core feature parity, call-routing model, provider stack, cost/minute, pricing, consent/retention, SLOs, acquisition strategy, open-source dependency choices, brand and domain availability.
 
+## Latest discovery increment (2026-10-11)
+
+- Added initial Equal AI competitive analysis at `docs/research/COMPETITIVE_ANALYSIS.md`.
+- Added preliminary Android telephony feasibility assessment at `docs/research/TELEPHONY_FEASIBILITY.md`.
+- Initial finding: Android call-screening/redirection APIs should not be assumed to expose live cellular-call audio; carrier forwarding and a cloud voice route are leading hypotheses to test, not final architecture decisions.
+- Research remains incomplete; no product code is authorised.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
