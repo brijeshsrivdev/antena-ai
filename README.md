@@ -32,6 +32,8 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Verification and test strategy](docs/quality/VERIFICATION_AND_TEST_STRATEGY.md)
 - [Positioning and go-to-market hypotheses](docs/business/POSITIONING_AND_GO_TO_MARKET.md)
 - [System architecture options](docs/architecture/SYSTEM_ARCHITECTURE_OPTIONS.md)
+- [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
+- [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)
 - [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 - [10,000-user capacity model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 
