@@ -4,6 +4,8 @@
 
 ## 1. Why registered users are not a capacity target
 
+**Shared scenario reference:** This model's low/base/high inputs are consolidated in [WORKLOAD_SCENARIO_BASELINE.md](WORKLOAD_SCENARIO_BASELINE.md). That document is the common planning reference; the values remain assumptions pending customer and provider evidence.
+
 10,000 registrations do not tell us how many calls will happen at once. Capacity depends on monthly active users, calls per active user, connected duration, peak-hour distribution, streaming sessions, provider concurrency limits, retries, and whether each call uses one or multiple media legs.
 
 This model is a planning instrument. Replace all assumptions with interview evidence, provider limits and measured pilot telemetry before production sizing.
