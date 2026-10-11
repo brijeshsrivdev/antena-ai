@@ -23,6 +23,11 @@ Use primary sources where possible and record access dates. Separate official do
 | RES-017 | Can target carrier/device combinations support the required call route safely and reliably? | P0 | EXPERIMENT_REQUIRED | TELEPHONY_VALIDATION_PROTOCOL.md; not executed |
 | RES-018 | Can target users understand onboarding, route state, privacy and usage caps? | P1 | EXPERIMENT_REQUIRED | UX_WIREFLOW_SPEC.md; user validation not conducted |
 
+| RES-019 | Which Android APIs and Play policies actually support the proposed incoming-call experience? | P0 | IN_PROGRESS | ANDROID_CALL_ROUTE_DECISION.md; device/provider test remains |
+| RES-020 | Which voice provider supports the exact India route with transparent all-in costs and acceptable data terms? | P0 | EXPERIMENT_REQUIRED | VOICE_PROVIDER_RFP.md; no providers contacted or quotes received |
+| RES-021 | How should profile capabilities, tenant access, confirmation and audit be governed? | P0 | IN_PROGRESS | CAPABILITY_GOVERNANCE.md; owner review and tests remain |
+| RES-022 | Which low-cost GTM experiment identifies a segment with pain, setup willingness and plausible economics? | P1 | IN_PROGRESS | GTM_EXPERIMENT_PLAN.md; no experiments run |
+
 ## Source record template
 Research ID; claim/question; title and organisation; URL; access date; publication/update date; source type; finding; limitations/conflicts; confidence; affected decision/requirement; follow-up.
 
@@ -36,3 +41,11 @@ This is a question register, not a completed fresh market study. Mark an item co
 - Cost cases of ₹4/₹7/₹12 per connected minute are assumptions only. Twilio, Exotel, Ringg and MyOperator figures have different scopes and must not be compared as equivalent all-in quotes.
 - No interviews, live route tests, provider quotes, legal opinions, benchmarks, load tests or implementation have been performed.
 - Next: obtain customer evidence, run consented owner-supervised route tests, obtain comparable written quotes, and then reconcile measurable requirements and architecture.
+
+
+## Research updates — additional desk review, 2026-10-11
+- Android official docs describe CallScreeningService as a bounded call-screening/identification API that must respond within five seconds; they do not document a general cellular-audio relay to a cloud AI agent. Source: https://developer.android.com/reference/android/telecom/CallScreeningService
+- CallRedirectionService is for redirecting/cancelling outgoing calls and is not an incoming audio-bridge solution by itself. Source: https://developer.android.com/reference/android/telecom/CallRedirectionService
+- Google Play's call/SMS permission policy restricts sensitive permissions and ties them to eligible core functionality/default-handler requirements. Source: https://support.google.com/googleplay/android-developer/answer/10208820
+- TRAI lists the TCCCPR Third Amendment, 2026, released 18 September 2026. Exact applicability to this product needs specialist review: https://www.trai.gov.in/release-publication/regulations/amendments-page/7617
+- Added a route decision document, provider RFP, capability governance and GTM experiment plan. No provider requests, interviews, campaigns, device tests or implementation have occurred.
