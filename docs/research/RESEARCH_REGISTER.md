@@ -5,19 +5,19 @@ Use primary sources where possible and record access dates. Separate official do
 | ID | Research question | Priority | Status | Deliverable |
 |---|---|---|---|---|
 | RES-001 | What is MyEqual.ai's documented feature set, platform support, routing, pricing and limitations? | P0 | IN_PROGRESS | Initial competitor profile added; hands-on verification and pricing research remain |
-| RES-002 | Which direct/adjacent products cover personal AI calls, AI receptionists and voice agents? | P0 | OPEN | Competitor landscape |
+| RES-002 | Which direct/adjacent products cover personal AI calls, AI receptionists and voice agents? | P0 | IN_PROGRESS | Initial landscape covers Equal AI, Truecaller, Tring, native screening and voice-agent platforms; independent review and full matrix remain |
 | RES-003 | Which segments have frequent, painful call-handling problems? | P0 | IN_PROGRESS | Initial public market-demand evidence and interview plan added; interviews and segment evidence remain |
 | RES-004 | Which telephony providers support routing and real-time media in target regions? | P0 | IN_PROGRESS | Android/call-forwarding feasibility assessment added; carrier tests and provider comparison remain |
 | RES-005 | Which speech/model providers meet latency, quality, language, privacy and cost goals? | P0 | OPEN | Benchmark plan |
 | RES-006 | What is all-in variable cost per connected minute? | P0 | IN_PROGRESS | Public provider benchmarks and scenarios added; written quotes and route-specific cost validation remain |
 | RES-007 | What laws/rules apply to recording, interception, transcription, consent and personal data? | P0 | IN_PROGRESS | Preliminary India issue-spotting register and data inventory added; legal opinion and jurisdiction matrix remain |
-| RES-008 | What Android APIs and app-store rules constrain call routing? | P0 | OPEN | Android feasibility assessment |
+| RES-008 | What Android APIs and app-store rules constrain call routing? | P0 | IN_PROGRESS | Official API/policy desk review added; current-version review and hands-on route validation remain |
 | RES-009 | Which open-source voice/media/orchestration/observability dependencies are commercially suitable? | P1 | IN_PROGRESS | Framework evaluation and repository-level licence review added; exact version pins, transitive licences and test results remain |
-| RES-010 | What pricing supports gross margin and acquisition economics? | P1 | OPEN | Pricing hypotheses |
+| RES-010 | What pricing supports gross margin and acquisition economics? | P1 | IN_PROGRESS | Initial price sensitivity and positioning hypotheses added; customer evidence and quotes remain |
 | RES-011 | What workload does 10,000 users represent under low/base/high usage? | P1 | IN_PROGRESS | Initial low/base/high model added; user evidence, provider limits and measured peaks remain |
 | RES-012 | Which brands have acceptable trademark, domain, app-store and product-conflict risk? | P1 | OPEN | Brand screen |
 | RES-013 | Which hospitality actions can safely be exposed through Antena APIs? | P1 | OPEN | Connector permission matrix |
-| RES-014 | Which low-cost acquisition channels have evidence for this product? | P1 | OPEN | Go-to-market plan |
+| RES-014 | Which low-cost acquisition channels have evidence for this product? | P1 | IN_PROGRESS | Initial positioning/GTM hypotheses added; channel experiments and segment evidence remain |
 
 ## Source record template
 Research ID; claim/question; title and organisation; URL; access date; publication/update date; source type; finding; limitations/conflicts; confidence; affected decision/requirement; follow-up.
