@@ -14,6 +14,7 @@ The category is validated by competitors, especially Equal AI and hiRobin. A gen
 | Truecaller Assistant | Answers calls, asks caller's purpose, helps user decide; spam options | Android/iOS; availability varies by country, carrier and language | May be bundled with Premium in selected markets; no comparable India price verified | Brand trust, caller reputation context, distribution | Adjacent incumbent and potential platform competitor |
 | Google / Android call screening | Native screening and spam/caller protections vary by device/region | OS/device-dependent; not a uniform third-party API contract | No comparable standalone price | Distribution and OS integration | Third-party apps cannot assume unrestricted cellular audio access |
 | Tring: Your Assistant | Listed as AI call assistant with missed-call summaries and outgoing calls in prior desk research | Android listing | Previously showed 500+ downloads when checked; not a market-share measure | Local entrant, useful UX comparison | Limited public evidence on adoption and unit economics |
+| Sharyx AI Call Assistant | Store listing describes forwarding calls to a dedicated AI number, caller-intent capture and summaries | Android; listing says calls are forwarded to an AI number | Google Play listing showed 500+ downloads and an initial release dated Jul 27, 2026 when checked; store metrics are not active-user counts | Closely adjacent India-listed product and useful setup/route comparison | Very limited public evidence; route/carrier compatibility, pricing, quality, privacy details and reliability need hands-on review |
 | Vapi / Retell / Bland | Voice-agent APIs/platforms, generally developer/business oriented | API + telephony integrations | Stacked per-minute/component pricing; exact India route must be quoted | Fast experimentation with managed components | Not equivalent to personal SIM screening |
 | MyOperator / Exotel / Knowlarity | Business telephony, IVR, contact center, custom AI agents | Business numbers, cloud telephony | MyOperator publishes ₹5,000/month Sedan and ₹15,000/month SUV, billed annually; AI plans custom | Local operations, support and integrations | Mostly B2B; could be providers/partners as well as competition |
 
@@ -22,6 +23,7 @@ The category is validated by competitors, especially Equal AI and hiRobin. A gen
 - Equal AI official site: https://www.myequal.ai/
 - Equal AI terms and variable in-app pricing: https://myequal.ai/terms-and-conditions/
 - Equal AI App Store listing: https://apps.apple.com/in/app/equal-ai-call-assistant/id6757906431
+- Sharyx AI Call Assistant Google Play listing: https://play.google.com/store/apps/details?id=com.sharyx.call_assistant
 - hiRobin official site: https://www.hirobin.ai/
 - Truecaller Assistant overview: https://support.truecaller.com/support/solutions/articles/81000407438-what-is-truecaller-assistant-
 - Truecaller India availability: https://support.truecaller.com/support/solutions/articles/81000412918-assistant-activation-in-india
@@ -36,6 +38,9 @@ The category is validated by competitors, especially Equal AI and hiRobin. A gen
 4. **Profile portability:** backend-managed profiles with explicit, audited capabilities; no arbitrary user-supplied tools.
 5. **Hospitality utility:** an operator profile can answer approved FAQs and capture intent through a trusted Antena API; it must not invent availability, prices, reservations or policy exceptions.
 6. **Data minimisation:** transparent audio/transcript retention and deletion status.
+
+## Pricing evidence caveat
+Equal AI's official terms state that paid Android features may be offered through one-time unlocks or subscriptions and that prices/features can vary by user, offer and purchase point. The App Store listing exposes ₹149 and ₹249 in-app purchase entries, but these should not be treated as a universal subscription price. Source: https://myequal.ai/terms-and-conditions/ and https://apps.apple.com/in/app/equal-ai-call-assistant/id6757906431.
 
 ## Unknowns
 - Competitor call completion rate, takeover latency, language error rate, disclosure behavior and end-to-end cost.
