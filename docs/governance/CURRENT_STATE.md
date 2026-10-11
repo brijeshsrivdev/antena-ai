@@ -80,3 +80,9 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/governance/BASELINE_CONSISTENCY_AUDIT.md`, a cross-document readiness review covering 12 P0/P1 gaps.
 - Key findings: call-route feasibility and customer evidence remain unproven; provider pricing references have different scopes; cost/capacity scenarios use different workload assumptions; legal/privacy controls depend on route/provider/jurisdiction; requirement status language and traceability need normalization.
 - The audit makes no product decisions and does not authorise implementation. README indexes the audit.
+
+## Cross-document normalization increment — 2026-10-11
+- Added `docs/architecture/WORKLOAD_SCENARIO_BASELINE.md` as a shared proposed low/base/high workload table: 20k / 150k / 600k monthly connected minutes, with explicit MAU, calls/user, duration and illustrative concurrency assumptions.
+- Linked the shared scenario reference from capacity and pricing documents. The separate 10k / 75k / 240k minute set remains labelled as alternate sensitivity analysis, not directly comparable.
+- Normalized the core requirements header to `DRAFT`, because formal review has not started. This does not approve any requirement.
+- Added `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` and linked it from README. Baseline remains incomplete; no coding or deployment is authorised.
