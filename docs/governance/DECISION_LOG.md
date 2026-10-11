@@ -16,3 +16,10 @@
 | DEC-012 | Product implementation | APPROVED | No coding until owner explicitly approves baseline. | Owner approval required to lift gate. |
 
 Do not mark a decision APPROVED unless explicitly approved by the owner or directly specified by them. Link detailed architecture decisions to ADRs when created.
+
+## Research notes added 2026-10-11 (not product decisions)
+
+- Public Ringg pricing advertises ₹6/connected minute for a bundled voice-agent service. It is a benchmark only, not a quote for the proposed consumer routing path.
+- Android call-screening/redirection APIs do not establish unrestricted cellular audio access. Carrier forwarding to a cloud voice agent remains a hypothesis to validate, not an approved architecture.
+- LiveKit Agents, Pipecat and Vocode Core are candidate frameworks only. Repository-level licence files were inspected; dependency trees, model terms and exact versions remain unaudited.
+- India DPDP Rules 2025 and TRAI requirements are included in issue-spotting documents; no legal conclusion is made.
