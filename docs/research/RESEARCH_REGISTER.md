@@ -12,7 +12,7 @@ Use primary sources where possible and record access dates. Separate official do
 | RES-006 | What is all-in variable cost per connected minute? | P0 | IN_PROGRESS | Public provider benchmarks and scenarios added; written quotes and route-specific cost validation remain |
 | RES-007 | What laws/rules apply to recording, interception, transcription, consent and personal data? | P0 | IN_PROGRESS | Preliminary India issue-spotting register and data inventory added; legal opinion and jurisdiction matrix remain |
 | RES-008 | What Android APIs and app-store rules constrain call routing? | P0 | OPEN | Android feasibility assessment |
-| RES-009 | Which open-source voice/media/orchestration/observability dependencies are commercially suitable? | P1 | IN_PROGRESS | Evaluation framework and initial LiveKit/Pipecat/Vocode review added; exact versions, transitive licences and test results remain |
+| RES-009 | Which open-source voice/media/orchestration/observability dependencies are commercially suitable? | P1 | IN_PROGRESS | Framework evaluation and repository-level licence review added; exact version pins, transitive licences and test results remain |
 | RES-010 | What pricing supports gross margin and acquisition economics? | P1 | OPEN | Pricing hypotheses |
 | RES-011 | What workload does 10,000 users represent under low/base/high usage? | P1 | IN_PROGRESS | Initial low/base/high model added; user evidence, provider limits and measured peaks remain |
 | RES-012 | Which brands have acceptable trademark, domain, app-store and product-conflict risk? | P1 | OPEN | Brand screen |
@@ -56,3 +56,9 @@ Security/privacy increment (2026-10-11):
 - Added `docs/security/THREAT_MODEL.md` with initial threat scenarios, trust boundaries and controls.
 - Added `docs/security/DATA_INVENTORY_AND_LIFECYCLE.md` with candidate data classes and deletion lifecycle; no retention durations are approved.
 - Added `docs/research/VOICE_STACK_CANDIDATE_REVIEW.md` using official repository licence files and pricing pages; no framework/provider selected.
+
+
+Architecture/verification increment (2026-10-11):
+- Added initial threat model and data inventory/lifecycle, requirements traceability matrix, and verification/test strategy.
+- Added product scope/feature catalogue, UX screen inventory, positioning/GTM hypotheses, architecture options and 10,000-user capacity scenarios.
+- All remain discovery drafts. No user interviews, carrier tests, provider quotes, legal opinion, benchmark runs, load tests or implementation have been performed.
