@@ -57,3 +57,8 @@ README and linked documents must be verified against current main after this inc
 - Added capability governance for profile allowlists, tenant-scoped Antena APIs, confirmation rules, audit, idempotency and prompt-injection boundaries.
 - Added low-cost GTM experiments for consumer and hospitality segments. No marketing experiment has run.
 - Updated README index. The baseline remains a draft; no coding or deployment is authorised.
+
+
+## Quality evaluation increment — 2026-10-11
+- Added docs/quality/VOICE_AGENT_EVALUATION_PLAN.md with synthetic-corpus design, consented controlled-call guidance, candidate latency/accuracy/route gates, security zero-tolerance cases, reproducibility metadata and pilot approval requirements.
+- The numeric thresholds are proposed starting points only. No benchmark or load test has run, and no threshold is approved.
