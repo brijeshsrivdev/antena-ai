@@ -9,6 +9,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 ## Start here
 - [Project charter](docs/governance/PROJECT_CHARTER.md)
 - [Current state](docs/governance/CURRENT_STATE.md)
+- [Baseline consistency and readiness audit](docs/governance/BASELINE_CONSISTENCY_AUDIT.md)
 - [Handover guide](docs/governance/HANDOVER.md)
 - [Discovery plan](docs/discovery/DISCOVERY_PLAN.md)
 - [Customer validation plan](docs/discovery/CUSTOMER_VALIDATION_PLAN.md)
