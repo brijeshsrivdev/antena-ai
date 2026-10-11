@@ -28,3 +28,10 @@ A broad discovery scaffold and first draft set has been pushed to GitHub. It inc
 
 ## Handover checklist
 Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list completed work and source links; list unresolved risks/questions, owners and triggers; identify contradictions; state phase approvals; explicitly state whether implementation is authorised.
+
+## Latest increment — baseline consistency audit (2026-10-11)
+- Read the current requirements draft, traceability matrix, API contract, data model, threat model, privacy/data inventory, UX screen inventory/wireflows, capability governance, capacity model, pricing models and decision log.
+- Added `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` with 12 P0/P1 gaps and a recommended order of resolution.
+- Important reconciliation issue: `COST_SCENARIO_MODEL.md` uses 10k/75k/240k monthly-minute scenarios, while `CAPACITY_AND_SCALE_MODEL.md` and `PRICING_AND_UNIT_ECONOMICS.md` use 20k/150k/600k. These are based on different assumptions, not necessarily a factual contradiction, but a canonical shared workload table is needed before decisions.
+- Price assumptions (₹4/₹7/₹12), a public ₹6/min anchor and future written quotes must remain clearly distinct.
+- The audit is not an approval. Route tests, customer interviews, written quotes, legal review and final owner sign-off remain outstanding. Implementation is not authorised.
