@@ -49,5 +49,7 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added verification/test strategy and initial requirements traceability matrix. The matrix explicitly lists missing evidence and unapproved thresholds.
 - Documentation now covers product scope, UX inventory, positioning hypotheses, architecture options, security/data lifecycle, test strategy, capacity and pricing frameworks. This is a broad draft baseline, not yet a complete approved specification.
 
+- Added conceptual API contract and data model drafts. They define candidate resource boundaries, entities and controls, but are not OpenAPI schemas or database migrations.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
