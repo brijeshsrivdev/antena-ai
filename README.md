@@ -17,6 +17,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Decision log](docs/governance/DECISION_LOG.md)
 - [Research register](docs/research/RESEARCH_REGISTER.md)
 - [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
+- [Market demand and segmentation](docs/research/MARKET_DEMAND_AND_SEGMENTATION.md)
 - [Telephony feasibility](docs/research/TELEPHONY_FEASIBILITY.md)
 - [Requirements index](docs/requirements/REQUIREMENTS_INDEX.md)
 - [Core requirements draft](docs/requirements/CORE_REQUIREMENTS_DRAFT.md)
