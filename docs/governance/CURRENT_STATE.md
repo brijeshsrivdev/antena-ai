@@ -51,5 +51,7 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 
 - Added conceptual API contract and data model drafts. They define candidate resource boundaries, entities and controls, but are not OpenAPI schemas or database migrations.
 
+- Added initial market-demand/segmentation review. Equal AI's reported usage and funding are treated as competitor signals, not audited market-size proof; no TAM/SAM/SOM is asserted.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
