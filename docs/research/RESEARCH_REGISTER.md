@@ -6,7 +6,7 @@ Use primary sources where possible and record access dates. Separate official do
 |---|---|---|---|---|
 | RES-001 | What is MyEqual.ai's documented feature set, platform support, routing, pricing and limitations? | P0 | IN_PROGRESS | Initial competitor profile added; hands-on verification and pricing research remain |
 | RES-002 | Which direct/adjacent products cover personal AI calls, AI receptionists and voice agents? | P0 | OPEN | Competitor landscape |
-| RES-003 | Which segments have frequent, painful call-handling problems? | P0 | IN_PROGRESS | Interview plan added; interviews and evidence matrix remain |
+| RES-003 | Which segments have frequent, painful call-handling problems? | P0 | IN_PROGRESS | Initial public market-demand evidence and interview plan added; interviews and segment evidence remain |
 | RES-004 | Which telephony providers support routing and real-time media in target regions? | P0 | IN_PROGRESS | Android/call-forwarding feasibility assessment added; carrier tests and provider comparison remain |
 | RES-005 | Which speech/model providers meet latency, quality, language, privacy and cost goals? | P0 | OPEN | Benchmark plan |
 | RES-006 | What is all-in variable cost per connected minute? | P0 | IN_PROGRESS | Public provider benchmarks and scenarios added; written quotes and route-specific cost validation remain |
@@ -67,3 +67,8 @@ Architecture/verification increment (2026-10-11):
 API/data model increment (2026-10-11):
 - Added conceptual API contract and data model drafts with authz, idempotency, connector boundaries, artifact separation and deletion considerations.
 - These are architecture inputs, not approved endpoint schemas, data types or migrations. Finalisation depends on the validated call route, provider terms, product scope and legal review.
+
+
+Market research increment (2026-10-11):
+- Added `MARKET_DEMAND_AND_SEGMENTATION.md`, using public reporting on Equal AI's company-reported usage/funding and TRAI subscriber data with caveats against treating total connections as TAM.
+- No TAM/SAM/SOM number is asserted; bottom-up sizing awaits segment evidence.
