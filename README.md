@@ -42,6 +42,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
 - [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)
 - [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
+- [Shared workload scenario baseline](docs/architecture/WORKLOAD_SCENARIO_BASELINE.md)
 
 ## Latest discovery additions
 - [Android call route constraints and decision gates](docs/research/ANDROID_CALL_ROUTE_DECISION.md)
