@@ -43,5 +43,8 @@ Target segment, launch geography, core feature parity, call-routing model, provi
 - Added draft core requirements REQ-001–REQ-015 and non-functional requirement areas; thresholds and traceability remain incomplete.
 - Added system architecture options and trust-boundary draft; no architecture decision is approved.
 
+- Added initial threat model and data inventory/lifecycle draft. Both require revision against the eventual architecture and legal advice.
+- Added current source-based candidate review of LiveKit Agents, Pipecat, Vocode Core and managed realtime APIs. Repository-level licences were inspected, but transitive dependency and provider terms are not fully audited.
+
 ## Last verified state
 A documentation-only README was committed to main as an initial repository marker. The wider documentation baseline is being added. Product implementation remains unauthorised.
