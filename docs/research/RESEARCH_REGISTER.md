@@ -49,3 +49,12 @@ This is a question register, not a completed fresh market study. Mark an item co
 - Google Play's call/SMS permission policy restricts sensitive permissions and ties them to eligible core functionality/default-handler requirements. Source: https://support.google.com/googleplay/android-developer/answer/10208820
 - TRAI lists the TCCCPR Third Amendment, 2026, released 18 September 2026. Exact applicability to this product needs specialist review: https://www.trai.gov.in/release-publication/regulations/amendments-page/7617
 - Added a route decision document, provider RFP, capability governance and GTM experiment plan. No provider requests, interviews, campaigns, device tests or implementation have occurred.
+
+| RES-023 | Which Indian voice-provider public prices apply to the exact consumer forwarding + real-time AI route? | P0 | IN_PROGRESS | PROVIDER_PRICING_EVIDENCE.md; public pricing remains non-comparable and written quotes are outstanding |
+
+## Provider pricing evidence update — 2026-10-11
+- Added `docs/research/PROVIDER_PRICING_EVIDENCE.md` to distinguish public price anchors from route-specific all-in costs.
+- Ringg advertises ₹6 per connected minute for a bundled voice-agent offer; this is not evidence that existing-number consumer forwarding, original caller ID, and takeover are supported.
+- Exotel's public business phone packages exclude Voice Streaming (Agent Stream), which is priced separately by contacting sales. Exotel documentation also states that carrier forwarding charges are separate from the Exotel bill.
+- Truecaller's India activation instructions show a forwarding-based assistant pattern and carrier-specific setup, but do not establish our product's route eligibility or provider terms.
+- No provider was contacted, no quote received and no route tested. Public prices must not be presented as comparable all-in offers.
