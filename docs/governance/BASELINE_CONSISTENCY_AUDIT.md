@@ -133,3 +133,8 @@ No new product decision is made by this audit. Existing proposed directions rema
 - Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` to operationalise scope-specific approval, consent, data minimisation, safety/reversibility, spend limits, stop conditions and evidence review for discovery activities.
 - This partially mitigates the process/documentation risk that prepared protocols could be mistaken for permission to run experiments. It does not resolve the underlying P0/P1 evidence gaps: customer discovery, route feasibility, comparable written quotes, legal review, measured performance/economics and owner decisions remain outstanding.
 - No experiment is authorised by the checklist. No product implementation is authorised.
+
+
+## Consolidated exit criteria follow-up — 2026-10-12
+- Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` to make Phase 0 evidence requirements and owner gates explicit across 20 workstreams.
+- This improves visibility and cross-document review but does not close the substantive gaps identified in this audit. Customer evidence, route feasibility, comparable quotes, legal review, validated economics, final traceability and owner approval remain outstanding.
