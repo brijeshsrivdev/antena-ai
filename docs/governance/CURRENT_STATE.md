@@ -111,3 +111,10 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/discovery/PHASE_0_EVIDENCE_WORKBOOK.md` with private participant-record guidance, route-test capture rows, provider quote comparison and evidence-to-decision logging.
 - This prepares fieldwork; it does not claim that interviews, telephony tests or provider outreach have occurred. Owner approval and safety checks are required before experiments.
 - README now indexes the workbook. Implementation remains unauthorised.
+
+
+## Experiment approval checklist increment — 2026-10-12
+- Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` as a scope-specific approval gate for discovery activities, with separate conditions for interviews, telephony tests, provider outreach and UX validation.
+- The checklist covers consent, minimum necessary data, private handling of identifiable evidence, budget ceilings, safe restoration/disable procedures, stop conditions and post-activity review.
+- It is a preparation document, not approval to run fieldwork. No interviews, provider outreach, route tests, quotes, legal opinions or benchmarks are claimed complete; implementation remains unauthorised.
+- README and roadmap now index/reference the checklist.
