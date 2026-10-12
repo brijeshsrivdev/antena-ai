@@ -83,3 +83,9 @@ See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 
 ## Phase 0 exit-gate increment — 2026-10-12
 - Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` as a consolidated map of 20 discovery gates, required evidence, current status and exit conditions.
 - It separates document preparation from evidence collection, baseline approval and explicit implementation authorisation. Phase 0 remains incomplete; the map is a review aid, not approval.
+
+
+## Residual risk review increment — 2026-10-12
+- Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` and linked it through the README, exit criteria, owner decision pack, audit, current state and handover.
+- The register tracks 18 risks with evidence needs and stop conditions; no risk is considered accepted or closed merely because a mitigation document exists.
+- Phase 0 remains incomplete. Route, customer, provider, legal, economics and operational evidence remain outstanding.
