@@ -204,3 +204,8 @@ README and linked documents must be verified against current main after this inc
 - Added candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` records to the conceptual data model so route eligibility, multi-leg call identity and distributed deletion have explicit representations. Usage corrections remain immutable linked events.
 - This is a documentation coverage improvement, not release evidence. No P0 candidate is release-ready on documentation alone; route/provider, legal/privacy, pricing/invoice, operations and authentication decisions remain open.
 - Phase 0 remains incomplete, PR #1 remains draft/unmerged, and implementation is not authorized.
+
+
+## API operation coverage refinement — 2026-10-12
+- Added proposed API operations for evidence-backed route eligibility, owner correction of supported summary fields, and deletion-status retrieval. These make the API contract better align with REQ-002, REQ-008 and REQ-010.
+- The operations remain conceptual and require schema/security review; route evidence, factuality evaluation, legal/privacy policy and deletion lifecycle evidence remain unresolved. No implementation is authorized.
