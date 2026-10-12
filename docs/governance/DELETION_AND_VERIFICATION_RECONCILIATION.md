@@ -56,22 +56,47 @@ Named people/teams and on-call coverage are not established. Assign these roles 
 | Security incident or unauthorized access | Security/incident owner | Escalate exposed content, unauthorized deletion/status access, or suspected data reappearance. |
 | User communication and support | Support owner | Explain pending/partial/completed states and provide a correction/escalation path without overclaiming. |
 
-## 5. Verification artifact crosswalk
+## 5. Requirement, threshold and verification artifact crosswalk
 
-These artifacts are future work. Their names identify planned evidence, not tests already run.
+The following are proposed future artifacts and coverage pointers, not evidence that tests have been designed in full or executed. Requirement priorities/statuses remain draft. “NOT RUN” means no result is claimed in this discovery repository.
 
-| Requirement / threshold | Planned verification artifact | Pass evidence needed | Current state |
+| Requirement / threshold | Planned verification artifact | Minimum evidence needed | Current state |
 |---|---|---|---|
-| REQ-010, REQ-013, NFR-005, AT-008 | `deletion-target-matrix.md` or equivalent versioned fixture; end-to-end deletion exercise report | Each in-scope data class mapped to present/non-present targets; per-target result; retries/partial failure; provider and backup evidence; policy-approved exceptions | NOT RUN; AT-008 OPEN |
-| REQ-011, AT-006 | Cross-account authorization test report for request creation/status, exports, jobs and callbacks | No unauthorized cross-account read/write/status disclosure in defined test set | NOT RUN; threshold PROPOSED |
-| REQ-015, NFR-009, AT-009 | Deletion-backlog alert/runbook exercise and backup/restore drill | Named owner, detection, escalation, safe retry, recovery evidence and approved RTO/RPO | NOT RUN; AT-009 OPEN |
-| REQ-009, AT-005 | Duplicate/out-of-order usage event and provider invoice reconciliation report | No duplicate ledger charge in the defined replay set; discrepancies linked to immutable adjustments and reconciled against provider evidence | NOT RUN; threshold PROPOSED |
-| REQ-001, REQ-014, AT-001 | Disable/recovery usability walkthrough and controlled route recovery report | Approved supported-route scope; timestamped state transitions; restoration independently verified; failure paths exercised | NOT RUN; AT-001 PROPOSED; route evidence BLOCKED |
-| REQ-006, AT-003/AT-004 | Timestamped end-to-end latency/cancellation benchmark by route and provider | Defined clocks and sample conditions; p50/p95/p99; provider cancellation semantics; results compared only with pre-approved threshold | NOT RUN; AT-003 OPEN, AT-004 PROPOSED |
-| REQ-008, AT-012 | Versioned labelled summary-evaluation set, rubric and evaluation report | Provenance/consent for data; explicit factuality and uncertainty scoring; predeclared acceptance decision | NOT RUN; AT-012 OPEN |
-| REQ-016 | Authentication/recovery abuse and session-revocation test report | Enumeration, brute force, replay, expiry and revoked-session cases covered with recorded results | NOT RUN; mechanism unselected |
+| REQ-001; AT-001 | Activation/disable usability walkthrough; route state-transition and recovery report | Action path, configuration/version, timestamps, authoritative state, disable and restoration outcomes | NOT RUN; AT-001 PROPOSED; route evidence blocked |
+| REQ-002; AT-002 | Versioned supported-route matrix and controlled route test report | Device/OS/operator/plan/SIM/forwarding configuration, expected vs observed routing, numerator/denominator, confidence interval, written provider eligibility | NOT RUN; AT-002 PROPOSED/exploratory |
+| REQ-003 | Profile schema/version and context-isolation test report | Validation failures, immutable published version, active-call version behavior, prompt-injection boundary and profile deletion | NOT RUN; customer value and profile policy open |
+| REQ-004 | Disclosure policy review record and scripted disclosure/safe-escalation test report | Route-specific notice delivery/one-way audio/failure behavior, jurisdiction-specific qualified review, urgency and out-of-scope cases | NOT RUN; blocked by route and legal/product review |
+| REQ-005 | Provider callback contract suite and call-session/provider-leg reconciliation report | Signature/replay verification, duplicate/out-of-order events, provider-account/session mapping, terminal-state precedence and late events | NOT RUN; provider contract unselected |
+| REQ-006; AT-003, AT-004 | Timestamped end-to-end latency and cancellation benchmark | Clock semantics, route/provider/language/load, p50/p95/p99, accepted-cancel to stopped generation/playback; compare only against pre-approved threshold | NOT RUN; AT-003 OPEN, AT-004 PROPOSED |
+| REQ-007 | Takeover/transfer route-specific success/failure/timeout report | Supported-route evidence, duplicate request handling, unknown/late outcome reconciliation, verified user-visible result | NOT RUN; conditional on route support |
+| REQ-008; AT-012 | Versioned labelled summary-evaluation set, rubric and evaluation report | Provenance/consent, negation/names/dates/commitments/missing facts, uncertainty scoring, predeclared acceptance decision | NOT RUN; AT-012 OPEN |
+| REQ-009; AT-005, AT-011 | Usage idempotency/replay suite, quota-exhaustion simulation and provider invoice reconciliation report | Duplicate/replay cases, immutable adjustments, provider billable units/rounding/multiple legs, hard account/global cap and stop conditions | NOT RUN; AT-005 PROPOSED; AT-011 control PROPOSED, amounts OPEN; quotes pending |
+| REQ-010; REQ-013; NFR-005; AT-008 | Data-class/deletion-target matrix and end-to-end deletion exercise report | In-scope destinations marked present/not present with evidence; per-target outcomes; retries/partial failure; provider and backup evidence; approved exceptions | NOT RUN; AT-008 OPEN; privacy/provider policy blocked |
+| REQ-011; AT-006 | Cross-account authorization report covering APIs, search, exports, jobs, callbacks and tool gateway | Defined negative test set with zero unauthorized reads/writes/status disclosures/actions; include revoked-session and object-reference cases | NOT RUN; AT-006 PROPOSED zero-tolerance gate |
+| REQ-012 | Connector capability/scope contract suite and adversarial authorization report | Server allowlist, tenant/account scope, schema validation, confirmation/idempotency, audit and denied arbitrary URL/SQL/tool attempts | NOT RUN; future hospitality scope; Antena capability audit pending |
+| REQ-013 | History/summary/media authorization, expiry and deletion report | Distinguish metadata, summary, transcript and audio; expired/revoked access; optional media disabled unless separately approved | NOT RUN; P1 candidate; transcript/audio feature-gated |
+| REQ-014; AT-001 | Disable/recovery drill, support access audit and incident tabletop | Independent recovery path, named escalation owner, timestamps, support least privilege, verified restoration and stop conditions | NOT RUN; ownership/runbooks open |
+| REQ-015; AT-009, AT-010, AT-011 | Monitoring/runbook exercise, deletion-backlog alert test, restore drill and load/burst/soak report | Alert ownership, queue recovery, approved RTO/RPO, measured peak profile, spend-cap enforcement and provider outage behavior | NOT RUN; AT-009 OPEN, AT-010 OPEN, AT-011 amounts OPEN |
+| REQ-016 | Authentication/recovery abuse and session-revocation report | Enumeration, brute force, expiry, replay, recovery abuse, session expiry/revocation and authorization after revocation | NOT RUN; authentication mechanism unselected |
+| NFR-001 | End-to-end latency benchmark by route/provider/language/load | Approved p95/p99 targets before confirmatory test; timestamped sample distributions | NOT RUN; target OPEN under AT-003 |
+| NFR-002 | Route reliability matrix report | Approved per-configuration threshold, controlled repetitions and confidence interval | NOT RUN; threshold OPEN/proposed under AT-002 |
+| NFR-003 | Conversation completion/failure classification report | Predefined completion, safe fallback, disconnect, cancellation and one-way-audio categories; denominator and observed rates | NOT RUN; target OPEN |
+| NFR-004 | Availability/incident measurement and dependency review | Approved SLO, maintenance policy, dependency scope and representative observation period | NOT RUN; target OPEN under AT-009 |
+| NFR-005 | Data-class retention/deletion evidence pack | Approved per-class schedule/SLA, first-party/provider deletion exercise, backup policy and reviewed exceptions | NOT RUN; AT-008 OPEN |
+| NFR-006 | Load, burst, soak and provider-quota report | Approved concurrency/CPS profile, workload mix, bottleneck and failure behavior; validate rather than assume the 10x multiplier | NOT RUN; target open under AT-010 |
+| NFR-007 | Cost and invoice reconciliation report | Comparable written route-specific quotes, measured billable units, invoice reconciliation and approved margin/stress case | NOT RUN; provider quotes and approved cost target missing |
+| NFR-008 | Accessibility audit and assistive-technology walkthrough | Chosen standard, screen reader, dynamic text, contrast, touch targets and error/fallback flows | NOT RUN; standard/target open |
+| NFR-009 | Backup/restore and incident recovery exercise | Owner-approved RTO/RPO, restore evidence, deletion non-resurrection check and route/control-plane recovery | NOT RUN; target open under AT-009 |
+| NFR-010; AT-006, AT-007 | Threat-control test report and independent review appropriate to exposure | AuthZ, webhook replay, secrets/logging, tool allowlist, prompt injection and zero-tolerance action/isolation cases | NOT RUN; thresholds proposed; review scope open |
 
-Do not use a generic “test passed” checkbox without a versioned test plan, scope/configuration, input set, expected outcome, observed outcome, timestamp, environment/provider version, evidence location, reviewer and disposition of failures.
+### Acceptance-threshold status control
+
+- **PROPOSED** means a candidate value/control awaits explicit owner approval; it is not a release gate yet.
+- **OPEN** means no numeric target has been set or the necessary evidence is missing. Do not invent a value or treat it as zero/unlimited.
+- **NOT RUN** means no experiment, benchmark, deletion exercise, load test, security test or pilot result is claimed.
+- AT-001, AT-002, AT-004, AT-005, AT-006, AT-007 and the control aspect of AT-011 remain proposed; AT-003, AT-008, AT-009, AT-010 and AT-012 remain open. AT-011 spend amounts remain open. Any status change must be made in the canonical acceptance threshold register and supported by an owner decision or evidence, not only in this crosswalk.
+
+For each executed report, capture requirement/threshold IDs, approved scope/configuration, test-plan version, environment and provider versions, inputs, expected and observed outcomes, timestamps, evidence location, reviewer, failures and disposition. A generic “passed” checkbox without reproducible evidence is insufficient.
 
 ## 6. Reconciliation rules
 
