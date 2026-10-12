@@ -99,6 +99,7 @@ No interviews, live route tests, provider outreach/quotes, legal opinions, bench
 
 ## Related documents
 
+- docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md
 - docs/governance/OWNER_DECISION_PACK.md
 - docs/governance/BASELINE_CONSISTENCY_AUDIT.md
 - docs/governance/DECISION_LOG.md
