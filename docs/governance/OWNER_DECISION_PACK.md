@@ -52,3 +52,7 @@ For each ODP item, record: **Decision / Status / Rationale / Evidence reviewed /
 - docs/research/TELEPHONY_VALIDATION_PROTOCOL.md
 - docs/research/VOICE_PROVIDER_RFP.md
 - docs/research/PRIVACY_AND_REGULATORY_RISK_REGISTER.md
+
+
+## Experiment governance update — 2026-10-12
+Before any interviews, controlled call-route tests, provider outreach involving project details, or participant-based UX validation, use `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` and obtain explicit owner approval for that exact scope. The checklist does not itself approve fieldwork. It does not change decision statuses or authorize product implementation.
