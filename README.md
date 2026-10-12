@@ -11,6 +11,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Current state](docs/governance/CURRENT_STATE.md)
 - [Baseline consistency and readiness audit](docs/governance/BASELINE_CONSISTENCY_AUDIT.md)
 - [Architecture/API/data/security semantic review — findings open, baseline not approved](docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md)
+- [Requirement-to-contract coverage audit — API, state, security and verification gaps](docs/governance/REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md)
 - [UX/state contract reconciliation — lifecycle-backed UX claims and failure states](docs/governance/UX_STATE_CONTRACT_RECONCILIATION.md)
 - [Phase 0 exit criteria and evidence map — incomplete, owner review required](docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md)
 - [Phase 0 residual risk register — open risks, evidence and stop conditions](docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md)
