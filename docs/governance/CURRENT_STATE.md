@@ -209,3 +209,11 @@ README and linked documents must be verified against current main after this inc
 ## API operation coverage refinement — 2026-10-12
 - Added proposed API operations for evidence-backed route eligibility, owner correction of supported summary fields, and deletion-status retrieval. These make the API contract better align with REQ-002, REQ-008 and REQ-010.
 - The operations remain conceptual and require schema/security review; route evidence, factuality evaluation, legal/privacy policy and deletion lifecycle evidence remain unresolved. No implementation is authorized.
+
+
+## Deletion and verification reconciliation increment — 2026-10-12
+
+- Added `docs/governance/DELETION_AND_VERIFICATION_RECONCILIATION.md` to connect each data class with candidate deletion destinations, target-level outcomes, role-based ownership and planned verification evidence.
+- Reconciled the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map to the new artifact.
+- This is documentation-only. Retention periods, deletion SLA, backup expiry, legal exception policy, named owners and candidate target-state enums remain unapproved. Planned tests are not run evidence; AT-008 remains OPEN.
+- Phase 0 remains incomplete; product implementation, external experiments and provider outreach remain unauthorized without separate explicit approval. PR #1 remains draft and unmerged.
