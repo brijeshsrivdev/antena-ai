@@ -178,3 +178,6 @@ README and linked documents must be verified against current main after this inc
 - Added a SCOPE-001–SCOPE-021 crosswalk to `TRACEABILITY_MATRIX.md` and provisional scope/requirement mappings to `MVP_SCOPE_AND_FEATURE_GATES.md`.
 - SCOPE-011 follow-up reminders/tasks and SCOPE-012 caller/contact allowlist/denylist remain unmapped to dedicated requirements and should be deferred or specified before MVP inclusion. All priorities and mappings remain drafts.
 - The working set is now REQ-001–REQ-016 and NFR-001–NFR-010. The earlier identifier check covered 15 REQ IDs before REQ-016 was added; a fresh cross-reference check is required after this update. No implementation is authorized.
+## Post-crosswalk verification — 2026-10-12
+- Re-ran the draft identifier check after adding REQ-016. The core requirements and traceability matrix both contain REQ-001–REQ-016 and NFR-001–NFR-010 with no missing IDs in either direction. All 21 SCOPE IDs from the product catalogue appear in the crosswalk; UX/THR/PRIV references resolve to the source inventories.
+- SCOPE-011 and SCOPE-012 have no direct REQ mapping and must be deferred or specified before MVP inclusion; SCOPE-017/018/021 are currently excluded/deferred. The audit records that lexical presence is not semantic completeness or approval.
