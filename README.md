@@ -28,6 +28,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Requirements index](docs/requirements/REQUIREMENTS_INDEX.md)
 - [Core requirements draft](docs/requirements/CORE_REQUIREMENTS_DRAFT.md)
 - [Requirements traceability matrix](docs/requirements/TRACEABILITY_MATRIX.md)
+- [Acceptance threshold register — proposed, owner review required](docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md)
 - [Architecture principles](docs/architecture/ARCHITECTURE_PRINCIPLES.md)
 - [Roadmap](docs/roadmap/ROADMAP.md)
 - [Pricing and unit economics](docs/business/PRICING_AND_UNIT_ECONOMICS.md)
