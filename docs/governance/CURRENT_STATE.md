@@ -105,3 +105,9 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/governance/OWNER_DECISION_PACK.md` to consolidate ten discovery decisions, their evidence needs, blocked dependencies and the explicit implementation gate.
 - Linked the decision pack from README. It records the current hypotheses without treating them as approved and lists evidence not yet collected.
 - Next evidence-led work should prioritize customer interviews, controlled call-route feasibility, comparable written provider quotes and jurisdiction-specific legal review. Experiments require owner approval; product code remains unauthorised.
+
+
+## Phase 0 evidence workbook increment — 2026-10-12
+- Added `docs/discovery/PHASE_0_EVIDENCE_WORKBOOK.md` with private participant-record guidance, route-test capture rows, provider quote comparison and evidence-to-decision logging.
+- This prepares fieldwork; it does not claim that interviews, telephony tests or provider outreach have occurred. Owner approval and safety checks are required before experiments.
+- README now indexes the workbook. Implementation remains unauthorised.
