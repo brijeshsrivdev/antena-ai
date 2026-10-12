@@ -49,3 +49,9 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Zero-tolerance candidate gates cover duplicate billing, cross-tenant access and unauthorised tool actions. Numeric latency, deletion, availability/recovery, capacity and summary-quality thresholds remain open pending evidence.
 - Linked the register from README and REQUIREMENTS_INDEX.md. REQ-001 and REQ-006 now reference proposed AT-001/AT-004 values in the canonical requirements; NFR target decisions and evidence-dependent values remain open.
 - No interviews, route tests, provider quotes, legal opinion, benchmarks or implementation have been performed. Product implementation remains unauthorised.
+
+
+## Owner decision pack increment — 2026-10-12
+- Added `docs/governance/OWNER_DECISION_PACK.md` to consolidate ten discovery decisions, their evidence needs, blocked dependencies and the explicit implementation gate.
+- Linked the decision pack from README. It records the current hypotheses without treating them as approved and lists evidence not yet collected.
+- Next evidence-led work should prioritize customer interviews, controlled call-route feasibility, comparable written provider quotes and jurisdiction-specific legal review. Experiments require owner approval; product code remains unauthorised.
