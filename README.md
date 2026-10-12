@@ -19,6 +19,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [UX screen inventory](docs/discovery/UX_SCREEN_INVENTORY.md)
 - [UX wireflow specification](docs/discovery/UX_WIREFLOW_SPEC.md)
 - [Decision log](docs/governance/DECISION_LOG.md)
+- [Owner decision pack — discovery choices and gates](docs/governance/OWNER_DECISION_PACK.md)
 - [Research register](docs/research/RESEARCH_REGISTER.md)
 - [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
 - [Competitor matrix](docs/research/COMPETITOR_MATRIX.md)
