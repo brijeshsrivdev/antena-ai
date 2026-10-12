@@ -129,3 +129,9 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 - Aligned the conceptual data model with the state/event contract by adding candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` entities and clarifying immutable usage adjustments. These remain draft concepts, not approved schemas.
 - The audit finds no P0 candidate release-ready on documentation alone. Route/provider evidence, legal/privacy review, invoice reconciliation, operational runbooks and auth-policy decisions remain open. The verification scenarios are planned only; no tests were run.
 - Phase 0 remains incomplete. No interviews, provider outreach, live route tests, spending, legal opinions, benchmarks, load tests or implementation were performed or authorized by this documentation pass. PR #1 remains draft and unmerged.
+
+
+## API operation coverage refinement — 2026-10-12
+- Added explicit proposed operations to `API_CONTRACT_DRAFT.md` for listing/checking evidence-backed supported route options, correcting supported summary fields with audit/version semantics, and retrieving deletion status with per-target completion distinctions.
+- These additions close naming/representation gaps found during the requirement-to-contract audit; they do not prove route support or approve endpoint schemas. The coverage audit now records these as proposed operations.
+- Phase 0 remains incomplete; PR #1 remains draft and unmerged. No implementation or external activity is authorized.
