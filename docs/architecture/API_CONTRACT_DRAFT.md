@@ -26,6 +26,8 @@ These names are illustrative; route shapes and schemas require review.
 | Account recovery | Start and complete recovery | Recover access through an approved recovery factor | Anti-enumeration responses, rate limits, short-lived single-use challenges, replay protection and audit; mechanism remains undecided. |
 | Profile | Create/update profile draft | Configure voice, language, boundaries and structured context | Schema allowlist; validate length/types; version every published change. |
 | Profile | Publish profile version | Make reviewed configuration active | Explicit user action; preserve version reference for each call session. |
+| Profile / call summary | Correct supported summary fields | Let the account owner correct supported extracted facts | Owner-authorized, validated fields; preserve an audit/version history; do not silently rewrite source call evidence or treat a correction as model-confirmed truth. |
+| Routing | List supported route options / check eligibility | Show only route configurations eligible for the user's known region/device/operator/plan/SIM inputs | Derive from a versioned server-side supported-route registry with evidence status; unknown or untested combinations must remain unsupported/unverified, not inferred compatible. |
 | Routing | Get routing status | Show active/setup/failed state | Never infer success solely from a client action. |
 | Routing | Start setup / verify route | Guide and verify approved route | Route-specific capability and operator constraints; rate limit tests. |
 | Routing | Disable route | Stop assistant handling and guide restoration | Idempotent; report verified vs unverified deactivation distinctly. |
@@ -37,6 +39,7 @@ These names are illustrative; route shapes and schemas require review.
 | Usage | Read invoice/plan | Show plan state | Billing provider is source of truth for payment state; usage ledger for metered events. |
 | Privacy | Request export | Create export job | Re-authentication, limited expiry, audit, least privilege. |
 | Privacy | Request deletion | Begin data deletion workflow | Idempotent; expose pending/completed/exception state. |
+| Privacy | Get deletion status | Show request-level progress and safe outstanding-target/exception categories | Account-authorized; distinguish requested, in progress, partial, primary removed, completed and reviewed exception; never claim full deletion based only on primary-store state. |
 | Support | Report call issue | Capture category/session ID | Do not require raw content upload; redact fields. |
 | Connector | Execute allowed action | Invoke a pre-registered domain capability | Server-selected operation, typed payload, scoped auth, policy check, audit and idempotency. |
 
