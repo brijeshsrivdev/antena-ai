@@ -155,3 +155,14 @@ No new product decision is made by this audit. Existing proposed directions rema
 - Resolved a wording inconsistency: requirement IDs are stable within the working draft and referenced by the traceability matrix, but the requirements themselves remain DRAFT and unapproved. This does not close the substantive coverage/evidence gaps.
 - Verified all 49 local Markdown links in README resolve to tracked files. External link validity, source freshness beyond the checked pages and all non-README links remain unverified.
 - These checks improve source/status hygiene but do not resolve customer, route, provider quote, legal advice, cost validation or owner-decision blockers.
+
+
+## External claim ledger and identifier-reference check — 2026-10-12
+- Added `docs/research/EXTERNAL_CLAIM_LEDGER.md` and registered it as RES-024. It distinguishes official documentation, vendor claims, app-store signals, internal model assumptions and inference, including limitations and decision impact.
+- Ran a programmatic lexical cross-check over the current core requirements, traceability matrix, UX screen inventory, threat model, privacy risk register and acceptance-threshold register:
+  - REQ identifiers: 15 in the core draft and 15 in traceability; no missing IDs in either direction.
+  - NFR identifiers: 10 in the core draft and 10 in traceability; no missing IDs in either direction.
+  - Referenced UX, THR and PRIV identifiers resolve to IDs found in their respective source documents.
+  - AT-001 and AT-004 references in the core draft both exist in the acceptance-threshold register.
+- **Scope limitation:** This was an ID/reference-presence check, not semantic proof that each requirement is complete, correctly prioritized, testable, legally sufficient or implemented. It did not validate every cross-document link or external URL.
+- The remaining blockers are unchanged: customer evidence, supported-route proof, comparable written quotes, counsel review, validated cost/performance, operational ownership and explicit owner decisions. Phase 0 remains incomplete; implementation remains unauthorised.
