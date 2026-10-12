@@ -92,3 +92,10 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/discovery/MVP_SCOPE_AND_FEATURE_GATES.md` to distinguish core candidates, conditional features and deferred scope. It is not an approved MVP.
 - Updated `REQUIREMENTS_INDEX.md` to point to the traceability and scope-gate artefacts.
 - Remaining blockers are unchanged: customer interviews, owner-supervised route tests, comparable provider quotes, jurisdiction-specific legal review, complete measurable acceptance criteria, and owner approval.
+
+
+## Acceptance-threshold register increment — 2026-10-12
+- Added `docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md` and linked it from README and REQUIREMENTS_INDEX.md.
+- The register distinguishes proposed candidate thresholds from open values. No threshold has owner approval; the core requirements' existing TBDs remain unresolved.
+- Candidate controls include a two-action disable path, an exploratory route-verification target, measurable cancellation, and zero-tolerance checks for duplicate charges, cross-tenant access and unauthorised actions. These require review and evidence before use as release gates.
+- No interviews, carrier/device tests, written provider quotes, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
