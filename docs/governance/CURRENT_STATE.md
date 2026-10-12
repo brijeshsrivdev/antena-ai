@@ -170,3 +170,6 @@ README and linked documents must be verified against current main after this inc
 ## Workload arithmetic verification — 2026-10-12
 - Independently recomputed monthly minutes, average concurrency, illustrative 10× peaks and cost tables at ₹4/₹7/₹12 plus the ₹6/min public benchmark for the canonical and alternate scenario sets. All reviewed arithmetic matches the stated formulas.
 - This does not validate scenario inputs, demand, peak multiplier, route support or applicability of a public vendor price. `BASELINE_CONSISTENCY_AUDIT.md` records the verification and limitations.
+## Roadmap gate sequencing update — 2026-10-12
+- Corrected a roadmap ambiguity: Phase 0 now contains governed discovery and non-code evidence collection under activity-specific approval; baseline approval is distinct from implementation authorization; Phase 1 implementation requires both the approved baseline and a separate explicit owner authorization; pilot approval is separate again.
+- Experiments that require product code remain blocked until implementation authorization. This correction does not approve interviews, route tests, provider outreach, spending, implementation or deployment.
