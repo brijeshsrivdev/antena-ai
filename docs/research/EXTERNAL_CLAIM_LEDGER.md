@@ -1,0 +1,60 @@
+# External Claim Ledger — Evidence, Limits and Decision Impact
+
+**Snapshot:** 2026-10-12  
+**Status:** Desk-research control document. Not an independent validation report, legal opinion, vendor confirmation or product approval.  
+**Purpose:** Keep consequential external claims separate from interpretations and decisions. Re-check volatile pages before relying on them.
+
+## Reading rules
+
+- **Source class:** Official platform/regulator, vendor marketing/docs, app-store listing, or model/inference.
+- **Evidence status:** *Desk-checked* means the cited source was reviewed for this documentation pass; it does not mean the claim was independently tested. *Unverified* means the product-specific conclusion is still open.
+- Never turn a competitor listing, provider price page or API description into evidence that our proposed route works.
+- Preserve the source access date and exact relevant page/version when new evidence is collected. Record contradictory evidence rather than silently replacing it.
+- This ledger is about claim traceability. It does not authorize interviews, calls, provider outreach, legal work, spending, implementation or deployment.
+
+## Claim ledger
+
+| ID | Claim used in discovery | Primary source and source class | What the source supports | What it does not establish | Status / decision impact |
+|---|---|---|---|---|---|
+| CL-001 | Android CallScreeningService is a screening/identification API with a bounded response deadline. | https://developer.android.com/reference/android/telecom/CallScreeningService — official platform documentation | The documented role and response timing of this API. | General-purpose capture/streaming of cellular-call audio to a cloud conversational agent. | **Desk-checked; high confidence on API scope.** Keeps unrestricted cellular audio capture out of assumed architecture. Recheck before implementation. |
+| CL-002 | CallRedirectionService supports outgoing-call redirection/cancellation. | https://developer.android.com/reference/android/telecom/CallRedirectionService — official platform documentation | The documented outgoing-call redirection role. | An incoming-call audio bridge or takeover capability for this product. | **Desk-checked; high confidence on documented scope.** Incoming-route feasibility remains open. |
+| CL-003 | Google Play restricts sensitive call-log/SMS permissions to eligible core functionality and policy conditions. | https://support.google.com/googleplay/android-developer/answer/10208820 — official store policy | Published eligibility and review restrictions. | Approval for this app, a particular permission declaration, or a particular call-routing design. | **Desk-checked; policy can change.** Distribution plan must be rechecked against actual app behavior and current policy. |
+| CL-004 | Google Play publishes a future policy change effective 2027-01-27 concerning phone-call account verification and READ_CALL_LOG. | https://support.google.com/googleplay/android-developer/answer/16558241 — official store policy | The policy page's stated future date and scope. | Whether the proposed app will use the permission, qualify for an exception, or be affected in the same way. | **Desk-checked; time-sensitive.** Recheck before release and do not design around a presumed exception. |
+| CL-005 | MeitY's official index lists the Digital Personal Data Protection Rules, 2025 with a publication date of 2025-11-14. | https://www.meity.gov.in/documents/act-and-policies and https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digital-Personal-Data-Protection-Rules-2025 — official government sources | The existence and published instrument/index metadata. | Which provisions apply on a future launch date, how phased commencement affects this service, or a legal compliance conclusion. | **Desk-checked; legal applicability unresolved.** Counsel must read the instrument, schedules and commencement provisions. |
+| CL-006 | TRAI's amendments index lists the TCCCPR Third Amendment Regulations, 2026 dated 2026-09-18. | https://www.trai.gov.in/release-publication/regulations/amendments-page/7617 — official regulator index | The listed instrument and date. | That the instrument prohibits, permits or otherwise determines the legality of this specific call-assistant route. | **Desk-checked; applicability unknown.** Counsel must assess the final instrument and relevant service/telecom roles. |
+| CL-007 | Ringg advertises ₹6 per connected minute for a bundled voice-agent product and lists a phone-number fee. | https://www.ringg.ai/pricing — vendor pricing page | A public headline price for the vendor's described bundle at time of review. | A quote for consumer SIM forwarding, caller-ID preservation, takeover, all call legs, all taxes/fees, or this product's route. | **Vendor claim; medium confidence as a published anchor, low as a cost forecast.** Do not use as all-in unit cost without written route-specific quote. |
+| CL-008 | Exotel's published business-phone packages do not include Voice Streaming/Agent Stream, which is priced separately. | https://exotel.com/pricing/business-phone-system/ — vendor pricing page | Package scope and the stated exclusion/separate-pricing requirement. | Exact total price for a live AI media stream, consumer call forwarding, or a complete session. | **Vendor claim; desk-checked.** Obtain itemised quote for every billable leg/component before unit-economics approval. |
+| CL-009 | Exotel's forwarding documentation says mobile-carrier forwarding charges are paid separately to the carrier. | https://docs.exotel.com/business-phone-system/call-forwarding-charges and https://support.exotel.com/support/solutions/articles/3000019643-who-do-i-pay-call-forwarding-charges-for-my-customer-facing-number-to-my-service-provider-or-exotel — vendor documentation | Forwarding charges may be a separate cost and dependency. | The charge for each user's operator/plan, route eligibility or exact monthly bill. | **Vendor documentation; desk-checked.** Include carrier-side charges and route eligibility in quotes/tests. |
+| CL-010 | Truecaller Assistant's India setup documentation describes call-forwarding activation and carrier-specific instructions. | https://support.truecaller.com/support/solutions/articles/81000412918-assistant-activation-in-india and https://support.truecaller.com/support/solutions/articles/81000419841-assistant-activation — official product support | A forwarding-based assistant setup exists for listed supported contexts. | Our product's technical/commercial rights, same reliability, route behavior or transferable provider terms. | **Product documentation; desk-checked.** Evidence of a market pattern only, not route proof. |
+| CL-011 | Equal AI's public terms say paid features/prices may vary; App Store listing has ₹149/₹249 purchase entries. | https://myequal.ai/terms-and-conditions/ and https://apps.apple.com/in/app/equal-ai-call-assistant/id6757906431 — vendor terms and store listing | Published purchase entries and terms allowing variation by offer/purchase point. | A universal subscription price, actual realised revenue, retention, quality or willingness to pay. | **Vendor/store evidence; desk-checked.** Do not use listing prices as a single comparable subscription benchmark. |
+| CL-012 | Sharyx's Google Play listing describes forwarding calls to a dedicated AI number and showed 500+ downloads at review time. | https://play.google.com/store/apps/details?id=com.sharyx.call_assistant — app-store listing | Listing-described product flow and a store-reported download band at the time checked. | Active users, successful route rate, retention, revenue, call quality, consent behavior or current downloads. | **Store-reported; low confidence as demand evidence.** Use as competitor discovery input, not market-size validation. |
+| CL-013 | Equal AI's Google Play listing and official site describe a personal AI call assistant. | https://play.google.com/store/apps/details?id=in.equal.ai.assistant and https://www.myequal.ai/ — store listing/vendor site | Publicly described feature positioning and availability claims. | Independently verified functionality, end-to-end reliability, privacy implementation, user retention or unit economics. | **Vendor/store evidence.** Closest direct benchmark identified in desk research; hands-on test remains unperformed. |
+| CL-014 | MyOperator public pricing lists annual business-telephony packages with stated plan prices. | https://myoperator.com/pricing — vendor pricing page | Publicly displayed package prices and included plan descriptions at review time. | Comparable per-minute personal-assistant cost, AI streaming price, route eligibility or a negotiated quote. | **Vendor claim; scope differs.** Do not compare headline plan price directly with connected-minute assumptions. |
+| CL-015 | The workload model uses 10,000 registered users and low/base/high monthly minutes of 20k/150k/600k. | docs/architecture/WORKLOAD_SCENARIO_BASELINE.md — internal scenario model | Arithmetic consequences of explicit assumed MAU, calls per user and call duration. | Forecast demand, measured concurrency, provider capacity or probability of peaks. | **Model assumption, not external fact.** Keep the 10x peak multiplier marked illustrative until validated. |
+| CL-016 | ₹4/₹7/₹12 per connected minute are used for cost sensitivity. | docs/business/COST_SCENARIO_MODEL.md — internal sensitivity model | Scenario arithmetic at selected hypothetical unit prices. | Provider quotes, market prices for this exact route, gross margin or customer willingness to pay. | **Assumption only.** Do not set a price or included-minutes plan from this model alone. |
+| CL-017 | Live routing, caller-ID behavior, takeover and all-in economics may vary by operator, plan, device, provider and route. | Inference from platform docs, vendor pricing scopes and missing route-specific evidence | Identifies dependencies that must be tested or contractually confirmed. | A measured failure rate or conclusion that all routes are impossible. | **Reasoned risk inference.** Test only after explicit scope-specific owner approval; preserve negative results. |
+
+## Evidence collection template
+
+For each new claim or changed source, capture:
+
+- Claim ID and exact statement being used.
+- Source URL, page title, publisher and source class.
+- Published/updated date, access date and relevant quoted fragment or section.
+- Direct observation versus vendor assertion versus inference.
+- Scope covered, exclusions, contradictory evidence and confidence.
+- Affected requirement, architecture choice, cost assumption or launch gate.
+- Verification status: DESK_CHECKED, INDEPENDENTLY_TESTED, WRITTEN_PROVIDER_CONFIRMED, COUNSEL_REVIEWED, SUPERSEDED, or UNVERIFIED.
+- Next review trigger/date and named owner.
+
+## Decision implications
+
+1. The Android API evidence does not prove the proposed cellular audio route. Treat route feasibility as a release-blocking unknown.
+2. Public vendor prices are not comparable until all call legs, streaming, speech/model, forwarding, number rental, failed-call billing, tax and support are itemised.
+3. App-store counts and feature listings are weak demand/performance evidence; customer interviews and hands-on evaluation remain outstanding and require explicit activity approval.
+4. Legal source discovery is not legal advice. Applicable commencement dates, telecom role, call disclosure/recording and data duties need qualified review before real calls or launch.
+5. Capacity and cost tables are sensitivity models, not forecasts. Reconcile their assumptions before pricing or architecture approval.
+
+## Review state
+
+As of 2026-10-12, this ledger consolidates claims already cited in discovery documents. It is not evidence that all source pages were re-opened during this specific pass, that URLs will remain unchanged, or that the product has been validated. No interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation are claimed complete.
