@@ -1,7 +1,7 @@
 # Expanded Requirements Traceability — Working Draft
 
 **Status:** DRAFT; not approved. No implementation authorised.  
-**Canonical functional IDs:** REQ-001–REQ-015 in `CORE_REQUIREMENTS_DRAFT.md`. NFR-001–NFR-010 are in the same file. Priority labels remain candidates. Candidate thresholds and unresolved target decisions are tracked in `ACCEPTANCE_THRESHOLD_REGISTER.md`; none is owner-approved.
+**Draft ID set:** REQ-001–REQ-015 and NFR-001–NFR-010 are stable identifiers within the current working draft and are defined in `CORE_REQUIREMENTS_DRAFT.md`. They are not yet approved baseline requirements. Priority labels remain candidates. Candidate thresholds and unresolved target decisions are tracked in `ACCEPTANCE_THRESHOLD_REGISTER.md`; none is owner-approved.
 
 ## Functional traceability
 
