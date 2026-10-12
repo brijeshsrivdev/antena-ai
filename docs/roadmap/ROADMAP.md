@@ -72,3 +72,9 @@ See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 
 - Added `docs/discovery/PHASE_0_EVIDENCE_WORKBOOK.md` with private participant-record guidance, route-test capture rows, provider quote comparison and evidence-to-decision logging.
 - This prepares fieldwork; it does not claim that interviews, telephony tests or provider outreach have occurred. Owner approval and safety checks are required before experiments.
 - README now indexes the workbook. Implementation remains unauthorised.
+
+
+## Experiment governance increment — 2026-10-12
+- Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` to require scope-specific owner approval before interviews, telephony tests, provider outreach that shares project details, or UX validation involving participants.
+- The checklist specifies data minimisation, consent, reversible routing, spend caps, stop conditions, result review and sanitised evidence handling. It authorises no activity by itself.
+- Fieldwork, provider contact, live tests and implementation remain unapproved until the relevant gates are explicitly cleared.
