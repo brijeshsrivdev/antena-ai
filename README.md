@@ -25,6 +25,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Decision log](docs/governance/DECISION_LOG.md)
 - [Owner decision pack — discovery choices and gates](docs/governance/OWNER_DECISION_PACK.md)
 - [Research register](docs/research/RESEARCH_REGISTER.md)
+- [External claim ledger — sources, limitations and decision impact](docs/research/EXTERNAL_CLAIM_LEDGER.md)
 - [Competitive analysis — Equal AI](docs/research/COMPETITIVE_ANALYSIS.md)
 - [Competitor matrix](docs/research/COMPETITOR_MATRIX.md)
 - [Market demand and segmentation](docs/research/MARKET_DEMAND_AND_SEGMENTATION.md)
