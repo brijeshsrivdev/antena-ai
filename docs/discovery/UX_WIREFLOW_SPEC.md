@@ -90,3 +90,13 @@ Hospitality profile boundary: trusted Antena APIs only. It may answer approved F
 
 ## Validation evidence
 Test with 5–8 users before visual design freeze. Observe whether users can explain routing, disable service, understand retention, identify uncertain summaries and predict usage-cap behavior. Do not build a prototype until the baseline gate is approved.
+
+## MVP scope alignment note
+
+This wireflow is a discovery model, not a promise that every branch ships in the MVP. Until separately approved:
+- Contact/group-based call rules are optional and must not require broad contact-book access by default; the core flow needs a no-contacts fallback.
+- Transcript/audio display remains disabled unless the separate feature gate for consent, legal review, retention, provider terms, cost and deletion is passed.
+- Takeover is displayed only for a validated route; do not design a universal takeover promise into the base path.
+- Follow-up tasks/reminders require user confirmation and must not execute external or consequential actions autonomously.
+
+Keep the final wireflow versioned to the approved MVP and the requirement/acceptance-threshold registers.
