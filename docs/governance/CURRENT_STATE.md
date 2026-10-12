@@ -118,3 +118,9 @@ README and linked documents must be verified against current main after this inc
 - The checklist covers consent, minimum necessary data, private handling of identifiable evidence, budget ceilings, safe restoration/disable procedures, stop conditions and post-activity review.
 - It is a preparation document, not approval to run fieldwork. No interviews, provider outreach, route tests, quotes, legal opinions or benchmarks are claimed complete; implementation remains unauthorised.
 - README and roadmap now index/reference the checklist.
+
+
+## Phase 0 exit criteria increment — 2026-10-12
+- Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md`, consolidating 20 gates across customer validation, route feasibility, provider costs, legal/privacy, scope, UX, requirements, architecture, security, operations, brand and owner decisions.
+- The map explicitly distinguishes prepared documentation from uncollected evidence and from owner approvals. It records Phase 0 as incomplete and implementation as unauthorised.
+- README and roadmap now index/reference the exit map. No external experiment or implementation is claimed complete.
