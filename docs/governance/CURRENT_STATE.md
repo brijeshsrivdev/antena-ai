@@ -149,3 +149,11 @@ README and linked documents must be verified against current main after this inc
 - The ledger explicitly separates official platform/regulator documentation from vendor assertions, store-reported signals and internal scenario assumptions. It does not turn public pricing into an all-in quote or platform API documentation into route feasibility.
 - This is desk-research organisation only. It does not claim every external page was re-opened during this pass, nor does it resolve route feasibility, customer demand, provider terms, legal applicability or performance.
 - No interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Phase 0 remains incomplete and implementation remains unauthorised.
+
+
+## Requirement-reference verification increment — 2026-10-12
+- Programmatically compared identifiers across CORE_REQUIREMENTS_DRAFT.md, TRACEABILITY_MATRIX.md, UX_SCREEN_INVENTORY.md, THREAT_MODEL.md, PRIVACY_AND_REGULATORY_RISK_REGISTER.md and ACCEPTANCE_THRESHOLD_REGISTER.md.
+- Result: all 15 REQ IDs and 10 NFR IDs appear in both the core draft and traceability matrix; all referenced UX/THR/PRIV IDs were found in their source documents; AT-001 and AT-004 references resolve.
+- Recorded the result and its limits in BASELINE_CONSISTENCY_AUDIT.md. This confirms identifier presence only, not requirement quality, semantic coverage, acceptance, legal sufficiency or implementation.
+- Added EXTERNAL_CLAIM_LEDGER.md and indexed it in README and RESEARCH_REGISTER.md. Existing README links had previously been checked as 49 valid local paths; the newly added ledger file and README link were separately confirmed, but a fresh full recursive-tree scan has not been run.
+- Phase 0 remains incomplete. No interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
