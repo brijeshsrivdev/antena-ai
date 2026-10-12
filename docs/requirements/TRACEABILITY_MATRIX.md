@@ -23,7 +23,7 @@
 | REQ-014 Support/urgent disable | Hypothesis; interviews pending | UX-009–UX-010, UX-021 | Control plane; SupportCase/AuditEvent | THR-011, THR-015, THR-017, PRIV-013–014 | Disable/recovery drill, incident simulation and support access audit. Gate: before pilot. |
 | REQ-015 Observability/recovery | SLOs unapproved | UX-010, UX-021 | Operations plane and structured events | THR-003, THR-012, THR-017, PRIV-014 | Fault injection, alert/runbook, retry, spend and deletion-backlog tests. Gate: before pilot. |
 
-| REQ-016 Account authentication/recovery | Gap identified from P0 account scope; provider/mechanism unselected | UX-003 | Identity/session service; recovery policy; AuditEvent | THR-001, THR-014, PRIV-013 | Authentication, enumeration, brute-force, recovery abuse and revocation tests. Gate: before internal MVP. |
+| REQ-016 Account authentication/recovery | Gap identified from P0 account scope; provider/mechanism unselected | UX-003 | Identity/session service; recovery policy; AuditEvent | THR-001, PRIV-006 | Authentication, enumeration, brute-force, recovery abuse and revocation tests. Gate: before internal MVP. |
 
 ## Non-functional traceability
 
@@ -81,7 +81,7 @@ The product-scope catalogue uses SCOPE IDs; this table makes their current relat
 | SCOPE-009 | Call history and search | REQ-013 | P1 candidate; may be narrowed to summaries/metadata. |
 | SCOPE-010 | Full transcript/audio playback | REQ-013, REQ-010 | Off unless separately approved; retention/legal/provider gates apply. |
 | SCOPE-011 | Follow-up reminders/tasks | — | P1 candidate, not fully specified by current REQs; defer or create a requirement before inclusion. User confirmation required. |
-| SCOPE-012 | Caller/contact allowlist and denylist | REQ-001, REQ-002 (partial) | Conditional/P1; contact-book handling and rule semantics are not fully specified. Create a dedicated requirement before inclusion. |
+| SCOPE-012 | Caller/contact allowlist and denylist | — | Conditional/P1; not directly covered by current REQs. Defer or create a dedicated requirement before inclusion; contact-book handling and rule semantics need definition. |
 | SCOPE-013 | Usage meter and plan limits | REQ-009 | P0 candidate. |
 | SCOPE-014 | Data export, deletion and retention settings | REQ-010, REQ-013 | P0 privacy foundation, subject to data-class/provider lifecycle decisions. |
 | SCOPE-015 | Abuse report and support | REQ-014, REQ-015 | P0 candidate. |
