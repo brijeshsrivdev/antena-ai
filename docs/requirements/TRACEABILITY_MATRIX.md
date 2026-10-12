@@ -3,6 +3,10 @@
 **Status:** DRAFT; not approved. No implementation authorised.  
 **Draft ID set:** REQ-001–REQ-016 and NFR-001–NFR-010 are stable identifiers within the current working draft and are defined in `CORE_REQUIREMENTS_DRAFT.md`. They are not yet approved baseline requirements. Priority labels remain candidates. Candidate thresholds and unresolved target decisions are tracked in `ACCEPTANCE_THRESHOLD_REGISTER.md`; none is owner-approved.
 
+## Acceptance-criteria testability audit
+
+See [`docs/governance/ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md`](../governance/ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md) for a desk-only assessment of REQ-001–REQ-016 and NFR-001–NFR-010 testability, failure-path gaps, future evidence artifacts and unresolved dependencies. This does not change requirement status or approve any threshold.
+
 ## Functional traceability
 
 | ID | Evidence state | UX | Architecture / data | Risks | Verification and exit gate |
