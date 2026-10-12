@@ -11,6 +11,7 @@
 - Keep long-lived call media off ordinary JSON control-plane endpoints; use the selected provider's authenticated media transport.
 - Return honest status: configured, pending, verified, degraded, failed, disabled or unknown.
 - Separate user-visible call metadata from raw audio/transcript access.
+- Distinguish the account holder's product choices/consents from notices or legal-basis evidence relating to third-party callers; a product account setting is not proof that a caller was notified or consented.
 - Keep domain connectors server-defined and scoped.
 - Define rate limits, retention impact, audit events and abuse controls per operation.
 
@@ -21,6 +22,8 @@ These names are illustrative; route shapes and schemas require review.
 | Resource area | Proposed operation | Purpose | Security/contract notes |
 |---|---|---|---|
 | Account | Read current account | Show account status and user settings | Derived from authenticated principal; do not trust client-supplied owner ID. |
+| Account/session | List and revoke active sessions/devices | Let an account owner inspect and revoke access after device loss or suspected compromise | Require recent re-authentication for sensitive changes; revoke server-side; do not rely on client-only logout. |
+| Account recovery | Start and complete recovery | Recover access through an approved recovery factor | Anti-enumeration responses, rate limits, short-lived single-use challenges, replay protection and audit; mechanism remains undecided. |
 | Profile | Create/update profile draft | Configure voice, language, boundaries and structured context | Schema allowlist; validate length/types; version every published change. |
 | Profile | Publish profile version | Make reviewed configuration active | Explicit user action; preserve version reference for each call session. |
 | Routing | Get routing status | Show active/setup/failed state | Never infer success solely from a client action. |
@@ -60,6 +63,7 @@ Do not expose provider tokens, raw call content, stack traces or internal hostna
 - Bound body size and accepted content types.
 - Reject unknown event types safely and alert on repeated invalid signatures.
 - Define event ordering and final-state reconciliation.
+- Specify the canonical call state machine and allowed transitions, including late/out-of-order events, route deactivation, provider-leg versus user-visible call identity, and reconciliation when provider state disagrees with local state.
 - Keep raw payload retention minimal and redact personal content.
 
 ## 5. Tool/connector contract
