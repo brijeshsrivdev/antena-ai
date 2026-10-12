@@ -30,6 +30,10 @@ Consolidate the choices that must be resolved before the discovery baseline can 
 - Performance, reliability, cost, security or deletion benchmarks.
 - Brand clearance, paid acquisition experiments or launch validation.
 
+## Risk review
+
+Review `PHASE_0_RESIDUAL_RISK_REGISTER.md` with this decision pack. Critical route, user-control, economics, legal/privacy and AI-safety risks must be resolved or explicitly dispositioned with evidence and conditions before baseline approval.
+
 ## Recommended approval sequence
 
 1. Approve the discovery hypotheses and select a narrow interview segment, without authorising product code.
