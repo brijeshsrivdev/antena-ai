@@ -111,3 +111,8 @@ No interviews, live route tests, provider outreach/quotes, legal opinions, bench
 - docs/requirements/TRACEABILITY_MATRIX.md
 - docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md
 - docs/roadmap/ROADMAP.md
+
+
+## Deletion and verification reconciliation — 2026-10-12
+
+Added [Deletion and Verification Reconciliation](DELETION_AND_VERIFICATION_RECONCILIATION.md) to connect data classes to candidate deletion targets, define unresolved operational responsibilities, and map selected requirements/thresholds to future verification artifacts. This improves desk-review traceability only. It does not satisfy G0-09, G0-10, G0-11, G0-12 or G0-17 by itself: retention/deletion policy, route/provider mappings, owner-approved thresholds, named operational owners and executed evidence remain outstanding. Phase 0 remains INCOMPLETE and implementation remains NOT AUTHORISED.
