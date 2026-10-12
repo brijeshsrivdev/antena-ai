@@ -141,3 +141,11 @@ README and linked documents must be verified against current main after this inc
 - Clarified that REQ-001–REQ-015 and NFR-001–NFR-010 are stable IDs within the current draft, while their content, priorities and traceability remain unapproved. The core draft and requirements index no longer imply the IDs themselves are awaiting reconciliation.
 - README's 49 local Markdown links were checked against the recursive repository tree; all targets exist. This did not validate external URLs or prove factual completeness.
 - No interviews, live route tests, provider quotes, legal opinions, benchmarks, load tests or implementation have occurred. Phase 0 remains incomplete and implementation unauthorised.
+
+
+## External claim traceability increment — 2026-10-12
+- Added `docs/research/EXTERNAL_CLAIM_LEDGER.md` with 17 consequential claims, source classes, evidence scope, exclusions, confidence/status and decision impact.
+- Indexed the ledger in README and registered it as RES-024 in the research register.
+- The ledger explicitly separates official platform/regulator documentation from vendor assertions, store-reported signals and internal scenario assumptions. It does not turn public pricing into an all-in quote or platform API documentation into route feasibility.
+- This is desk-research organisation only. It does not claim every external page was re-opened during this pass, nor does it resolve route feasibility, customer demand, provider terms, legal applicability or performance.
+- No interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Phase 0 remains incomplete and implementation remains unauthorised.
