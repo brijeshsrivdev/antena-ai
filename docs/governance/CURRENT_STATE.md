@@ -213,7 +213,7 @@ README and linked documents must be verified against current main after this inc
 
 ## Deletion and verification reconciliation increment — 2026-10-12
 
-- Added `docs/governance/DELETION_AND_VERIFICATION_RECONCILIATION.md` to connect each data class with candidate deletion destinations, target-level outcomes, role-based ownership and planned verification evidence.
+- Added `docs/governance/DELETION_AND_VERIFICATION_RECONCILIATION.md` to connect each data class with candidate deletion destinations, target-level outcomes, role-based ownership, and planned verification evidence for REQ-001–REQ-016, NFR-001–NFR-010 and applicable AT-001–AT-012.
 - Reconciled the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map to the new artifact.
 - This is documentation-only. Retention periods, deletion SLA, backup expiry, legal exception policy, named owners and candidate target-state enums remain unapproved. Planned tests are not run evidence; AT-008 remains OPEN.
 - Phase 0 remains incomplete; product implementation, external experiments and provider outreach remain unauthorized without separate explicit approval. PR #1 remains draft and unmerged.
