@@ -135,3 +135,12 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 - Added explicit proposed operations to `API_CONTRACT_DRAFT.md` for listing/checking evidence-backed supported route options, correcting supported summary fields with audit/version semantics, and retrieving deletion status with per-target completion distinctions.
 - These additions close naming/representation gaps found during the requirement-to-contract audit; they do not prove route support or approve endpoint schemas. The coverage audit now records these as proposed operations.
 - Phase 0 remains incomplete; PR #1 remains draft and unmerged. No implementation or external activity is authorized.
+
+
+## Deletion and verification reconciliation increment — 2026-10-12
+
+- Added `DELETION_AND_VERIFICATION_RECONCILIATION.md`: data-class-to-target inventory, candidate request/target outcomes, role-based operational accountability, and requirement/threshold-to-future-verification mapping.
+- Linked the reconciliation from README, the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map.
+- Explicitly left retention durations, deletion SLA, backup expiry, legal exceptions, named operational owners and candidate target enums unapproved. Unknown destinations block a full-deletion claim.
+- Verification artifacts are plans only. No tests, deletion exercise, restore drill, route tests, interviews, provider outreach, legal opinions or implementation were performed by this pass. AT-008 remains OPEN and Phase 0 remains incomplete.
+- PR #1 remains draft/unmerged. Do not merge without explicit owner instruction; product implementation and external experiments remain unauthorized.
