@@ -4,7 +4,7 @@
 
 ## Requirement lifecycle note
 
-REQ-001–REQ-015 and NFR-001–NFR-010 are stable identifiers within this working draft and are referenced by TRACEABILITY_MATRIX.md. Requirement content, priority, completeness and cross-document traceability remain draft and unapproved. Unresolved targets are tracked in ACCEPTANCE_THRESHOLD_REGISTER.md; candidate values are not approved and must be reviewed before baseline approval.
+REQ-001–REQ-016 and NFR-001–NFR-010 are stable identifiers within this working draft and are referenced by TRACEABILITY_MATRIX.md. Requirement content, priority, completeness and cross-document traceability remain draft and unapproved. Unresolved targets are tracked in ACCEPTANCE_THRESHOLD_REGISTER.md; candidate values are not approved and must be reviewed before baseline approval.
 
 ## REQ-001 — Explicit user activation and routing state
 **Priority:** P0 candidate. **Status:** DRAFT.
@@ -187,6 +187,19 @@ Acceptance criteria:
 - Alerts have a named owner and runbook.
 - Retry policies are bounded and idempotent.
 - Recovery, provider outage and deletion-job failures are tested before production.
+
+## REQ-016 — Account authentication and recovery
+**Priority:** P0 candidate. **Status:** DRAFT.
+
+The system shall authenticate account owners and provide a secure, abuse-resistant account recovery path before granting access to personal profiles, call records, routing controls or usage data.
+
+Acceptance criteria:
+- Unauthenticated requests cannot access account-specific data or mutate routing/profile state.
+- Authentication sessions can be revoked, expire according to an approved policy and are protected against replay/theft to the extent supported by the selected mechanism.
+- Account recovery verifies control of an approved recovery factor and rate-limits attempts; it must not reveal whether another person has an account through distinguishable responses.
+- Recovery, credential changes and risky authentication events are auditable without logging secrets or unnecessary personal content.
+- Abuse tests cover brute force, replay, enumeration, recovery-factor compromise and session revocation.
+- The authentication provider, recovery factors, session policy and support recovery procedure are chosen and reviewed before implementation.
 
 ## Non-functional requirements to baseline
 
