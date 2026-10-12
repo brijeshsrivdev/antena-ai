@@ -70,3 +70,12 @@ TRAI's recent amendment is a reason to obtain current specialist advice on the e
 - Caller ID, takeover or fallback behavior is unsafe or too confusing.
 - Required Play permissions or distribution model cannot be justified.
 - Actual cost exceeds validated willingness to pay without a credible change in scope or economics.
+
+
+## Official-source freshness note — 2026-10-12
+
+The official Android API pages were rechecked for this discovery pass. CallScreeningService remains documented as screening/identification with a five-second response requirement; CallRedirectionService is documented for optional outgoing-call redirection/cancellation. Neither reference establishes unrestricted incoming cellular-audio access for a cloud AI assistant. Sources: https://developer.android.com/reference/android/telecom/CallScreeningService and https://developer.android.com/reference/android/telecom/CallRedirectionService .
+
+Google Play's current SMS/call-log policy continues to restrict sensitive permissions to eligible default-handler functionality and subject to review. The policy page notes a change effective 27 January 2027; check the then-current policy before implementation/distribution: https://support.google.com/googleplay/android-developer/answer/10208820 .
+
+TRAI's amendments index lists the TCCCPR Third Amendment Regulations, 2026 dated 18 September 2026. Its application to this proposed call-routing model is not inferred here and needs qualified review: https://www.trai.gov.in/release-publication/regulations/amendments-page/7617 . This source check is not legal advice and does not replace route/provider tests.
