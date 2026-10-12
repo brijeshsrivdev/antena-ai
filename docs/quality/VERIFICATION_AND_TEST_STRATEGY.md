@@ -102,3 +102,11 @@ For each requirement:
 7. Obtain review before merge.
 
 No implementation work is authorised by this test strategy.
+
+## 7. Verification artifact and evidence contract
+
+Use [Deletion and Verification Reconciliation](../governance/DELETION_AND_VERIFICATION_RECONCILIATION.md) as the draft crosswalk from requirements and threshold IDs to planned evidence artifacts. It covers deletion targets, cross-account isolation, deletion-backlog/restore recovery, usage reconciliation, route disable/recovery, latency/cancellation, summary factuality and authentication/recovery.
+
+A planned artifact or test layer is not proof of execution. Each future report should record requirement/threshold IDs, approved scope and configuration, test-plan/version, environment and provider versions, inputs, expected and observed outcomes, timestamps, evidence location, reviewer, failures and disposition. Preserve negative/partial outcomes; do not silently mark unknown or blocked cases as passed.
+
+The acceptance threshold register remains the canonical source for threshold values/status. All existing thresholds remain proposed or open until the owner approves them. No tests or experiments are claimed completed by this section.

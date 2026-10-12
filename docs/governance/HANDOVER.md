@@ -94,3 +94,63 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Checked Markdown table column consistency in MVP_SCOPE_AND_FEATURE_GATES.md, TRACEABILITY_MATRIX.md and CORE_REQUIREMENTS_DRAFT.md. A stale three-column separator in the MVP scope tables was found and corrected; rerun found no table-row column mismatches in those files.
 - Arithmetic for canonical and alternate workload/cost scenarios was recomputed and matches the documented formulas. Provider quote scenarios and evaluation thresholds have been reconciled to their canonical registers.
 - Latest verified main before this handover update: `f4a53bc351ab2f94ba52a8dfe5187983d8a6eb14`. Phase 0 remains incomplete; no interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
+
+## Latest continuation — architecture/API/data/security semantic review (2026-10-12)
+- Added `docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md` with 12 P0/P1 findings and a recommended desk-only resolution order. The main unresolved themes are account-vs-tenant authority, call/provider-leg state, verified route disable semantics, distributed deletion completion, and canonical usage-event idempotency.
+- Clarified `docs/architecture/API_CONTRACT_DRAFT.md` with account-session listing/revocation and account-recovery operations, and the distinction between account-holder choices and caller-facing disclosure evidence.
+- Clarified `docs/architecture/DATA_MODEL_DRAFT.md` with AccountSession, RecoveryChallenge and CallerDisclosureEvent concepts. These are candidate conceptual entities, not approved schema decisions. Updated REQ-016 in the traceability matrix to point to the new contract concepts.
+- Indexed the semantic review in README and recorded the increment in CURRENT_STATE.
+- Remaining contract decisions must stay open where they depend on the route, provider, jurisdiction or owner choices. No provider-specific call state machine, retention period, authentication mechanism, endpoint schema or threshold is approved by this review.
+- Phase 0 remains incomplete; no interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation have occurred. Do not treat documentation work as permission for those activities. Implementation remains unauthorised.
+
+## State/event contract follow-up — 2026-10-12
+- Added `docs/architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md` to spell out conceptual lifecycle states for call sessions/provider legs, routing, deletion and usage reconciliation. It covers duplicate/out-of-order events, verified-vs-requested status, immutable usage adjustments and safe uncertainty.
+- Indexed the draft from README and linked it from the semantic review. These are provider-neutral candidates only; they must be mapped against actual route/provider contracts before implementation and do not prove route feasibility.
+- Revalidated modified Markdown table column consistency after the account/session and caller-disclosure changes: no row/column mismatches were found. REQ-001–REQ-016 remain present in traceability, and the semantic review is indexed from README.
+- Phase 0 remains incomplete; no interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Product implementation remains unauthorised.
+
+## P0 contract coverage follow-up — 2026-10-12
+A requirement-by-requirement review finds no P0 candidate release-ready on documentation alone. REQ-001, REQ-003, REQ-005, REQ-008, REQ-009, REQ-011, REQ-014, REQ-015 and REQ-016 have partial contract coverage. REQ-002, REQ-004, REQ-006 and REQ-010 remain materially blocked by route/provider evidence or legal review. REQ-007 remains conditional on a verified route. Key failure scenarios include duplicate/out-of-order callbacks, route disable without verified restoration, partial provider deletion, usage/invoice mismatch, cross-account export access, recovery replay and privacy-sensitive logging.
+
+The coverage review is an audit conclusion, not an approval. The full draft contract references remain in CORE_REQUIREMENTS_DRAFT.md, TRACEABILITY_MATRIX.md, API_CONTRACT_DRAFT.md, DATA_MODEL_DRAFT.md, THREAT_MODEL.md, DATA_INVENTORY_AND_LIFECYCLE.md and STATE_AND_EVENT_CONTRACTS_DRAFT.md. Phase 0 remains incomplete; implementation remains unauthorised.
+
+
+## UX/state contract reconciliation — 2026-10-12
+- Added `docs/governance/UX_STATE_CONTRACT_RECONCILIATION.md` after comparing the UX screen inventory and textual wireflows with the API and lifecycle state drafts.
+- Captured required user-facing distinctions for route verification/disable/restoration, live call and provider-leg status, takeover, distributed deletion, artifact availability, usage reconciliation, account recovery/session revocation, caller disclosure, follow-up tasks, contact permissions and support states.
+- Added prohibited copy patterns and future verification scenarios for stale/conflicting events, delayed confirmations, partial deletion, late usage corrections, recovery replay and stale sessions. These scenarios are planning requirements only; no tests were executed.
+- The UX drafts are generally directionally aligned, but final screen copy and flow states must use authoritative state and must not treat request acceptance as completion. Conditional features remain gated; SCOPE-011 and SCOPE-012 still need a dedicated requirement or explicit MVP deferral.
+- Phase 0 remains incomplete. No interviews, provider outreach, live route tests, spending, legal opinions, benchmarks, load tests or implementation were performed by this increment. Do not merge the draft PR or begin implementation without the separately required authorization.
+
+
+## Requirement-to-contract coverage audit — 2026-10-12
+- Added `docs/governance/REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md`, indexed it from README and linked it from `TRACEABILITY_MATRIX.md`. It maps REQ-001–REQ-016 to proposed API operations, data/state contracts, threat/privacy controls, failure scenarios, future verification artifacts and unresolved blockers.
+- Updated traceability references for routing configuration, provider-leg lifecycle and privacy/deletion records.
+- Aligned the conceptual data model with the state/event contract by adding candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` entities and clarifying immutable usage adjustments. These remain draft concepts, not approved schemas.
+- The audit finds no P0 candidate release-ready on documentation alone. Route/provider evidence, legal/privacy review, invoice reconciliation, operational runbooks and auth-policy decisions remain open. The verification scenarios are planned only; no tests were run.
+- Phase 0 remains incomplete. No interviews, provider outreach, live route tests, spending, legal opinions, benchmarks, load tests or implementation were performed or authorized by this documentation pass. PR #1 remains draft and unmerged.
+
+
+## API operation coverage refinement — 2026-10-12
+- Added explicit proposed operations to `API_CONTRACT_DRAFT.md` for listing/checking evidence-backed supported route options, correcting supported summary fields with audit/version semantics, and retrieving deletion status with per-target completion distinctions.
+- These additions close naming/representation gaps found during the requirement-to-contract audit; they do not prove route support or approve endpoint schemas. The coverage audit now records these as proposed operations.
+- Phase 0 remains incomplete; PR #1 remains draft and unmerged. No implementation or external activity is authorized.
+
+
+## Deletion and verification reconciliation increment — 2026-10-12
+
+- Added `DELETION_AND_VERIFICATION_RECONCILIATION.md`: data-class-to-target inventory, candidate request/target outcomes, role-based operational accountability, and a full REQ-001–REQ-016 / NFR-001–NFR-010 / AT-001–AT-012 future-verification crosswalk.
+- Linked the reconciliation from README, the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map.
+- Explicitly left retention durations, deletion SLA, backup expiry, legal exceptions, named operational owners and candidate target enums unapproved. Unknown destinations block a full-deletion claim.
+- Verification artifacts are plans only. No tests, deletion exercise, restore drill, route tests, interviews, provider outreach, legal opinions or implementation were performed by this pass. AT-008 remains OPEN and Phase 0 remains incomplete.
+- PR #1 remains draft/unmerged. Do not merge without explicit owner instruction; product implementation and external experiments remain unauthorized.
+
+
+## Cross-document consistency review increment — 2026-10-12
+
+- Added `FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md` and indexed it from README.
+- Verified presence of REQ-001–REQ-016 and NFR-001–NFR-010 in both core requirements and traceability, plus SCOPE-001–SCOPE-021 in the scope crosswalk.
+- Added explicit conditional traceability for UX-006 (platform permissions) and UX-022 (notifications/status). The matrix warns that permission grants/notifications do not prove route eligibility or verified routing.
+- SCOPE-011/SCOPE-012 remain unassigned to dedicated requirements and must not silently enter MVP.
+- Remaining blockers: customer/problem evidence; route/provider feasibility and restoration; comparable quotes/invoice costs; jurisdiction-specific legal/privacy review; approved retention/deletion/backup policy; operational owners/runbooks; measurable, owner-approved thresholds.
+- Review is documentation-only, not independent external approval or release evidence. Phase 0 remains incomplete and implementation is not authorized. PR #1 remains draft/unmerged; merge requires explicit owner instruction.

@@ -181,3 +181,49 @@ README and linked documents must be verified against current main after this inc
 ## Post-crosswalk verification — 2026-10-12
 - Re-ran the draft identifier check after adding REQ-016. The core requirements and traceability matrix both contain REQ-001–REQ-016 and NFR-001–NFR-010 with no missing IDs in either direction. All 21 SCOPE IDs from the product catalogue appear in the crosswalk; UX/THR/PRIV references resolve to the source inventories.
 - SCOPE-011 and SCOPE-012 have no direct REQ mapping and must be deferred or specified before MVP inclusion; SCOPE-017/018/021 are currently excluded/deferred. The audit records that lexical presence is not semantic completeness or approval.
+
+## Architecture/API/data/security semantic review — 2026-10-12
+- Added `docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md` to record 12 semantic findings across account/session recovery, account-vs-tenant authority, caller disclosure vs account consent, call/provider-leg state, route disable semantics, deletion completion, usage idempotency, callback validation, exports/support access and observability.
+- Clarified the API draft with candidate account-session listing/revocation and recovery operations. Clarified the data model with AccountSession, RecoveryChallenge and a separate CallerDisclosureEvent concept; ConsentRecord now explicitly represents account-holder choices, not proof of third-party caller notice/consent.
+- Updated REQ-016 traceability to identify the proposed API/data records and session/recovery abuse tests. These are draft contract clarifications, not an approved schema, provider selection or legal determination.
+- Phase 0 remains incomplete. No interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation have occurred. Product implementation remains unauthorised.
+
+- Added `docs/architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md` with conceptual call/session and provider-leg events, route activation/disable states, distributed deletion states, usage reconciliation, idempotency and callback-validation rules. It explicitly avoids promising provider-specific states or route capabilities.
+- The semantic contract review and state/event draft are documentation artifacts only. Route-specific state mapping, auth mechanism, data retention/deletion SLA, billing units and operational owners remain open.
+
+
+## UX/state semantic reconciliation — 2026-10-12
+- Added `UX_STATE_CONTRACT_RECONCILIATION.md` and indexed it from README. Compared UX inventory/wireflows against API and lifecycle contracts.
+- Captured lifecycle-backed wording and states for route activation/disable/restoration, live call/takeover, deletion, transcript/audio availability, usage reconciliation, account recovery/session revocation, caller disclosure, conditional follow-up tasks/contact rules and support incidents.
+- Added anti-pattern copy examples and future verification scenarios. These are planning artifacts, not evidence that testing occurred.
+- UX/state desk review is complete for this pass. Phase 0 and baseline approval remain incomplete; provider/route and legal evidence plus owner decisions remain open. No implementation is authorised.
+
+
+## Requirement-to-contract coverage audit — 2026-10-12
+- Added `REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md` and linked it from README and the traceability matrix. It maps all current REQ-001–REQ-016 draft requirements to API operations, data/state contracts, threat/privacy controls, failure scenarios and future verification evidence.
+- Added candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` records to the conceptual data model so route eligibility, multi-leg call identity and distributed deletion have explicit representations. Usage corrections remain immutable linked events.
+- This is a documentation coverage improvement, not release evidence. No P0 candidate is release-ready on documentation alone; route/provider, legal/privacy, pricing/invoice, operations and authentication decisions remain open.
+- Phase 0 remains incomplete, PR #1 remains draft/unmerged, and implementation is not authorized.
+
+
+## API operation coverage refinement — 2026-10-12
+- Added proposed API operations for evidence-backed route eligibility, owner correction of supported summary fields, and deletion-status retrieval. These make the API contract better align with REQ-002, REQ-008 and REQ-010.
+- The operations remain conceptual and require schema/security review; route evidence, factuality evaluation, legal/privacy policy and deletion lifecycle evidence remain unresolved. No implementation is authorized.
+
+
+## Deletion and verification reconciliation increment — 2026-10-12
+
+- Added `docs/governance/DELETION_AND_VERIFICATION_RECONCILIATION.md` to connect each data class with candidate deletion destinations, target-level outcomes, role-based ownership, and planned verification evidence for REQ-001–REQ-016, NFR-001–NFR-010 and applicable AT-001–AT-012.
+- Reconciled the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map to the new artifact.
+- This is documentation-only. Retention periods, deletion SLA, backup expiry, legal exception policy, named owners and candidate target-state enums remain unapproved. Planned tests are not run evidence; AT-008 remains OPEN.
+- Phase 0 remains incomplete; product implementation, external experiments and provider outreach remain unauthorized without separate explicit approval. PR #1 remains draft and unmerged.
+
+
+## Cross-document consistency review increment — 2026-10-12
+
+- Added `docs/governance/FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md` to record the semantic review across requirements, UX, MVP scope, API/data/state, security/privacy, thresholds and Phase 0 gates.
+- Rechecked the REQ-001–REQ-016 and NFR-001–NFR-010 presence in both core requirements and traceability; all are present. Confirmed the SCOPE-001–SCOPE-021 crosswalk exists.
+- Corrected the traceability matrix to map conditional UX-006 permissions to REQ-001/REQ-002 and UX-022 notification/permission status to REQ-001/REQ-015. A permission grant or notification is not proof of a verified route.
+- SCOPE-011 tasks/reminders and SCOPE-012 contact/caller rules remain intentionally without direct requirement coverage and must stay deferred or receive reviewed requirements before MVP inclusion.
+- The review confirms the remaining blockers are evidence/owner decisions, not merely missing documents: customer validation, route feasibility/restoration, comparable provider quotes, qualified jurisdiction-specific legal review, data lifecycle policy, operational ownership and unapproved thresholds.
+- Phase 0 remains incomplete; no interviews, route tests, provider outreach, quotes, legal opinions, benchmarks, load tests or implementation were performed. PR #1 remains draft/unmerged; no merge is authorized.

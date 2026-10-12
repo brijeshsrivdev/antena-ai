@@ -69,3 +69,11 @@ No specific duration is set here. Durations must reflect product value, provider
 ## 7. Decision status
 
 This document proposes data classes and lifecycle controls only. It does not approve retention durations, provider data terms, recording defaults or a legal basis.
+
+## 8. Deletion-target reconciliation — 2026-10-12
+
+The shared target-by-data-class checklist and candidate request/target outcome semantics are recorded in [Deletion and Verification Reconciliation](../governance/DELETION_AND_VERIFICATION_RECONCILIATION.md). Use it to enumerate actual first-party, provider, derived-copy and backup destinations once the deployed architecture is selected.
+
+For each destination, record **present**, **not present with evidence**, or **unknown**. Unknown destinations block a full-deletion claim. A parent `DeletionRequest` is not complete merely because the primary row is gone; each required `DeletionTarget` must have a confirmed outcome or a separately approved exception. The candidate target states in the reconciliation document are proposals, not approved enum values.
+
+No data-class retention duration, deletion SLA, backup expiry or legal exception is approved by this addition.

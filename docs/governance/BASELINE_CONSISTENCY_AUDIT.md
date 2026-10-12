@@ -194,3 +194,10 @@ No new product decision is made by this audit. Existing proposed directions rema
 - Re-ran the identifier-presence check after adding REQ-016: REQ-001–REQ-016 appear in both the core draft and traceability matrix; NFR-001–NFR-010 appear in both. No missing IDs were found in either direction.
 - The SCOPE-001–SCOPE-021 catalogue identifiers all appear in the traceability crosswalk. Referenced UX, THR and PRIV identifiers resolve to their source inventories. The crosswalk explicitly leaves SCOPE-011, SCOPE-012, SCOPE-017, SCOPE-018 and SCOPE-021 without direct REQ mapping because they are currently deferred/excluded or require separate specification; SCOPE-011/012 must not silently enter MVP.
 - This is lexical/reference-presence verification only. It does not prove semantic completeness, that every acceptance criterion is measurable, or that any requirement is approved or implemented.
+
+## Cross-document semantic review increment — 2026-10-12
+
+- Added `FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md` as a consolidated view of draft contract alignment and unresolved blockers.
+- Added traceability for UX-006 permissions and UX-022 notification/permission status to the appropriate route/status and operations requirements. SCOPE-011/012 remain intentionally deferred/unmapped pending dedicated requirements.
+- This pass improves document alignment but does not resolve evidence-dependent P0 risks. Route feasibility, customer demand, route-specific provider pricing, qualified legal review, retention/deletion policy, operational readiness and owner approvals remain open.
+- Identifier checks and table-shape checks do not establish semantic completeness, runtime correctness or legal sufficiency. Phase 0 remains incomplete; implementation remains unauthorized.
