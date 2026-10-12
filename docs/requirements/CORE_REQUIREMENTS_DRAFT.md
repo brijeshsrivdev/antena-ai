@@ -4,7 +4,7 @@
 
 ## Requirement lifecycle note
 
-The IDs below are provisional until reconciled with the requirements index. Unresolved targets are tracked in ACCEPTANCE_THRESHOLD_REGISTER.md; candidate values are not approved and must be reviewed before the baseline can be approved.
+REQ-001–REQ-015 and NFR-001–NFR-010 are stable identifiers within this working draft and are referenced by TRACEABILITY_MATRIX.md. Requirement content, priority, completeness and cross-document traceability remain draft and unapproved. Unresolved targets are tracked in ACCEPTANCE_THRESHOLD_REGISTER.md; candidate values are not approved and must be reviewed before baseline approval.
 
 ## REQ-001 — Explicit user activation and routing state
 **Priority:** P0 candidate. **Status:** DRAFT.
