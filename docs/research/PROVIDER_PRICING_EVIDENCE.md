@@ -36,7 +36,7 @@ Send the same request in `VOICE_PROVIDER_RFP.md` to at least two candidates. Req
 2. **Hosted-number/VoIP route:** inbound call, live media streaming, transfer/takeover and fallback behaviour.
 3. **Alternative if route 1 is unsupported:** provider-recommended lawful and contractually supported design, with the user-visible trade-offs.
 
-For each route, request invoice estimates at 10,000, 75,000 and 240,000 connected minutes/month and a sample invoice that itemises every call leg and AI component. Ask the provider to state unsupported capabilities explicitly rather than marking them "custom".
+For each route, use the shared canonical workload scenarios in `../architecture/WORKLOAD_SCENARIO_BASELINE.md` as the default quote comparison: 20,000 / 150,000 / 600,000 connected minutes per month. If useful, request the alternate 10,000 / 75,000 / 240,000-minute sensitivity set in `../business/COST_SCENARIO_MODEL.md` separately and label it as a different scenario set. Request a sample invoice that itemises every call leg and AI component. Ask the provider to state unsupported capabilities explicitly rather than marking them "custom".
 
 ## Decision rule
 
