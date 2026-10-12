@@ -15,7 +15,7 @@ Before promising an incoming-call assistant, establish one supported route, the 
 ## Candidate core slice
 
 | Capability | Scope / requirement mapping (draft) | Candidate disposition | Required evidence before release |
-|---|---|---|
+|---|---|---|---|
 | Account, authentication and recovery | SCOPE-001; REQ-016, REQ-011 | Core candidate | Threat review, account isolation and recovery tests |
 | Structured assistant profile/context | SCOPE-002/003; REQ-003 | Core candidate | Bounded schema, versioning, edit/delete and injection tests |
 | Route setup, test, status and disable | SCOPE-004; REQ-001/002/014 | Mandatory for any route-based product | Controlled route tests and verified recovery |
@@ -32,7 +32,7 @@ These are candidates, not permission to implement them.
 ## Conditional features
 
 | Capability | Scope / requirement mapping (draft) | Default treatment | Gate |
-|---|---|---|
+|---|---|---|---|
 | User takeover/transfer | SCOPE-007; REQ-007 | Conditional | Include only if end-to-end tests prove it on the advertised route |
 | Expanded call history | SCOPE-009; REQ-013 | Limited initially | Validate user value and define retention |
 | Full transcript | SCOPE-010; REQ-010/013 | Off unless separately approved | Privacy, retention, provider and cost decisions |
