@@ -81,3 +81,12 @@ Cross-cutting verification must include duplicate and out-of-order provider even
 ## Exit status
 
 **Semantic review: findings documented; baseline not ready for approval.** SEM-001 has been partially corrected in the draft contract vocabulary. SEM-002 through SEM-007 and the P1 items remain open, dependent on further documentation, owner choices or external evidence. Phase 0 remains incomplete and implementation remains unauthorized.
+
+
+## UX/state reconciliation follow-up — 2026-10-12
+
+The desk review in [UX_STATE_CONTRACT_RECONCILIATION.md](UX_STATE_CONTRACT_RECONCILIATION.md) compares the UX inventory and wireflows against the API and state/event contracts. It makes the required distinctions explicit for verified routing versus requested setup/disable, user-visible sessions versus provider legs, requested versus confirmed takeover, distributed deletion, artifact availability, estimated versus reconciled usage, account recovery/session revocation, caller disclosure, and conditional task/contact features.
+
+The review found the existing UX principles directionally aligned, but the final wireflows must consume authoritative states and must not display completion merely because a request was accepted. SCOPE-011 and SCOPE-012 remain unmapped to dedicated requirements and must be deferred or specified before MVP inclusion. Verification scenarios are proposed only; no tests or external validation were performed.
+
+This closes the planned **desk-only UX/state semantic reconciliation pass**, not Phase 0 or baseline approval. Route/provider mappings, legal/privacy review, owner decisions and field evidence remain outstanding. Implementation remains unauthorized.
