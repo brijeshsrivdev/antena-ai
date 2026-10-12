@@ -176,3 +176,8 @@ No new product decision is made by this audit. Existing proposed directions rema
 - Updated `VOICE_PROVIDER_RFP.md` to use the shared canonical 20k/150k/600k connected-minute scenarios as the default provider comparison. The alternate 10k/75k/240k-minute set remains available only as a separately labelled sensitivity analysis, preventing accidental mixing of assumptions.
 - These are documentation consistency fixes, not approval of thresholds or evidence of performance. No provider quotes, benchmarks, controlled calls, interviews, legal reviews or implementation have occurred.
 - Applied the same default/alternate workload distinction to `PROVIDER_PRICING_EVIDENCE.md`, so the provider research, RFP and shared workload baseline use consistent quote volumes.
+
+## Workload and cost arithmetic check — 2026-10-12
+- Recomputed the canonical workload formulas and scenario costs independently: monthly minutes = MAU × calls per MAU × minutes per call; average concurrency = minutes ÷ 43,200; illustrative peak = ceiling of average concurrency × 10. The low/base/high outputs match the shared table: 20k/150k/600k minutes, average concurrency 0.46/3.47/13.89 and illustrative peaks 5/35/139.
+- Recomputed cost sensitivities at ₹4/₹7/₹12 and the Ringg ₹6/min comparison anchor for both the canonical 20k/150k/600k set and the separate 10k/75k/240k set. The published arithmetic in the reviewed workload/cost tables matches these calculations.
+- This check validates arithmetic only. It does not validate the usage assumptions, the 10× peak multiplier, any advertised provider rate as applicable to the route, actual costs, demand or capacity.
