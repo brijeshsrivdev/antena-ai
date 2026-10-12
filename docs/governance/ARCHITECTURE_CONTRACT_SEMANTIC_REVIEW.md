@@ -45,7 +45,7 @@ These are conceptual corrections only. They do not choose an identity provider, 
 | Tool governance | Capability allowlist, typed schemas, server-side authorization, confirmation and audit are described | Concrete operation inventory and tenant/scope matrix; future Antena capability audit |
 | Telemetry | Content-free logs by default and observability requirement are present | Field allowlist, redaction tests, retention, privileged access and alert ownership |
 
-## Recommended order for remaining desk-only work
+## Follow-up artifact\n\nAdded [STATE_AND_EVENT_CONTRACTS_DRAFT.md](../architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md) to make call/session, routing, deletion and usage-reconciliation states explicit. Its states are conceptual and provider-neutral; route-specific transitions, retention SLAs and billable units remain unapproved.\n\n## Recommended order for remaining desk-only work
 
 1. Resolve the semantic contract items that can be clarified without route/provider decisions: account-versus-tenant vocabulary, call/session/provider-leg glossary, event idempotency key scope, and the distinction between disclosure and consent.
 2. Map each P0 requirement to an explicit API operation, data record/state, threat/privacy control, failure scenario, and verification artifact; leave unavailable route-specific mappings visibly blocked.
