@@ -10,6 +10,7 @@ Status: initial scaffold. Detailed product requirements are not baselined. Imple
 
 - [Expanded traceability](TRACEABILITY_MATRIX.md) now includes proposed evidence states and exit gates for REQ-001–REQ-015 and NFR-001–NFR-010.
 - [MVP scope and feature gates](../discovery/MVP_SCOPE_AND_FEATURE_GATES.md) separates core candidates, conditional capabilities and deferred scope. Nothing in it is approved.
+- [Acceptance threshold register](ACCEPTANCE_THRESHOLD_REGISTER.md) records measurable candidate thresholds, evidence requirements and unresolved placeholders. All values remain proposed or open pending explicit owner review.
 
 ## Planned requirement domains
 - GOV: governance, approval gates and auditability
