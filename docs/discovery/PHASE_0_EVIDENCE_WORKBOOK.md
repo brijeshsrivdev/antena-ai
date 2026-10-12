@@ -127,3 +127,31 @@ Do not compute a winner until quotes describe comparable components and the inte
 - docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md
 - docs/governance/OWNER_DECISION_PACK.md
 - docs/governance/DECISION_LOG.md
+
+## Provider outreach email template (draft; send only after owner approval)
+
+**Subject:** Request for written feasibility and pricing — India AI call-assistant route evaluation
+
+Hello,
+
+We are evaluating a potential India-first AI call-assistant service and are conducting discovery only. No production deployment or customer traffic is planned at this stage.
+
+We need written confirmation of whether your service terms and technical platform support this exact use case: a consenting user may configure a supported call-forwarding or hosted-number route so an AI assistant can answer selected incoming calls, disclose that it is an AI assistant, capture the caller's stated purpose and deliver a summary to the user. We will not use the service for emergency calls, OTP/bank authentication, deceptive impersonation or sensitive production testing.
+
+Could you please confirm in writing:
+
+1. Whether this personal consumer use case is allowed under your current terms, and any country/operator/number/KYC restrictions.
+2. Which Indian operators and forwarding types are supported, including no-answer, busy, unreachable and unconditional forwarding.
+3. Caller ID behaviour, transfer/takeover options, failure fallback and any known carrier limitations.
+4. An itemised written quote covering all inbound/outbound/forwarding/bridge legs, number rental, media streaming, speech/model components, failed-call billing, billing pulse, taxes, concurrency/CPS, overages and minimum commitments.
+5. Data processing locations, subprocessors, audio/transcript retention, deletion timelines, training use, security documentation, incident notification and applicable contractual documents.
+6. Sandbox/test-number availability and the process for a small controlled feasibility test using consenting participants.
+
+Please distinguish contractual commitments from general marketing capabilities, and list any excluded charges or unsupported scenarios. We would appreciate a response valid through a stated date and an example invoice for 20,000, 150,000 and 600,000 connected minutes per month, with assumptions and excluded costs shown separately.
+
+Thank you,
+Product Discovery Team
+
+---
+
+Do not send this email or share personal/business information until the owner has selected the intended route and approved the provider shortlist. A response is evidence of a vendor statement, not proof of capability; contractual review and controlled tests remain necessary.
