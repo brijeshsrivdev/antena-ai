@@ -50,6 +50,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [System architecture options](docs/architecture/SYSTEM_ARCHITECTURE_OPTIONS.md)
 - [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
 - [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)
+- [State and event contracts draft — conceptual states, lifecycle and reconciliation](docs/architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md)
 - [Capacity and scale model](docs/architecture/CAPACITY_AND_SCALE_MODEL.md)
 - [Shared workload scenario baseline](docs/architecture/WORKLOAD_SCENARIO_BASELINE.md)
 
