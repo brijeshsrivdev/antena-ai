@@ -181,3 +181,9 @@ README and linked documents must be verified against current main after this inc
 ## Post-crosswalk verification — 2026-10-12
 - Re-ran the draft identifier check after adding REQ-016. The core requirements and traceability matrix both contain REQ-001–REQ-016 and NFR-001–NFR-010 with no missing IDs in either direction. All 21 SCOPE IDs from the product catalogue appear in the crosswalk; UX/THR/PRIV references resolve to the source inventories.
 - SCOPE-011 and SCOPE-012 have no direct REQ mapping and must be deferred or specified before MVP inclusion; SCOPE-017/018/021 are currently excluded/deferred. The audit records that lexical presence is not semantic completeness or approval.
+
+## Architecture/API/data/security semantic review — 2026-10-12
+- Added `docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md` to record 12 semantic findings across account/session recovery, account-vs-tenant authority, caller disclosure vs account consent, call/provider-leg state, route disable semantics, deletion completion, usage idempotency, callback validation, exports/support access and observability.
+- Clarified the API draft with candidate account-session listing/revocation and recovery operations. Clarified the data model with AccountSession, RecoveryChallenge and a separate CallerDisclosureEvent concept; ConsentRecord now explicitly represents account-holder choices, not proof of third-party caller notice/consent.
+- Updated REQ-016 traceability to identify the proposed API/data records and session/recovery abuse tests. These are draft contract clarifications, not an approved schema, provider selection or legal determination.
+- Phase 0 remains incomplete. No interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation have occurred. Product implementation remains unauthorised.
