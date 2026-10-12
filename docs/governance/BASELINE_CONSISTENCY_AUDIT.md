@@ -138,3 +138,8 @@ No new product decision is made by this audit. Existing proposed directions rema
 ## Consolidated exit criteria follow-up — 2026-10-12
 - Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` to make Phase 0 evidence requirements and owner gates explicit across 20 workstreams.
 - This improves visibility and cross-document review but does not close the substantive gaps identified in this audit. Customer evidence, route feasibility, comparable quotes, legal review, validated economics, final traceability and owner approval remain outstanding.
+
+
+## Residual-risk consolidation — 2026-10-12
+- Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` with 18 open or partially mitigated risks, explicit evidence needs and stop conditions.
+- The register improves risk visibility but does not resolve route, demand, provider cost, legal, privacy, reliability or security evidence gaps. Risk acceptance remains an owner decision.
