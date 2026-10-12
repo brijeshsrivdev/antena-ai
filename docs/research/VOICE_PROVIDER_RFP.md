@@ -29,10 +29,10 @@ Provide itemised prices and currency:
 - Recording, streaming, transcription, speech generation, model orchestration and storage.
 - Concurrent sessions, calls-per-second, overage and rate-limit fees.
 - Taxes, currency conversion and pass-through carrier charges.
-- Volume tiers at 10k, 75k and 240k connected minutes/month.
+- Quote the shared canonical workload scenarios from `../architecture/WORKLOAD_SCENARIO_BASELINE.md`: 20,000 / 150,000 / 600,000 connected minutes per month. Separately, if useful, quote the alternate 10,000 / 75,000 / 240,000-minute sensitivity set in `../business/COST_SCENARIO_MODEL.md`; label the two sets distinctly and do not mix them.
 - Price validity, termination, notice and committed-spend terms.
 
-For each scenario, return an estimated invoice and state excluded items. Do not bundle unpriced components into “included” without limits.
+For each scenario, return an estimated invoice and state excluded items. Do not bundle unpriced components into “included” without limits. The canonical shared workload scenario is the default comparison set across providers; retain the alternate sensitivity set only as a separately labelled comparison.
 
 ## D. Technical and operational questionnaire
 - Real-time media protocol, codec, sample rate, echo cancellation and DTMF support.
