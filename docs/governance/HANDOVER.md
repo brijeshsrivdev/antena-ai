@@ -154,3 +154,12 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 - SCOPE-011/SCOPE-012 remain unassigned to dedicated requirements and must not silently enter MVP.
 - Remaining blockers: customer/problem evidence; route/provider feasibility and restoration; comparable quotes/invoice costs; jurisdiction-specific legal/privacy review; approved retention/deletion/backup policy; operational owners/runbooks; measurable, owner-approved thresholds.
 - Review is documentation-only, not independent external approval or release evidence. Phase 0 remains incomplete and implementation is not authorized. PR #1 remains draft/unmerged; merge requires explicit owner instruction.
+
+
+## Acceptance-criteria testability audit — 2026-10-12
+
+- Current work branch: `docs/acceptance-testability-audit-2026-10-12`, created from merged `main` commit `0c7e6bb86806eec226f263b09b539eb7c269b6e0` after PR #1.
+- Added `docs/governance/ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md`; it reviews every REQ-001–REQ-016 and NFR-001–NFR-010 for testability, measurable thresholds, relevant failure modes and future evidence artifacts.
+- Updated README and `TRACEABILITY_MATRIX.md` to index the audit. No canonical requirement, numeric threshold or approval status was changed.
+- No tests or external experiments were run. Provider/route, customer, legal/privacy, operating-model and owner decisions remain open. Phase 0 remains incomplete; product implementation remains unauthorized.
+- Stop at the review gate after validating links, identifier coverage and Markdown table shape. Open a PR against `main`; do not merge unless the owner explicitly instructs it.
