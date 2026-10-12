@@ -99,3 +99,9 @@ README and linked documents must be verified against current main after this inc
 - The register distinguishes proposed candidate thresholds from open values. No threshold has owner approval; REQ-001 and REQ-006 now reference proposed AT-001/AT-004 values in the canonical requirements; NFR target decisions remain open.
 - Candidate controls include a two-action disable path, an exploratory route-verification target, measurable cancellation, and zero-tolerance checks for duplicate charges, cross-tenant access and unauthorised actions. These require review and evidence before use as release gates.
 - No interviews, carrier/device tests, written provider quotes, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
+
+
+## Owner decision pack increment — 2026-10-12
+- Added `docs/governance/OWNER_DECISION_PACK.md` to consolidate ten discovery decisions, their evidence needs, blocked dependencies and the explicit implementation gate.
+- Linked the decision pack from README. It records the current hypotheses without treating them as approved and lists evidence not yet collected.
+- Next evidence-led work should prioritize customer interviews, controlled call-route feasibility, comparable written provider quotes and jurisdiction-specific legal review. Experiments require owner approval; product code remains unauthorised.
