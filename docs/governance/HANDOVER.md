@@ -47,5 +47,5 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Added `docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md` with proposed starting points, evidence requirements and explicit open items for owner review.
 - Proposed examples include disable access within two dashboard actions, 30 controlled repetitions per supported route configuration with a 95% exploratory success target, and 500 ms cancellation as a candidate to validate against provider/media semantics. These are not approved release criteria.
 - Zero-tolerance candidate gates cover duplicate billing, cross-tenant access and unauthorised tool actions. Numeric latency, deletion, availability/recovery, capacity and summary-quality thresholds remain open pending evidence.
-- Linked the register from README and REQUIREMENTS_INDEX.md. Core requirement TBDs remain unresolved until canonical requirements are reviewed and updated.
+- Linked the register from README and REQUIREMENTS_INDEX.md. REQ-001 and REQ-006 now reference proposed AT-001/AT-004 values in the canonical requirements; NFR target decisions and evidence-dependent values remain open.
 - No interviews, route tests, provider quotes, legal opinion, benchmarks or implementation have been performed. Product implementation remains unauthorised.
