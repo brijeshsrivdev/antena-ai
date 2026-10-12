@@ -1,7 +1,7 @@
 # Expanded Requirements Traceability — Working Draft
 
 **Status:** DRAFT; not approved. No implementation authorised.  
-**Draft ID set:** REQ-001–REQ-015 and NFR-001–NFR-010 are stable identifiers within the current working draft and are defined in `CORE_REQUIREMENTS_DRAFT.md`. They are not yet approved baseline requirements. Priority labels remain candidates. Candidate thresholds and unresolved target decisions are tracked in `ACCEPTANCE_THRESHOLD_REGISTER.md`; none is owner-approved.
+**Draft ID set:** REQ-001–REQ-016 and NFR-001–NFR-010 are stable identifiers within the current working draft and are defined in `CORE_REQUIREMENTS_DRAFT.md`. They are not yet approved baseline requirements. Priority labels remain candidates. Candidate thresholds and unresolved target decisions are tracked in `ACCEPTANCE_THRESHOLD_REGISTER.md`; none is owner-approved.
 
 ## Functional traceability
 
@@ -22,6 +22,8 @@
 | REQ-013 History/transcript/audio | Data, cost and retention decisions pending | UX-014–UX-016, UX-019 | Call/summary/media APIs and artifacts | PRIV-003, PRIV-005, THR-008, THR-010 | Access, expiry, consent and deletion tests. Gate: summary/history scope before MVP; transcript/audio only if separately approved. |
 | REQ-014 Support/urgent disable | Hypothesis; interviews pending | UX-009–UX-010, UX-021 | Control plane; SupportCase/AuditEvent | THR-011, THR-015, THR-017, PRIV-013–014 | Disable/recovery drill, incident simulation and support access audit. Gate: before pilot. |
 | REQ-015 Observability/recovery | SLOs unapproved | UX-010, UX-021 | Operations plane and structured events | THR-003, THR-012, THR-017, PRIV-014 | Fault injection, alert/runbook, retry, spend and deletion-backlog tests. Gate: before pilot. |
+
+| REQ-016 Account authentication/recovery | Gap identified from P0 account scope; provider/mechanism unselected | UX-003 | Identity/session service; recovery policy; AuditEvent | THR-001, THR-014, PRIV-013 | Authentication, enumeration, brute-force, recovery abuse and revocation tests. Gate: before internal MVP. |
 
 ## Non-functional traceability
 
@@ -61,3 +63,33 @@ This mapping is a manual review, not an automated reference check. Validate all 
 - Explicit owner approval of baseline and implementation start.
 
 Requirement priority is provisional. Completing this matrix does not itself authorise implementation.
+
+## Product-scope to requirement crosswalk
+
+The product-scope catalogue uses SCOPE IDs; this table makes their current relationship to the requirement baseline explicit. A blank requirement mapping is intentional only where the feature is deferred/excluded or remains outside the proposed MVP; it is not evidence of complete coverage.
+
+| Scope ID | Capability | Requirement mapping | Current treatment / gap |
+|---|---|---|---|
+| SCOPE-001 | Account, authentication and recovery | REQ-016, REQ-011 | P0 candidate; REQ-016 added to close the previously unmapped authentication/recovery gap. |
+| SCOPE-002 | Assistant profile setup | REQ-003 | P0 candidate. |
+| SCOPE-003 | Personal context form | REQ-003 | P0 candidate. |
+| SCOPE-004 | Routing/forwarding onboarding and verification | REQ-001, REQ-002 | P0 candidate; blocked by route evidence. |
+| SCOPE-005 | Live call handling | REQ-004, REQ-005, REQ-006 | P0 candidate; blocked by route/provider/legal evidence. |
+| SCOPE-006 | Caller disclosure and safe response policy | REQ-004, REQ-010 | P0 candidate; jurisdictional policy review required. |
+| SCOPE-007 | User takeover / transfer or end-call control | REQ-007 | Conditional; remove from MVP promise if route cannot support it. |
+| SCOPE-008 | Post-call summary and intent | REQ-008 | P0 candidate; factuality evaluation required. |
+| SCOPE-009 | Call history and search | REQ-013 | P1 candidate; may be narrowed to summaries/metadata. |
+| SCOPE-010 | Full transcript/audio playback | REQ-013, REQ-010 | Off unless separately approved; retention/legal/provider gates apply. |
+| SCOPE-011 | Follow-up reminders/tasks | — | P1 candidate, not fully specified by current REQs; defer or create a requirement before inclusion. User confirmation required. |
+| SCOPE-012 | Caller/contact allowlist and denylist | REQ-001, REQ-002 (partial) | Conditional/P1; contact-book handling and rule semantics are not fully specified. Create a dedicated requirement before inclusion. |
+| SCOPE-013 | Usage meter and plan limits | REQ-009 | P0 candidate. |
+| SCOPE-014 | Data export, deletion and retention settings | REQ-010, REQ-013 | P0 privacy foundation, subject to data-class/provider lifecycle decisions. |
+| SCOPE-015 | Abuse report and support | REQ-014, REQ-015 | P0 candidate. |
+| SCOPE-016 | Multi-language and code-switching | REQ-006 | P1 candidate; supported languages require end-to-end evidence. |
+| SCOPE-017 | Voice cloning / imitation | — | Excluded from initial scope; no requirement should be added unless scope is separately reopened. |
+| SCOPE-018 | Assistant-initiated outbound calls | — | Deferred; requires separate legal/provider and abuse analysis before a requirement is drafted. |
+| SCOPE-019 | Domain profiles and connectors | REQ-012 | Deferred after core validation. |
+| SCOPE-020 | Hospitality profile using Antena APIs | REQ-012 | Future expansion; Antena capability audit required. |
+| SCOPE-021 | Advocate/legal profile | — | Deferred; separate discovery and professional/legal review required. |
+
+This crosswalk is a draft consistency aid. The mapped requirements do not approve the corresponding features. The explicit gaps for SCOPE-011 and SCOPE-012 must be resolved by either deferring those features or drafting and reviewing dedicated requirements before baseline approval.
