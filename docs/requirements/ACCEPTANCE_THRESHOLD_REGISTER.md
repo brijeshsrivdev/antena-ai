@@ -52,3 +52,4 @@ These placeholders must not be silently treated as zero, unlimited, or implicitl
 - docs/quality/VOICE_AGENT_EVALUATION_PLAN.md
 - docs/research/TELEPHONY_VALIDATION_PROTOCOL.md
 - docs/governance/BASELINE_CONSISTENCY_AUDIT.md
+- docs/governance/DELETION_AND_VERIFICATION_RECONCILIATION.md — planned verification artifacts and deletion-target evidence mapping
