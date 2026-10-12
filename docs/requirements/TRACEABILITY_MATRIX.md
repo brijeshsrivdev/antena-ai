@@ -7,8 +7,8 @@
 
 | ID | Evidence state | UX | Architecture / data | Risks | Verification and exit gate |
 |---|---|---|---|---|---|
-| REQ-001 Activation and routing state | Route unproven; interviews pending; AT-001 proposed 2-action disable target | UX-007–UX-010 | Routing API/state machine; SupportedRouteConfiguration/RoutingConfig | THR-011, PRIV-013 | Test state transitions and disable/recovery. Gate: before live pilot. |
-| REQ-002 Route eligibility | Android desk review; controlled experiment required | UX-007–UX-009 | Route adapter and supported-combination registry | THR-011 | Test device/OS/operator/plan/SIM/forwarding matrix; get written provider support. Gate: before architecture freeze. |
+| REQ-001 Activation and routing state | Route unproven; interviews pending; AT-001 proposed 2-action disable target | UX-006 (only if route/platform requires permissions), UX-007–UX-010, UX-022 (permission/notification status and stale state) | Routing API/state machine; SupportedRouteConfiguration/RoutingConfig | THR-011, PRIV-013 | Test state transitions and disable/recovery. Gate: before live pilot. |
+| REQ-002 Route eligibility | Android desk review; controlled experiment required | UX-006–UX-009 (OS permission/role is route-dependent; do not imply eligibility from a grant alone) | Route adapter and supported-combination registry | THR-011 | Test device/OS/operator/plan/SIM/forwarding matrix; get written provider support. Gate: before architecture freeze. |
 | REQ-003 Profile/context | Hypothesis; customer evidence pending | UX-004–UX-005 | Profile API; AssistantProfile/ProfileVersion | THR-005, THR-018 | Schema, version isolation, injection and deletion tests. Gate: internal MVP. |
 | REQ-004 Disclosure and bounded conversation | Legal/UX policy pending | UX-002, UX-012 | Realtime worker and policy gateway; ConsentRecord/CallEvent | PRIV-001, PRIV-002, THR-013 | Counsel-approved notice and scripted disclosure, urgency and out-of-scope tests. Gate: real-call pilot. |
 | REQ-005 Session lifecycle | Provider unknown | UX-012–UX-013 | Webhook adapter/state machine; CallSession/ProviderLeg/CallEvent | THR-003, THR-004 | Signature, replay, duplicate and out-of-order tests. Gate: internal MVP. |
@@ -21,7 +21,7 @@
 | REQ-012 Domain connectors | Antena capability audit pending; future scope | Future domain profile | Server allowlist; ConnectorOperation/ToolInvocation; Antena API | THR-006, THR-007 | Tenant, scope, confirmation, idempotency and audit tests. Gate: hospitality profile, not core MVP. |
 | REQ-013 History/transcript/audio | Data, cost and retention decisions pending | UX-014–UX-016, UX-019 | Call/summary/media APIs and artifacts | PRIV-003, PRIV-005, THR-008, THR-010 | Access, expiry, consent and deletion tests. Gate: summary/history scope before MVP; transcript/audio only if separately approved. |
 | REQ-014 Support/urgent disable | Hypothesis; interviews pending | UX-009–UX-010, UX-021 | Control plane; SupportCase/AuditEvent | THR-011, THR-015, THR-017, PRIV-013–014 | Disable/recovery drill, incident simulation and support access audit. Gate: before pilot. |
-| REQ-015 Observability/recovery | SLOs unapproved | UX-010, UX-021 | Operations plane and structured events | THR-003, THR-012, THR-017, PRIV-014 | Fault injection, alert/runbook, retry, spend and deletion-backlog tests. Gate: before pilot. |
+| REQ-015 Observability/recovery | SLOs unapproved | UX-010, UX-021–UX-022 | Operations plane and structured events | THR-003, THR-012, THR-017, PRIV-014 | Fault injection, alert/runbook, retry, spend and deletion-backlog tests. Gate: before pilot. |
 | REQ-016 Account authentication/recovery | Gap identified from P0 account scope; provider/mechanism unselected | UX-003 | Account/session and recovery API operations; AuthIdentity, AccountSession, RecoveryChallenge, AuditEvent | THR-001, PRIV-006 | Authentication, enumeration, brute-force, recovery abuse, session expiry/revocation and recovery-challenge replay tests. Gate: before internal MVP. |
 
 ## Non-functional traceability
@@ -96,3 +96,10 @@ The product-scope catalogue uses SCOPE IDs; this table makes their current relat
 | SCOPE-021 | Advocate/legal profile | — | Deferred; separate discovery and professional/legal review required. |
 
 This crosswalk is a draft consistency aid. The mapped requirements do not approve the corresponding features. The explicit gaps for SCOPE-011 and SCOPE-012 must be resolved by either deferring those features or drafting and reviewing dedicated requirements before baseline approval.
+
+
+## UX inventory coverage clarification
+
+- **UX-006 (assistant permissions / system role)** is conditionally traced to REQ-001/REQ-002. It must only be presented when required by the selected platform/route; a permission grant is not proof that call routing is supported or verified.
+- **UX-022 (notifications and permission status)** is traced to REQ-001/REQ-015 for truthful status, stale-state handling and notification failure. Notifications are not authoritative route-state evidence, and private lock-screen content must remain minimised.
+- **UX-011 (caller handling preferences/contact access)** and **UX-017 (follow-up tasks)** remain conditional and unmapped to dedicated functional requirements. Keep them deferred or create/review explicit requirements before MVP inclusion, consistent with the scope crosswalk.
