@@ -127,3 +127,9 @@ Candidate thresholds are proposed, not approved; no benchmark or load test has r
 ## Owner decision record
 
 No new product decision is made by this audit. Existing proposed directions remain proposed. The owner retains approval authority. Implementation remains **not authorised** until the baseline is complete and the owner explicitly approves the next phase.
+
+
+## Follow-up mitigation — experiment governance (2026-10-12)
+- Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` to operationalise scope-specific approval, consent, data minimisation, safety/reversibility, spend limits, stop conditions and evidence review for discovery activities.
+- This partially mitigates the process/documentation risk that prepared protocols could be mistaken for permission to run experiments. It does not resolve the underlying P0/P1 evidence gaps: customer discovery, route feasibility, comparable written quotes, legal review, measured performance/economics and owner decisions remain outstanding.
+- No experiment is authorised by the checklist. No product implementation is authorised.
