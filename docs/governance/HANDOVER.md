@@ -139,7 +139,7 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 
 ## Deletion and verification reconciliation increment — 2026-10-12
 
-- Added `DELETION_AND_VERIFICATION_RECONCILIATION.md`: data-class-to-target inventory, candidate request/target outcomes, role-based operational accountability, and requirement/threshold-to-future-verification mapping.
+- Added `DELETION_AND_VERIFICATION_RECONCILIATION.md`: data-class-to-target inventory, candidate request/target outcomes, role-based operational accountability, and a full REQ-001–REQ-016 / NFR-001–NFR-010 / AT-001–AT-012 future-verification crosswalk.
 - Linked the reconciliation from README, the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map.
 - Explicitly left retention durations, deletion SLA, backup expiry, legal exceptions, named operational owners and candidate target enums unapproved. Unknown destinations block a full-deletion claim.
 - Verification artifacts are plans only. No tests, deletion exercise, restore drill, route tests, interviews, provider outreach, legal opinions or implementation were performed by this pass. AT-008 remains OPEN and Phase 0 remains incomplete.
