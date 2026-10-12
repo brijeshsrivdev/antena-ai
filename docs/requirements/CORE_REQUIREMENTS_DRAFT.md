@@ -4,7 +4,7 @@
 
 ## Requirement lifecycle note
 
-The IDs below are provisional until reconciled with the requirements index. Acceptance criteria with [TBD] are intentionally incomplete and must be assigned measurable values before approval.
+The IDs below are provisional until reconciled with the requirements index. Unresolved targets are tracked in ACCEPTANCE_THRESHOLD_REGISTER.md; candidate values are not approved and must be reviewed before the baseline can be approved.
 
 ## REQ-001 — Explicit user activation and routing state
 **Priority:** P0 candidate. **Status:** DRAFT.
@@ -16,7 +16,7 @@ Acceptance criteria:
 - Given setup is incomplete or cannot be verified, the UI does not claim that the assistant is active.
 - Given the user activates routing, the system records the activation action, configuration version, time and resulting verification status.
 - Given the user disables routing, the UI reports verified-off or clearly states that deactivation could not be verified and provides the approved recovery instructions.
-- The user can reach the disable/recovery flow from the primary dashboard within [TBD] actions.
+- Proposed usability target: the user can reach disable/recovery instructions within 2 actions from the primary dashboard (AT-001; owner approval pending).
 
 ## REQ-002 — Supported-route eligibility
 **Priority:** P0 candidate. **Status:** DRAFT.
@@ -74,7 +74,7 @@ The voice pipeline shall support the approved interaction mode, cancellation, in
 Acceptance criteria:
 - End-to-end p50/p95/p99 latency thresholds are approved before release.
 - The system handles caller interruption according to the selected provider's verified capabilities.
-- Cancelling a response stops downstream generation/playback within [TBD].
+- Proposed cancellation target: stop downstream generation/playback within 500 ms of accepted cancellation where measurable and supported (AT-004; provider validation and owner approval pending).
 - Provider timeout or media loss results in a defined fallback/termination behaviour, not indefinite silence.
 - Supported languages and device/carrier combinations are listed from test evidence.
 
@@ -205,4 +205,4 @@ Acceptance criteria:
 
 ## Traceability and status
 
-These draft requirements need trace links to customer evidence, UX screens, architecture components, privacy risks, provider capability and test cases. Do not mark APPROVED or implement until the owner reviews the complete baseline and explicitly authorises implementation.
+These draft requirements need trace links to customer evidence, UX screens, architecture components, privacy risks, provider capability and test cases. Numeric targets and evidence gaps are tracked in ACCEPTANCE_THRESHOLD_REGISTER.md. Do not mark APPROVED or implement until the owner reviews the complete baseline and explicitly authorises implementation.
