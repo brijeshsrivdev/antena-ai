@@ -217,3 +217,13 @@ README and linked documents must be verified against current main after this inc
 - Reconciled the data inventory, verification strategy, acceptance threshold register, requirement-contract coverage audit and Phase 0 exit map to the new artifact.
 - This is documentation-only. Retention periods, deletion SLA, backup expiry, legal exception policy, named owners and candidate target-state enums remain unapproved. Planned tests are not run evidence; AT-008 remains OPEN.
 - Phase 0 remains incomplete; product implementation, external experiments and provider outreach remain unauthorized without separate explicit approval. PR #1 remains draft and unmerged.
+
+
+## Cross-document consistency review increment — 2026-10-12
+
+- Added `docs/governance/FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md` to record the semantic review across requirements, UX, MVP scope, API/data/state, security/privacy, thresholds and Phase 0 gates.
+- Rechecked the REQ-001–REQ-016 and NFR-001–NFR-010 presence in both core requirements and traceability; all are present. Confirmed the SCOPE-001–SCOPE-021 crosswalk exists.
+- Corrected the traceability matrix to map conditional UX-006 permissions to REQ-001/REQ-002 and UX-022 notification/permission status to REQ-001/REQ-015. A permission grant or notification is not proof of a verified route.
+- SCOPE-011 tasks/reminders and SCOPE-012 contact/caller rules remain intentionally without direct requirement coverage and must stay deferred or receive reviewed requirements before MVP inclusion.
+- The review confirms the remaining blockers are evidence/owner decisions, not merely missing documents: customer validation, route feasibility/restoration, comparable provider quotes, qualified jurisdiction-specific legal review, data lifecycle policy, operational ownership and unapproved thresholds.
+- Phase 0 remains incomplete; no interviews, route tests, provider outreach, quotes, legal opinions, benchmarks, load tests or implementation were performed. PR #1 remains draft/unmerged; no merge is authorized.
