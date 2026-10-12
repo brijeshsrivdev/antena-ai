@@ -97,3 +97,9 @@ Before selecting STT, LLM or TTS providers, review retention, training use, data
 ## 6. Decision status
 
 No legal compliance conclusion is approved. Before live-call experiments, the owner must approve a test protocol with participant consent, disclosure, data minimisation, retention/deletion and counsel review appropriate to the actual architecture.
+
+## Official-source freshness note — 2026-10-12
+
+MeitY's current official Act and Policies index lists the Digital Personal Data Protection Rules, 2025 dated 14 November 2025 and related implementation documents: https://www.meity.gov.in/documents/act-and-policies and https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digital-Personal-Data-Protection-Rules-2025 . Some PIB summaries use 13 November 2025; for legal work, use the official Gazette instrument, corrigenda and commencement provisions rather than resolving the discrepancy from summaries alone. The Rules provide for phased commencement, so do not assume every provision applies at the same time. TRAI's TCCCPR Third Amendment Regulations, 2026 are listed on its amendments page dated 18 September 2026: https://www.trai.gov.in/release-publication/regulations/amendments-page/7617 . Applicability to the actual call route remains a question for qualified counsel.
+
+This is source maintenance, not a legal opinion or compliance conclusion. Launch geography, route, data flows, provider terms and applicable dates must be confirmed before any real-call pilot or public release.
