@@ -108,3 +108,8 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Indexed the draft from README and linked it from the semantic review. These are provider-neutral candidates only; they must be mapped against actual route/provider contracts before implementation and do not prove route feasibility.
 - Revalidated modified Markdown table column consistency after the account/session and caller-disclosure changes: no row/column mismatches were found. REQ-001–REQ-016 remain present in traceability, and the semantic review is indexed from README.
 - Phase 0 remains incomplete; no interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Product implementation remains unauthorised.
+
+## P0 contract coverage follow-up — 2026-10-12
+A requirement-by-requirement review finds no P0 candidate release-ready on documentation alone. REQ-001, REQ-003, REQ-005, REQ-008, REQ-009, REQ-011, REQ-014, REQ-015 and REQ-016 have partial contract coverage. REQ-002, REQ-004, REQ-006 and REQ-010 remain materially blocked by route/provider evidence or legal review. REQ-007 remains conditional on a verified route. Key failure scenarios include duplicate/out-of-order callbacks, route disable without verified restoration, partial provider deletion, usage/invoice mismatch, cross-account export access, recovery replay and privacy-sensitive logging.
+
+The coverage review is an audit conclusion, not an approval. The full draft contract references remain in CORE_REQUIREMENTS_DRAFT.md, TRACEABILITY_MATRIX.md, API_CONTRACT_DRAFT.md, DATA_MODEL_DRAFT.md, THREAT_MODEL.md, DATA_INVENTORY_AND_LIFECYCLE.md and STATE_AND_EVENT_CONTRACTS_DRAFT.md. Phase 0 remains incomplete; implementation remains unauthorised.
