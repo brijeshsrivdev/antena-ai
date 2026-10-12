@@ -173,3 +173,8 @@ README and linked documents must be verified against current main after this inc
 ## Roadmap gate sequencing update — 2026-10-12
 - Corrected a roadmap ambiguity: Phase 0 now contains governed discovery and non-code evidence collection under activity-specific approval; baseline approval is distinct from implementation authorization; Phase 1 implementation requires both the approved baseline and a separate explicit owner authorization; pilot approval is separate again.
 - Experiments that require product code remain blocked until implementation authorization. This correction does not approve interviews, route tests, provider outreach, spending, implementation or deployment.
+## Product-scope traceability increment — 2026-10-12
+- Added draft REQ-016 for account authentication and recovery after identifying that the P0 scope catalogue included these capabilities without a dedicated requirement. Updated the requirements index and traceability matrix.
+- Added a SCOPE-001–SCOPE-021 crosswalk to `TRACEABILITY_MATRIX.md` and provisional scope/requirement mappings to `MVP_SCOPE_AND_FEATURE_GATES.md`.
+- SCOPE-011 follow-up reminders/tasks and SCOPE-012 caller/contact allowlist/denylist remain unmapped to dedicated requirements and should be deferred or specified before MVP inclusion. All priorities and mappings remain drafts.
+- The working set is now REQ-001–REQ-016 and NFR-001–NFR-010. The earlier identifier check covered 15 REQ IDs before REQ-016 was added; a fresh cross-reference check is required after this update. No implementation is authorized.
