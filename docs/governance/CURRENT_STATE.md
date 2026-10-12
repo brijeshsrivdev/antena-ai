@@ -124,3 +124,8 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md`, consolidating 20 gates across customer validation, route feasibility, provider costs, legal/privacy, scope, UX, requirements, architecture, security, operations, brand and owner decisions.
 - The map explicitly distinguishes prepared documentation from uncollected evidence and from owner approvals. It records Phase 0 as incomplete and implementation as unauthorised.
 - README and roadmap now index/reference the exit map. No external experiment or implementation is claimed complete.
+
+
+## Residual-risk register increment — 2026-10-12
+- Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` with 18 risks, current evidence state, mitigation references and stop conditions.
+- Linked it from README, Phase 0 exit map, owner decision pack and consistency audit. Risks remain open unless evidence and explicit owner disposition support closure; implementation remains unauthorised.
