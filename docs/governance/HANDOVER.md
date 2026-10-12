@@ -121,3 +121,11 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 - Added prohibited copy patterns and future verification scenarios for stale/conflicting events, delayed confirmations, partial deletion, late usage corrections, recovery replay and stale sessions. These scenarios are planning requirements only; no tests were executed.
 - The UX drafts are generally directionally aligned, but final screen copy and flow states must use authoritative state and must not treat request acceptance as completion. Conditional features remain gated; SCOPE-011 and SCOPE-012 still need a dedicated requirement or explicit MVP deferral.
 - Phase 0 remains incomplete. No interviews, provider outreach, live route tests, spending, legal opinions, benchmarks, load tests or implementation were performed by this increment. Do not merge the draft PR or begin implementation without the separately required authorization.
+
+
+## Requirement-to-contract coverage audit — 2026-10-12
+- Added `docs/governance/REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md`, indexed it from README and linked it from `TRACEABILITY_MATRIX.md`. It maps REQ-001–REQ-016 to proposed API operations, data/state contracts, threat/privacy controls, failure scenarios, future verification artifacts and unresolved blockers.
+- Updated traceability references for routing configuration, provider-leg lifecycle and privacy/deletion records.
+- Aligned the conceptual data model with the state/event contract by adding candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` entities and clarifying immutable usage adjustments. These remain draft concepts, not approved schemas.
+- The audit finds no P0 candidate release-ready on documentation alone. Route/provider evidence, legal/privacy review, invoice reconciliation, operational runbooks and auth-policy decisions remain open. The verification scenarios are planned only; no tests were run.
+- Phase 0 remains incomplete. No interviews, provider outreach, live route tests, spending, legal opinions, benchmarks, load tests or implementation were performed or authorized by this documentation pass. PR #1 remains draft and unmerged.
