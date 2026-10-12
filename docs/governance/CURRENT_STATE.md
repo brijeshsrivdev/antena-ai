@@ -134,3 +134,10 @@ README and linked documents must be verified against current main after this inc
 ## Repository navigation verification — 2026-10-12
 - Parsed the current README Markdown links and compared all 49 local `.md` targets against the recursive Git tree on `main`; all 49 targets exist. No broken local README document links were found in this check.
 - This is a repository-link check only; it does not validate external URLs, source freshness, factual claims or the completeness of the research baseline.
+
+
+## Source and requirement consistency pass — 2026-10-12
+- Rechecked official Android CallScreeningService/CallRedirectionService references, Google Play call/SMS policy, MeitY's DPDP Rules index and TRAI's TCCCPR amendments index. Updated RESEARCH_REGISTER.md, ANDROID_CALL_ROUTE_DECISION.md and PRIVACY_AND_REGULATORY_RISK_REGISTER.md with source dates, limitations and recheck requirements.
+- Clarified that REQ-001–REQ-015 and NFR-001–NFR-010 are stable IDs within the current draft, while their content, priorities and traceability remain unapproved. The core draft and requirements index no longer imply the IDs themselves are awaiting reconciliation.
+- README's 49 local Markdown links were checked against the recursive repository tree; all targets exist. This did not validate external URLs or prove factual completeness.
+- No interviews, live route tests, provider quotes, legal opinions, benchmarks, load tests or implementation have occurred. Phase 0 remains incomplete and implementation unauthorised.
