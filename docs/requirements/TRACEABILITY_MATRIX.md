@@ -22,7 +22,6 @@
 | REQ-013 History/transcript/audio | Data, cost and retention decisions pending | UX-014–UX-016, UX-019 | Call/summary/media APIs and artifacts | PRIV-003, PRIV-005, THR-008, THR-010 | Access, expiry, consent and deletion tests. Gate: summary/history scope before MVP; transcript/audio only if separately approved. |
 | REQ-014 Support/urgent disable | Hypothesis; interviews pending | UX-009–UX-010, UX-021 | Control plane; SupportCase/AuditEvent | THR-011, THR-015, THR-017, PRIV-013–014 | Disable/recovery drill, incident simulation and support access audit. Gate: before pilot. |
 | REQ-015 Observability/recovery | SLOs unapproved | UX-010, UX-021 | Operations plane and structured events | THR-003, THR-012, THR-017, PRIV-014 | Fault injection, alert/runbook, retry, spend and deletion-backlog tests. Gate: before pilot. |
-
 | REQ-016 Account authentication/recovery | Gap identified from P0 account scope; provider/mechanism unselected | UX-003 | Account/session and recovery API operations; AuthIdentity, AccountSession, RecoveryChallenge, AuditEvent | THR-001, PRIV-006 | Authentication, enumeration, brute-force, recovery abuse, session expiry/revocation and recovery-challenge replay tests. Gate: before internal MVP. |
 
 ## Non-functional traceability
