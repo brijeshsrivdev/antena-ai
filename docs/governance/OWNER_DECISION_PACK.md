@@ -56,3 +56,7 @@ For each ODP item, record: **Decision / Status / Rationale / Evidence reviewed /
 
 ## Experiment governance update — 2026-10-12
 Before any interviews, controlled call-route tests, provider outreach involving project details, or participant-based UX validation, use `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` and obtain explicit owner approval for that exact scope. The checklist does not itself approve fieldwork. It does not change decision statuses or authorize product implementation.
+
+
+## Phase 0 exit review
+Use `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` as the consolidated gate checklist when reviewing this decision pack. It distinguishes draft documents from observed evidence and makes the baseline approval and implementation authorisation separate decisions. Current status remains incomplete; no decision is implied.
