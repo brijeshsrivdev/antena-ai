@@ -143,3 +143,8 @@ No new product decision is made by this audit. Existing proposed directions rema
 ## Residual-risk consolidation — 2026-10-12
 - Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` with 18 open or partially mitigated risks, explicit evidence needs and stop conditions.
 - The register improves risk visibility but does not resolve route, demand, provider cost, legal, privacy, reliability or security evidence gaps. Risk acceptance remains an owner decision.
+
+
+## README link validation — 2026-10-12
+- Checked all 49 local Markdown document links in README against the repository's recursive tree on `main`; all targets exist and none were missing.
+- Scope limitation: external links, link destinations' factual validity, research freshness, and non-README cross-document links were not validated by this check. The substantive P0/P1 evidence gaps remain open.
