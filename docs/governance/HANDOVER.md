@@ -41,3 +41,11 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Linked the workload baseline from `CAPACITY_AND_SCALE_MODEL.md`, `PRICING_AND_UNIT_ECONOMICS.md` and `COST_SCENARIO_MODEL.md`.
 - Normalized `CORE_REQUIREMENTS_DRAFT.md` status to DRAFT because formal review has not started.
 - Added the baseline consistency audit. Neither the shared workload assumptions nor any requirement is owner-approved; implementation remains blocked.
+
+
+## Latest increment — acceptance threshold register (2026-10-12)
+- Added `docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md` with proposed starting points, evidence requirements and explicit open items for owner review.
+- Proposed examples include disable access within two dashboard actions, 30 controlled repetitions per supported route configuration with a 95% exploratory success target, and 500 ms cancellation as a candidate to validate against provider/media semantics. These are not approved release criteria.
+- Zero-tolerance candidate gates cover duplicate billing, cross-tenant access and unauthorised tool actions. Numeric latency, deletion, availability/recovery, capacity and summary-quality thresholds remain open pending evidence.
+- Linked the register from README and REQUIREMENTS_INDEX.md. Core requirement TBDs remain unresolved until canonical requirements are reviewed and updated.
+- No interviews, route tests, provider quotes, legal opinion, benchmarks or implementation have been performed. Product implementation remains unauthorised.
