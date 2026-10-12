@@ -144,3 +144,13 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 - Explicitly left retention durations, deletion SLA, backup expiry, legal exceptions, named operational owners and candidate target enums unapproved. Unknown destinations block a full-deletion claim.
 - Verification artifacts are plans only. No tests, deletion exercise, restore drill, route tests, interviews, provider outreach, legal opinions or implementation were performed by this pass. AT-008 remains OPEN and Phase 0 remains incomplete.
 - PR #1 remains draft/unmerged. Do not merge without explicit owner instruction; product implementation and external experiments remain unauthorized.
+
+
+## Cross-document consistency review increment — 2026-10-12
+
+- Added `FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md` and indexed it from README.
+- Verified presence of REQ-001–REQ-016 and NFR-001–NFR-010 in both core requirements and traceability, plus SCOPE-001–SCOPE-021 in the scope crosswalk.
+- Added explicit conditional traceability for UX-006 (platform permissions) and UX-022 (notifications/status). The matrix warns that permission grants/notifications do not prove route eligibility or verified routing.
+- SCOPE-011/SCOPE-012 remain unassigned to dedicated requirements and must not silently enter MVP.
+- Remaining blockers: customer/problem evidence; route/provider feasibility and restoration; comparable quotes/invoice costs; jurisdiction-specific legal/privacy review; approved retention/deletion/backup policy; operational owners/runbooks; measurable, owner-approved thresholds.
+- Review is documentation-only, not independent external approval or release evidence. Phase 0 remains incomplete and implementation is not authorized. PR #1 remains draft/unmerged; merge requires explicit owner instruction.
