@@ -190,3 +190,10 @@ README and linked documents must be verified against current main after this inc
 
 - Added `docs/architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md` with conceptual call/session and provider-leg events, route activation/disable states, distributed deletion states, usage reconciliation, idempotency and callback-validation rules. It explicitly avoids promising provider-specific states or route capabilities.
 - The semantic contract review and state/event draft are documentation artifacts only. Route-specific state mapping, auth mechanism, data retention/deletion SLA, billing units and operational owners remain open.
+
+
+## UX/state semantic reconciliation — 2026-10-12
+- Added `UX_STATE_CONTRACT_RECONCILIATION.md` and indexed it from README. Compared UX inventory/wireflows against API and lifecycle contracts.
+- Captured lifecycle-backed wording and states for route activation/disable/restoration, live call/takeover, deletion, transcript/audio availability, usage reconciliation, account recovery/session revocation, caller disclosure, conditional follow-up tasks/contact rules and support incidents.
+- Added anti-pattern copy examples and future verification scenarios. These are planning artifacts, not evidence that testing occurred.
+- UX/state desk review is complete for this pass. Phase 0 and baseline approval remain incomplete; provider/route and legal evidence plus owner decisions remain open. No implementation is authorised.
