@@ -75,3 +75,12 @@ Before implementation, create:
 Conduct moderated walkthroughs with target-segment participants after problem interviews. Ask users to explain the routing state, find the disable control, describe what gets recorded, interpret a low-confidence summary and understand minute limits. Track completion, misinterpretation, time-to-complete, confidence and points of hesitation.
 
 No user testing is claimed to have occurred. All screens and flows are provisional until validated with customers and the selected telephony architecture.
+## Scope boundary against the proposed MVP
+
+This inventory covers candidate screens and states across the product, not a commitment to include every screen in the first release. Align with MVP_SCOPE_AND_FEATURE_GATES.md and PRODUCT_SCOPE_AND_FEATURE_CATALOG.md:
+- UX-011 (caller handling preferences/contact access) is conditional/P1. The initial experience must work without contact-book permission unless research demonstrates a need and the permission/policy review approves it.
+- UX-016 (transcript/audio playback) is off by default and excluded unless a separate product, privacy, legal and cost decision approves it. Its presence here only describes the state model if enabled later.
+- UX-017 follow-up tasks must remain user-confirmed; do not imply autonomous external actions.
+- UX-012/UX-013 live call/takeover states are route-dependent and must not be shown as available until the exact route supports them.
+
+Before baseline approval, mark each screen as MVP, conditional, deferred or excluded in the versioned MVP list. No screen in this inventory independently authorises a feature.
