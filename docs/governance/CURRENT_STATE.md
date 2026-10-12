@@ -129,3 +129,8 @@ README and linked documents must be verified against current main after this inc
 ## Residual-risk register increment — 2026-10-12
 - Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` with 18 risks, current evidence state, mitigation references and stop conditions.
 - Linked it from README, Phase 0 exit map, owner decision pack and consistency audit. Risks remain open unless evidence and explicit owner disposition support closure; implementation remains unauthorised.
+
+
+## Repository navigation verification — 2026-10-12
+- Parsed the current README Markdown links and compared all 49 local `.md` targets against the recursive Git tree on `main`; all 49 targets exist. No broken local README document links were found in this check.
+- This is a repository-link check only; it does not validate external URLs, source freshness, factual claims or the completeness of the research baseline.
