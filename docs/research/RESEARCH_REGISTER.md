@@ -82,3 +82,11 @@ This is a question register, not a completed fresh market study. Mark an item co
 - The ledger records 17 claims, source classes, limitations, status and decision impact, including Android route constraints, Play policy, DPDP/TRAI source limits, vendor pricing scope and workload/cost assumptions.
 - This is a traceability aid, not proof that every source was reopened in this pass or independently tested. Product-specific route support, provider quotes, customer demand and legal applicability remain unverified.
 - No interviews, provider outreach, live calls, legal opinions, benchmarks, load tests or implementation have occurred. No new activity is authorised.
+
+## Targeted official-source recheck — 2026-10-12
+
+- Reopened Google Play's current SMS/Call Log policy. It explicitly lists call recording among invalid uses of sensitive permissions and restricts speech-to-text/text-to-voice when the app is not the default handler or eligible for an exception; it also notes a 27 January 2027 change for READ_CALL_LOG account verification. Product-specific permission mapping and Play eligibility remain unverified.
+- Reopened the DPDP Act commencement notification in the Gazette. Its masthead is dated 13 November 2025 and the notification groups provisions into commencement on publication, one year later and eighteen months later. MeitY's index separately lists the DPDP Rules as published 14 November 2025. Counsel must map the Act and Rules separately to a proposed launch date.
+- Reopened Exotel's official business-phone pricing page. Listed packages exclude Voice Streaming/Agent Stream, which is separately priced. This reinforces that the public package figures are not an all-in route quote.
+- Updated ANDROID_CALL_ROUTE_DECISION.md, PRIVACY_AND_REGULATORY_RISK_REGISTER.md and EXTERNAL_CLAIM_LEDGER.md. Sources: https://support.google.com/googleplay/android-developer/answer/10208820 ; https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf ; https://next.exotel.com/pricing/business-phone-system/ .
+- No legal opinion, provider outreach, Play review, interview, live call, benchmark, load test or implementation occurred. These are source checks only.
