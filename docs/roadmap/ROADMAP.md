@@ -2,41 +2,58 @@
 
 Status: planning baseline only. Dates and implementation milestones are not committed.
 
-## Phase 0 — Governed discovery (current)
-Deliver charter, source-backed competitor/market research, customer validation plan and interview pack, telephony feasibility and test protocol, product scope, UX screen inventory and wireflows, architecture/API/data model drafts, dependency/licence evaluation, threat model/data inventory, privacy/legal issue register, pricing/economics and cost scenarios, capacity model, numbered requirements, traceability matrix and verification strategy.
+## Phase 0 — Governed discovery and evidence collection (current)
 
-**Exit gate:** owner reviews a coherent baseline and explicitly authorises implementation. No coding before this gate.
+Build and reconcile the complete discovery baseline: charter, source-backed competitor/market research, customer validation, telephony route feasibility, provider pricing/terms, product scope, UX, architecture/API/data models, dependency/licence review, threat model/data inventory, privacy/legal issue register, pricing/economics, capacity model, requirements, traceability, acceptance thresholds and verification strategy.
+
+Phase 0 includes both desk research and **non-code evidence collection** where required. Customer interviews, controlled calls on test SIMs, provider outreach, participant UX validation and any activity that collects personal data or incurs cost require their own completed approval record under `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md`. A general instruction to continue or the existence of a protocol does not authorize the activity. Keep evidence private/sanitized as specified; do not put identifiable participant or call data in this public repository.
+
+Do not write product code, prototypes or implementation spikes during Phase 0. If a proposed technical experiment requires product code, record it as a separate implementation activity and leave it blocked until explicit implementation authorization.
 
 ### Remaining discovery gaps before Phase 0 exit
-- Conduct customer interviews; interview pack exists but no interviews have occurred. Record negative and contradictory findings.
-- Obtain owner-run carrier/SIM/device evidence using the telephony protocol; no live tests have occurred.
-- Obtain at least two comparable written provider quotes for the exact intended route, including every call leg, model usage, data terms, taxes, failure billing and limits.
+
+- Conduct customer interviews; the interview pack exists but no interviews have occurred. Record negative and contradictory evidence.
+- Obtain owner-approved, controlled carrier/SIM/device route evidence using the telephony protocol; no live tests have occurred.
+- Obtain at least two comparable written provider quotes for the exact intended route, including every call leg, model/media usage, data terms, taxes, failure billing and limits.
 - Complete source validation and hands-on competitor feature/pricing review where possible.
-- Define measurable routing success, takeover, latency, language quality, privacy, cost, retention and capacity thresholds before running tests.
-- Validate textual wireflows with 5–8 users; produce visual UX specs only after key route and segment assumptions are supported.
+- Reconcile proposed acceptance thresholds before tests; do not change them after seeing results without a documented owner decision.
+- Validate textual wireflows with 5–8 users under an approved protocol; produce visual UX specs only after key route and segment assumptions are supported.
 - Complete provider, exact-version dependency and transitive licence/security review.
 - Obtain jurisdiction-specific legal review for telecommunications, caller notice/consent, recording, personal-data processing, provider contracts and distribution policies.
-- Reconcile requirements, traceability, API contract, data model, threat model, privacy inventory, pricing, capacity and UX; verify all README links.
+- Reconcile requirements, traceability, API contract, data model, threat model, privacy inventory, pricing, capacity and UX; verify repository links.
 - Resolve brand/positioning and initial segment based on evidence, not preference alone.
-- Owner signs off scope, risk acceptance, release gates and explicit implementation start.
+- Present the residual-risk register, evidence map, decision pack and consistent baseline for explicit owner review.
 
-## Phase 1 — Feasibility experiments (only after approval)
-Run narrowly scoped, non-production experiments for call routing, streaming audio, interruption handling, latency, supported languages, cost per minute and provider failure modes. Define data handling and consent for test participants. No real customer rollout without a separate release gate.
+**Phase 0 exit gate:** the owner explicitly approves a coherent discovery baseline, including the selected problem/segment and geography (or documented alternatives), evidence-backed route decision, scope, requirements, architecture direction, data/legal posture, economics, acceptance gates and residual risks/conditions. If an essential evidence gate is not met, record a justified stop, pivot or further-validation decision instead of implying it passed.
 
-## Phase 2 — Core MVP
-Implement only the owner-approved minimum personal call-assistant flow, identity/configuration, call session lifecycle, history controls, security, metering, observability and support fundamentals. Use TDD and requirement traceability. Scope depends on validated telephony path.
+**Important separation:** Phase 0 baseline approval is not implementation authorization. Product code remains blocked until the owner gives a separate, explicit implementation authorization after reviewing the approved baseline. Phase 0 completion does not itself lift that block.
 
-## Phase 3 — Controlled pilot
-Small invite-only cohort; verify reliability, user value, support burden, cost, abuse controls, consent, deletion and billing. Require explicit pilot approval and rollback criteria.
+## Phase 1 — Approved core MVP implementation (only after separate authorization)
 
-## Phase 4 — Hospitality profile
-Expose selected hospitality actions through trusted Antena APIs with tenant-scoped authorization, audit and idempotency. The Antena backend remains authoritative.
+Implement only the owner-approved minimum personal call-assistant flow, identity/configuration, call session lifecycle, necessary history/privacy controls, security, metering, observability and support fundamentals. Use TDD and requirement traceability. Start only after:
+- Phase 0 baseline approval is recorded;
+- the owner explicitly authorizes implementation as a separate decision;
+- route, provider, legal/privacy and spend preconditions for the first implementation slice are clear;
+- requirements and acceptance criteria for that slice are approved;
+- unresolved risks and excluded features are documented.
 
-## Phase 5 — Scale and expansion
-Increase capacity against measured workloads; validate 10,000-user scenarios and operational readiness. Consider further professional profiles only after core product and connector governance are validated.
+If a route or provider decision remains blocking, do not code around an assumption. Return to governed discovery or record an explicit scope pivot before proceeding.
+
+## Phase 2 — Controlled pilot (separate approval required)
+
+Use a small invite-only cohort only after the implemented MVP passes its acceptance gates. Verify reliability, user value, support burden, cost, abuse controls, notices, deletion and billing. Require explicit pilot approval, defined participant consent, monitoring, spend caps, incident response and rollback criteria. No production traffic is authorized by MVP implementation approval alone.
+
+## Phase 3 — Hospitality profile (future, separate scope)
+
+Expose selected hospitality actions through trusted Antena APIs with tenant-scoped authorization, confirmation policy, audit and idempotency. The Antena backend remains authoritative. Do not make hospitality integration a dependency of the initial personal-assistant MVP.
+
+## Phase 4 — Scale and expansion
+
+Increase capacity against measured workloads; validate the 10,000-user scenario against actual MAU, connected/AI-active minutes, peak arrivals and provider limits. Consider further professional profiles only after core product and connector governance are validated.
 
 ## Release gates
-Each phase requires evidence, security/privacy review, operational readiness, acceptance criteria and explicit owner approval. Legal/advocate profile is deferred; it is not a dependency for the initial release.
+
+Every phase requires evidence, security/privacy review, operational readiness, acceptance criteria and explicit owner approval appropriate to that phase. Discovery-activity approval, baseline approval, implementation authorization and pilot approval are separate decisions. The legal/advocate profile is deferred and is not a dependency for the initial release.
 
 
 ## Additional discovery gates
