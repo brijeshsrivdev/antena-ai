@@ -94,3 +94,11 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Checked Markdown table column consistency in MVP_SCOPE_AND_FEATURE_GATES.md, TRACEABILITY_MATRIX.md and CORE_REQUIREMENTS_DRAFT.md. A stale three-column separator in the MVP scope tables was found and corrected; rerun found no table-row column mismatches in those files.
 - Arithmetic for canonical and alternate workload/cost scenarios was recomputed and matches the documented formulas. Provider quote scenarios and evaluation thresholds have been reconciled to their canonical registers.
 - Latest verified main before this handover update: `f4a53bc351ab2f94ba52a8dfe5187983d8a6eb14`. Phase 0 remains incomplete; no interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
+
+## Latest continuation — architecture/API/data/security semantic review (2026-10-12)
+- Added `docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md` with 12 P0/P1 findings and a recommended desk-only resolution order. The main unresolved themes are account-vs-tenant authority, call/provider-leg state, verified route disable semantics, distributed deletion completion, and canonical usage-event idempotency.
+- Clarified `docs/architecture/API_CONTRACT_DRAFT.md` with account-session listing/revocation and account-recovery operations, and the distinction between account-holder choices and caller-facing disclosure evidence.
+- Clarified `docs/architecture/DATA_MODEL_DRAFT.md` with AccountSession, RecoveryChallenge and CallerDisclosureEvent concepts. These are candidate conceptual entities, not approved schema decisions. Updated REQ-016 in the traceability matrix to point to the new contract concepts.
+- Indexed the semantic review in README and recorded the increment in CURRENT_STATE.
+- Remaining contract decisions must stay open where they depend on the route, provider, jurisdiction or owner choices. No provider-specific call state machine, retention period, authentication mechanism, endpoint schema or threshold is approved by this review.
+- Phase 0 remains incomplete; no interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation have occurred. Do not treat documentation work as permission for those activities. Implementation remains unauthorised.
