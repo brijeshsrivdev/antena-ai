@@ -61,3 +61,9 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Added `docs/discovery/PHASE_0_EVIDENCE_WORKBOOK.md` with private participant-record guidance, route-test capture rows, provider quote comparison and evidence-to-decision logging.
 - This prepares fieldwork; it does not claim that interviews, telephony tests or provider outreach have occurred. Owner approval and safety checks are required before experiments.
 - README now indexes the workbook. Implementation remains unauthorised.
+
+
+## Latest increment — Phase 0 experiment approval checklist (2026-10-12)
+- Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` to require an explicit owner decision for each experiment scope before fieldwork, route testing, provider outreach or participant-based UX validation.
+- Approval records cover hypothesis, scope, consent, data, safety/reversibility, spend ceiling, success and stop criteria, evidence hygiene and post-test review. The checklist itself does not grant approval.
+- Indexed from README and referenced by ROADMAP.md and CURRENT_STATE.md. No fieldwork or implementation is authorised by this documentation increment.
