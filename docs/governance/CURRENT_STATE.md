@@ -187,3 +187,6 @@ README and linked documents must be verified against current main after this inc
 - Clarified the API draft with candidate account-session listing/revocation and recovery operations. Clarified the data model with AccountSession, RecoveryChallenge and a separate CallerDisclosureEvent concept; ConsentRecord now explicitly represents account-holder choices, not proof of third-party caller notice/consent.
 - Updated REQ-016 traceability to identify the proposed API/data records and session/recovery abuse tests. These are draft contract clarifications, not an approved schema, provider selection or legal determination.
 - Phase 0 remains incomplete. No interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation have occurred. Product implementation remains unauthorised.
+
+- Added `docs/architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md` with conceptual call/session and provider-leg events, route activation/disable states, distributed deletion states, usage reconciliation, idempotency and callback-validation rules. It explicitly avoids promising provider-specific states or route capabilities.
+- The semantic contract review and state/event draft are documentation artifacts only. Route-specific state mapping, auth mechanism, data retention/deletion SLA, billing units and operational owners remain open.
