@@ -4,9 +4,9 @@ Status: initial scaffold. Detailed product requirements are not baselined. Imple
 
 ## Current draft
 
-- [CORE_REQUIREMENTS_DRAFT.md](CORE_REQUIREMENTS_DRAFT.md) contains provisional REQ-001 through REQ-015 and initial non-functional requirement areas. These are drafts with unapproved priorities and some intentionally unresolved thresholds; reconcile IDs and traceability before approval.
+- [CORE_REQUIREMENTS_DRAFT.md](CORE_REQUIREMENTS_DRAFT.md) contains draft REQ-001 through REQ-015 and NFR-001 through NFR-010. IDs are stable within this working draft and used by the traceability matrix; requirement content, priorities, thresholds and full cross-document traceability remain unapproved and must be reviewed before baseline approval.
 
-- [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) maps provisional requirements to UX, architecture, risks and verification; known gaps remain.
+- [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) maps the draft requirements to UX, architecture, risks and verification; mappings are manual and known evidence/coverage gaps remain.
 
 - [Expanded traceability](TRACEABILITY_MATRIX.md) now includes proposed evidence states and exit gates for REQ-001–REQ-015 and NFR-001–NFR-010.
 - [MVP scope and feature gates](../discovery/MVP_SCOPE_AND_FEATURE_GATES.md) separates core candidates, conditional capabilities and deferred scope. Nothing in it is approved.
