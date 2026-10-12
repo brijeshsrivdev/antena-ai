@@ -51,6 +51,7 @@ This is a question register, not a completed fresh market study. Mark an item co
 - Added a route decision document, provider RFP, capability governance and GTM experiment plan. No provider requests, interviews, campaigns, device tests or implementation have occurred.
 
 | RES-023 | Which Indian voice-provider public prices apply to the exact consumer forwarding + real-time AI route? | P0 | IN_PROGRESS | PROVIDER_PRICING_EVIDENCE.md; public pricing remains non-comparable and written quotes are outstanding |
+| RES-024 | Which consequential external claims are supported by official docs, vendor assertions, store listings or internal assumptions? | P0 | IN_PROGRESS | EXTERNAL_CLAIM_LEDGER.md; desk claims are classified, but freshness, legal applicability and route-specific confirmation remain open |
 
 ## Provider pricing evidence update — 2026-10-11
 - Added `docs/research/PROVIDER_PRICING_EVIDENCE.md` to distinguish public price anchors from route-specific all-in costs.
@@ -74,3 +75,10 @@ This is a question register, not a completed fresh market study. Mark an item co
 - **TRAI TCCCPR:** TRAI's amendments page lists the TCCCPR Third Amendment Regulations, 2026 with release date 18 September 2026. A separate TRAI consultation page records the earlier draft consultation. The final instrument must be read and counsel must assess applicability; the title/date alone does not establish a restriction on this product. Sources: https://www.trai.gov.in/release-publication/regulations/amendments-page/7617 and https://trai.gov.in/release-publication/consultation .
 
 **Classification:** Official-source desk verification only. No legal opinion, provider confirmation, Play review, device/carrier test or product permission is established. Recheck source versions and commencement dates immediately before any real-call test, implementation or distribution.
+
+
+## External claim ledger update — 2026-10-12
+- Added `docs/research/EXTERNAL_CLAIM_LEDGER.md` to separate what official platform/regulator pages, vendor claims, app-store listings and internal models actually support from what they do not establish.
+- The ledger records 17 claims, source classes, limitations, status and decision impact, including Android route constraints, Play policy, DPDP/TRAI source limits, vendor pricing scope and workload/cost assumptions.
+- This is a traceability aid, not proof that every source was reopened in this pass or independently tested. Product-specific route support, provider quotes, customer demand and legal applicability remain unverified.
+- No interviews, provider outreach, live calls, legal opinions, benchmarks, load tests or implementation have occurred. No new activity is authorised.
