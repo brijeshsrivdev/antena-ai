@@ -73,3 +73,8 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` to consolidate 20 gates, required evidence, current status and explicit exit conditions.
 - Use it as the single review index for what can be completed by desk research, what requires separately approved fieldwork, what is blocked by external evidence, and what requires owner approval.
 - Phase 0 remains incomplete; the map does not approve fieldwork, baseline or implementation.
+
+
+## Latest increment — Phase 0 residual risk register (2026-10-12)
+- Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` covering route feasibility, user control, demand, economics, legal/privacy, AI safety, reliability, capacity, deletion, brand, dependency and operational risks.
+- Use it with the exit map and owner decision pack. It is not a quantitative risk assessment, proof of implemented controls or owner acceptance of residual risk.
