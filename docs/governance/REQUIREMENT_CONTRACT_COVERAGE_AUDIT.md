@@ -12,7 +12,7 @@ The current drafts have useful conceptual coverage, but **no P0 candidate is rel
 - **Conditional** — only valid if the chosen route supports the capability and tests prove it.
 - **Future** — outside the initial core MVP candidate; do not implement from the presence of a draft.
 
-API operations in this table are resource-level proposals from `API_CONTRACT_DRAFT.md`, not approved endpoint names or schemas. State names are conceptual and must be mapped to the selected route/provider before implementation.
+API operations in this table are resource-level proposals from `API_CONTRACT_DRAFT.md`, not approved endpoint names or schemas. State names are conceptual and must be mapped to the selected route/provider before implementation. The API draft now explicitly includes route-eligibility listing, owner correction of supported summary fields, and deletion-status retrieval; these are still proposals and require schema/security review.
 
 ## Requirement coverage matrix
 
