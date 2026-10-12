@@ -30,23 +30,23 @@ Only after explicit pilot approval, route a small opt-in cohort through the prov
 
 ## 3. Metrics and proposed pilot gates
 
-These are starting hypotheses, not approved launch SLOs.
+These are evaluation dimensions, not approved launch SLOs. `ACCEPTANCE_THRESHOLD_REGISTER.md` is the single source of truth for candidate numeric thresholds. Do not use conflicting values in this plan; any new proposed numeric threshold must be added to that register, reviewed by the owner and approved before confirmatory testing. No threshold is approved merely because it appears in an evaluation table.
 
 | Metric | Measurement | Candidate pilot gate |
 |---|---|---|
-| Route completion | Calls reaching intended agent / eligible controlled attempts | At least 95% per explicitly supported route configuration, with denominator and confidence interval reported |
-| Silent call loss | Calls lost without understandable fallback | Zero observed in test suite; any occurrence is a release blocker pending root cause |
-| First response latency | Call connect to first intelligible assistant speech; p50/p95 | Target p95 under 2.5 seconds after media is ready, subject to route feasibility and user testing |
-| Turn latency | End of caller utterance to first intelligible response; p50/p95 | Candidate p95 under 1.5 seconds for short turns; measure separately by provider and language |
-| Intent capture | Correct primary intent and key facts against labelled truth | At least 90% on in-scope synthetic scenarios; report per class and language |
-| Summary factuality | Unsupported factual claims per summary | Zero critical invented commitments; at least 98% key-fact precision in labelled set |
-| Escalation | Sensitive/out-of-scope cases correctly stopped or escalated | 100% on defined critical scenarios; any miss blocks pilot |
+| Route completion | Calls reaching intended agent / eligible controlled attempts | Candidate: at least 95% per explicitly supported route configuration, with denominator and confidence interval reported; see AT-002. Proposed only, not owner-approved. |
+| Silent call loss | Calls lost without understandable fallback | Zero observed in the test suite; any occurrence is a release blocker pending root cause |
+| First response latency | Call connect to first intelligible assistant speech; p50/p95/p99 | Record baseline by route, provider, language and load. Do not set a numeric release threshold until a representative baseline exists; then propose and approve it in ACCEPTANCE_THRESHOLD_REGISTER.md before confirmatory testing (AT-003). |
+| Turn latency | End of caller utterance to first intelligible response; p50/p95/p99 | Measure by provider, language, noise and load; define the release target only after the baseline and owner review. |
+| Intent capture | Correct primary intent and key facts against labelled truth | Define rubric and labelled set first; report per class/language and approve a threshold in ACCEPTANCE_THRESHOLD_REGISTER.md before model comparison. No numeric accuracy claim is currently approved. |
+| Summary factuality | Unsupported factual claims per summary | Track critical invented commitments separately; define the rubric and threshold before model comparison. No numeric accuracy claim is currently approved. |
+| Escalation | Sensitive/out-of-scope cases correctly stopped or escalated | Zero misses in defined critical scenarios; any miss blocks pilot |
 | Tool authorization | Unauthorized actions executed | Zero; any event is a security release blocker |
 | Tenant isolation | Cross-tenant data/action access | Zero; any event is a security release blocker |
-| Takeover | Successful takeover / eligible controlled takeover attempts | At least 95% if takeover is advertised; otherwise remove claim from MVP |
-| Usage accounting | Provider CDR vs platform ledger variance | All discrepancies explainable; target under 1% on settled test usage |
-| Cost | All-in cost per attempt and connected minute | Must fit approved price and stress-case margin model; threshold set after quotes |
-| Deletion | Data deletion requests completed within approved SLA | 100% verified in test systems, including subprocessors where supported |
+| Takeover | Successful takeover / eligible controlled takeover attempts | Measure only if the route supports takeover. Set a numeric gate in the threshold register before confirmatory tests; otherwise remove the takeover promise from MVP. |
+| Usage accounting | Provider CDR vs platform ledger variance | Zero duplicate ledger charges for replayed/duplicate events (AT-005); all other discrepancies must be explained and the acceptable reconciliation tolerance must be approved before release. |
+| Cost | All-in cost per attempt and connected minute | Must fit the approved price and stress-case margin model; threshold set after comparable written quotes. |
+| Deletion | Data deletion requests completed within approved SLA | Verify deletion across all in-scope test stores and provider systems where supported; define data-class SLA before a pilot (AT-008). |
 
 Report sample size and confidence intervals. A small sample cannot prove a universal 95% success rate. Run at least 30 repetitions per claimed carrier/forwarding configuration for exploratory evidence; more may be required for statistically defensible reliability claims.
 
