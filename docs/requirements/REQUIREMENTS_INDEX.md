@@ -4,11 +4,11 @@ Status: initial scaffold. Detailed product requirements are not baselined. Imple
 
 ## Current draft
 
-- [CORE_REQUIREMENTS_DRAFT.md](CORE_REQUIREMENTS_DRAFT.md) contains draft REQ-001 through REQ-015 and NFR-001 through NFR-010. IDs are stable within this working draft and used by the traceability matrix; requirement content, priorities, thresholds and full cross-document traceability remain unapproved and must be reviewed before baseline approval.
+- [CORE_REQUIREMENTS_DRAFT.md](CORE_REQUIREMENTS_DRAFT.md) contains draft REQ-001 through REQ-016 and NFR-001 through NFR-010. IDs are stable within this working draft and used by the traceability matrix; requirement content, priorities, thresholds and full cross-document traceability remain unapproved and must be reviewed before baseline approval.
 
 - [TRACEABILITY_MATRIX.md](TRACEABILITY_MATRIX.md) maps the draft requirements to UX, architecture, risks and verification; mappings are manual and known evidence/coverage gaps remain.
 
-- [Expanded traceability](TRACEABILITY_MATRIX.md) now includes proposed evidence states and exit gates for REQ-001–REQ-015 and NFR-001–NFR-010.
+- [Expanded traceability](TRACEABILITY_MATRIX.md) now includes proposed evidence states and exit gates for REQ-001–REQ-016 and NFR-001–NFR-010.
 - [MVP scope and feature gates](../discovery/MVP_SCOPE_AND_FEATURE_GATES.md) separates core candidates, conditional capabilities and deferred scope. Nothing in it is approved.
 - [Acceptance threshold register](ACCEPTANCE_THRESHOLD_REGISTER.md) records measurable candidate thresholds, evidence requirements and unresolved placeholders. All values remain proposed or open pending explicit owner review.
 
@@ -40,3 +40,8 @@ Use verifiable scenarios. Do not use vague terms such as fast, secure, user-frie
 
 ## Traceability
 Every feature traces to a problem or labelled hypothesis → UX journey → requirement → architecture/API/data → verification → milestone/operational owner.
+
+## Scope-to-requirement traceability update — 2026-10-12
+- Added REQ-016 for account authentication and recovery after the P0 scope catalogue was found to include those capabilities without an explicit requirement.
+- Added a scope-to-requirement crosswalk to TRACEABILITY_MATRIX.md. SCOPE-011 follow-up tasks and SCOPE-012 caller/contact allowlists remain unmapped; they must be deferred or receive dedicated requirements before inclusion in an approved MVP.
+- All IDs and mappings remain draft and unapproved. This update does not authorize implementation.
