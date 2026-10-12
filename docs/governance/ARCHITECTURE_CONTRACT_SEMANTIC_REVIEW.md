@@ -45,7 +45,11 @@ These are conceptual corrections only. They do not choose an identity provider, 
 | Tool governance | Capability allowlist, typed schemas, server-side authorization, confirmation and audit are described | Concrete operation inventory and tenant/scope matrix; future Antena capability audit |
 | Telemetry | Content-free logs by default and observability requirement are present | Field allowlist, redaction tests, retention, privileged access and alert ownership |
 
-## Follow-up artifact\n\nAdded [STATE_AND_EVENT_CONTRACTS_DRAFT.md](../architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md) to make call/session, routing, deletion and usage-reconciliation states explicit. Its states are conceptual and provider-neutral; route-specific transitions, retention SLAs and billable units remain unapproved.\n\n## Recommended order for remaining desk-only work
+## Follow-up artifact
+
+Added [STATE_AND_EVENT_CONTRACTS_DRAFT.md](../architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md) to make call/session, routing, deletion and usage-reconciliation states explicit. Its states are conceptual and provider-neutral; route-specific transitions, retention SLAs and billable units remain unapproved.
+
+## Recommended order for remaining desk-only work
 
 1. Resolve the semantic contract items that can be clarified without route/provider decisions: account-versus-tenant vocabulary, call/session/provider-leg glossary, event idempotency key scope, and the distinction between disclosure and consent.
 2. Map each P0 requirement to an explicit API operation, data record/state, threat/privacy control, failure scenario, and verification artifact; leave unavailable route-specific mappings visibly blocked.
@@ -53,6 +57,17 @@ These are conceptual corrections only. They do not choose an identity provider, 
 4. Reconcile API/data-model contracts with UX claims so the UI never promises verified route state, deletion completion, transcript availability or successful takeover without authoritative state.
 5. Re-run identifier/reference, table-shape and local-link checks after edits.
 6. Present unresolved owner decisions and external-evidence blockers; do not convert this review into architecture approval.
+
+
+## P0 requirement coverage conclusion
+
+| Coverage group | Requirements | Current conclusion |
+|---|---|---|
+| Partial contract coverage | REQ-001, REQ-003, REQ-005, REQ-008, REQ-009, REQ-011, REQ-014, REQ-015, REQ-016 | Draft API/data/state references exist, but at least one key design, evidence or verification item remains open. |
+| External-evidence or review blocked | REQ-002, REQ-004, REQ-006, REQ-010 | Route/provider capability, legal review, performance evidence or deletion/retention policy is still needed. |
+| Conditional | REQ-007 | Do not promise takeover unless the selected route supports it and tests verify the outcome. |
+
+Cross-cutting verification must include duplicate and out-of-order provider events, verified-vs-requested route state, partial downstream deletion, usage/invoice mismatches, cross-account export access, recovery replay, and privacy-sensitive log leakage. The traceability matrix records current risk and verification references; this coverage conclusion does not make any requirement release-ready.
 
 ## Explicit non-findings
 
