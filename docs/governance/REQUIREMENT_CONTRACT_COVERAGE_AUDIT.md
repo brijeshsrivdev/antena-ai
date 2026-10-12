@@ -69,3 +69,10 @@ The source verification/test plan and acceptance threshold register remain canon
 ## Approval status
 
 This audit closes a documentation mapping pass only. It does not close external evidence gaps, establish route feasibility, provide legal advice, approve the product baseline, authorize fieldwork or authorize implementation. Phase 0 remains incomplete. Baseline approval and implementation authorization remain separate decisions.
+
+
+## Verification artifact coverage follow-up — 2026-10-12
+
+The companion [Deletion and Verification Reconciliation](DELETION_AND_VERIFICATION_RECONCILIATION.md) maps REQ-010/REQ-013/NFR-005/AT-008 and other high-risk requirements to planned verification artifacts, pass evidence and current evidence state. It also provides a data-class-to-deletion-target checklist and a proposed operational responsibility model.
+
+This closes a documentation cross-reference gap only. It does not establish that all acceptance criteria are fully testable, that any artifact exists as an executed report, or that any threshold is approved. Tests remain NOT RUN; AT-008 remains OPEN; route/provider, privacy/legal and backup decisions remain unresolved. Review the artifact mapping against the final approved scope before baseline approval.
