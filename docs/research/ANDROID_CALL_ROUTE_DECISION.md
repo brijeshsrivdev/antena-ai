@@ -79,3 +79,15 @@ The official Android API pages were rechecked for this discovery pass. CallScree
 Google Play's current SMS/call-log policy continues to restrict sensitive permissions to eligible default-handler functionality and subject to review. The policy page notes a change effective 27 January 2027; check the then-current policy before implementation/distribution: https://support.google.com/googleplay/android-developer/answer/10208820 .
 
 TRAI's amendments index lists the TCCCPR Third Amendment Regulations, 2026 dated 18 September 2026. Its application to this proposed call-routing model is not inferred here and needs qualified review: https://www.trai.gov.in/release-publication/regulations/amendments-page/7617 . This source check is not legal advice and does not replace route/provider tests.
+
+## Google Play policy detail recheck — 2026-10-12
+
+The current policy page contains more specific constraints than a generic statement that call-log/SMS access is restricted:
+- It says apps must use sensitive Call Log/SMS permissions only for permitted uses and critical core functionality, with default-handler registration and policy review where applicable.
+- It lists call recording among invalid use cases for these sensitive permissions.
+- It lists text-to-voice and speech/voice-to-text among invalid uses when the app is not the default handler or an eligible exception.
+- It states that phone-call account verification will no longer be an eligible READ_CALL_LOG use case from 27 January 2027.
+
+These restrictions are relevant to permission design and distribution but do not prove that every conditional-forwarding design needs those permissions. Before choosing an architecture, map each proposed feature to its exact permissions, default role, policy category and store declaration. Do not assume the product will qualify for a role or exception.
+
+Source checked: https://support.google.com/googleplay/android-developer/answer/10208820 . No Play Console review, permission declaration or route test has been completed.
