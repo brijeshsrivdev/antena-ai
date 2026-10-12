@@ -90,3 +90,12 @@ The desk review in [UX_STATE_CONTRACT_RECONCILIATION.md](UX_STATE_CONTRACT_RECON
 The review found the existing UX principles directionally aligned, but the final wireflows must consume authoritative states and must not display completion merely because a request was accepted. SCOPE-011 and SCOPE-012 remain unmapped to dedicated requirements and must be deferred or specified before MVP inclusion. Verification scenarios are proposed only; no tests or external validation were performed.
 
 This closes the planned **desk-only UX/state semantic reconciliation pass**, not Phase 0 or baseline approval. Route/provider mappings, legal/privacy review, owner decisions and field evidence remain outstanding. Implementation remains unauthorized.
+
+
+## Requirement-to-contract coverage audit — 2026-10-12
+
+Added [REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md](REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md) to map REQ-001–REQ-016 to proposed API operations, data/state concepts, security/privacy controls, failure scenarios and future verification artifacts. The audit explicitly labels partial, externally blocked, conditional and future coverage rather than treating a named draft entity as implementation-ready coverage.
+
+The data model was also aligned with the state/event contract by adding candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` records, and by clarifying immutable usage adjustments. These additions address documentation representation gaps only. They do not establish supported routes, choose schemas, validate provider semantics or set a deletion policy.
+
+The key blockers remain route/provider evidence (REQ-002/005/006/007), legal/privacy policy (REQ-004/010), financial reconciliation evidence (REQ-009), and operational/authentication decisions (REQ-014/015/016). No P0 candidate is release-ready on documentation alone.
