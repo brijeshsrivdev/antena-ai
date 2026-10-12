@@ -67,3 +67,9 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` to require an explicit owner decision for each experiment scope before fieldwork, route testing, provider outreach or participant-based UX validation.
 - Approval records cover hypothesis, scope, consent, data, safety/reversibility, spend ceiling, success and stop criteria, evidence hygiene and post-test review. The checklist itself does not grant approval.
 - Indexed from README and referenced by ROADMAP.md and CURRENT_STATE.md. No fieldwork or implementation is authorised by this documentation increment.
+
+
+## Latest increment — Phase 0 exit criteria and evidence map (2026-10-12)
+- Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` to consolidate 20 gates, required evidence, current status and explicit exit conditions.
+- Use it as the single review index for what can be completed by desk research, what requires separately approved fieldwork, what is blocked by external evidence, and what requires owner approval.
+- Phase 0 remains incomplete; the map does not approve fieldwork, baseline or implementation.
