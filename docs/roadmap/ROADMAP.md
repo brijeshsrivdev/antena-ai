@@ -66,3 +66,9 @@ See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 
 - Expanded the traceability matrix for REQ-001–REQ-015 and NFR-001–NFR-010.
 - Added a proposed MVP scope gate matrix that treats route feasibility as a prerequisite and separates core candidates from conditional/deferred features.
 - The scope and traceability remain drafts. Customer/route/provider/legal evidence and owner approval remain outstanding.
+
+
+## Phase 0 evidence workbook increment — 2026-10-12
+- Added `docs/discovery/PHASE_0_EVIDENCE_WORKBOOK.md` with private participant-record guidance, route-test capture rows, provider quote comparison and evidence-to-decision logging.
+- This prepares fieldwork; it does not claim that interviews, telephony tests or provider outreach have occurred. Owner approval and safety checks are required before experiments.
+- README now indexes the workbook. Implementation remains unauthorised.
