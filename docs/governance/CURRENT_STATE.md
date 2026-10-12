@@ -96,6 +96,6 @@ README and linked documents must be verified against current main after this inc
 
 ## Acceptance-threshold register increment — 2026-10-12
 - Added `docs/requirements/ACCEPTANCE_THRESHOLD_REGISTER.md` and linked it from README and REQUIREMENTS_INDEX.md.
-- The register distinguishes proposed candidate thresholds from open values. No threshold has owner approval; the core requirements' existing TBDs remain unresolved.
+- The register distinguishes proposed candidate thresholds from open values. No threshold has owner approval; REQ-001 and REQ-006 now reference proposed AT-001/AT-004 values in the canonical requirements; NFR target decisions remain open.
 - Candidate controls include a two-action disable path, an exploratory route-verification target, measurable cancellation, and zero-tolerance checks for duplicate charges, cross-tenant access and unauthorised actions. These require review and evidence before use as release gates.
 - No interviews, carrier/device tests, written provider quotes, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
