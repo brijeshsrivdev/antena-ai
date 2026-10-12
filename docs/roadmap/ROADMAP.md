@@ -78,3 +78,8 @@ See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 
 - Added `docs/discovery/PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md` to require scope-specific owner approval before interviews, telephony tests, provider outreach that shares project details, or UX validation involving participants.
 - The checklist specifies data minimisation, consent, reversible routing, spend caps, stop conditions, result review and sanitised evidence handling. It authorises no activity by itself.
 - Fieldwork, provider contact, live tests and implementation remain unapproved until the relevant gates are explicitly cleared.
+
+
+## Phase 0 exit-gate increment — 2026-10-12
+- Added `docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md` as a consolidated map of 20 discovery gates, required evidence, current status and exit conditions.
+- It separates document preparation from evidence collection, baseline approval and explicit implementation authorisation. Phase 0 remains incomplete; the map is a review aid, not approval.
