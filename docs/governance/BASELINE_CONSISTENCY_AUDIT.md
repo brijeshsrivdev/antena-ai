@@ -148,3 +148,10 @@ No new product decision is made by this audit. Existing proposed directions rema
 ## README link validation — 2026-10-12
 - Checked all 49 local Markdown document links in README against the repository's recursive tree on `main`; all targets exist and none were missing.
 - Scope limitation: external links, link destinations' factual validity, research freshness, and non-README cross-document links were not validated by this check. The substantive P0/P1 evidence gaps remain open.
+
+
+## Source freshness and requirement-ID follow-up — 2026-10-12
+- Rechecked the official Android call API pages, Google Play sensitive call/SMS permission policy, MeitY DPDP Rules index and TRAI TCCCPR amendments index; recorded scope limits and date/commencement caveats in the research documents.
+- Resolved a wording inconsistency: requirement IDs are stable within the working draft and referenced by the traceability matrix, but the requirements themselves remain DRAFT and unapproved. This does not close the substantive coverage/evidence gaps.
+- Verified all 49 local Markdown links in README resolve to tracked files. External link validity, source freshness beyond the checked pages and all non-README links remain unverified.
+- These checks improve source/status hygiene but do not resolve customer, route, provider quote, legal advice, cost validation or owner-decision blockers.
