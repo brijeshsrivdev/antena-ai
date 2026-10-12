@@ -197,3 +197,10 @@ README and linked documents must be verified against current main after this inc
 - Captured lifecycle-backed wording and states for route activation/disable/restoration, live call/takeover, deletion, transcript/audio availability, usage reconciliation, account recovery/session revocation, caller disclosure, conditional follow-up tasks/contact rules and support incidents.
 - Added anti-pattern copy examples and future verification scenarios. These are planning artifacts, not evidence that testing occurred.
 - UX/state desk review is complete for this pass. Phase 0 and baseline approval remain incomplete; provider/route and legal evidence plus owner decisions remain open. No implementation is authorised.
+
+
+## Requirement-to-contract coverage audit — 2026-10-12
+- Added `REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md` and linked it from README and the traceability matrix. It maps all current REQ-001–REQ-016 draft requirements to API operations, data/state contracts, threat/privacy controls, failure scenarios and future verification evidence.
+- Added candidate `SupportedRouteConfiguration`, `ProviderLeg` and `DeletionTarget` records to the conceptual data model so route eligibility, multi-leg call identity and distributed deletion have explicit representations. Usage corrections remain immutable linked events.
+- This is a documentation coverage improvement, not release evidence. No P0 candidate is release-ready on documentation alone; route/provider, legal/privacy, pricing/invoice, operations and authentication decisions remain open.
+- Phase 0 remains incomplete, PR #1 remains draft/unmerged, and implementation is not authorized.
