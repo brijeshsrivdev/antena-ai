@@ -227,3 +227,11 @@ README and linked documents must be verified against current main after this inc
 - SCOPE-011 tasks/reminders and SCOPE-012 contact/caller rules remain intentionally without direct requirement coverage and must stay deferred or receive reviewed requirements before MVP inclusion.
 - The review confirms the remaining blockers are evidence/owner decisions, not merely missing documents: customer validation, route feasibility/restoration, comparable provider quotes, qualified jurisdiction-specific legal review, data lifecycle policy, operational ownership and unapproved thresholds.
 - Phase 0 remains incomplete; no interviews, route tests, provider outreach, quotes, legal opinions, benchmarks, load tests or implementation were performed. PR #1 remains draft/unmerged; no merge is authorized.
+
+
+## Acceptance-criteria testability audit — 2026-10-12
+
+- Added `ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md` to assess REQ-001–REQ-016 and NFR-001–NFR-010 for observable assertions, negative/partial/timeout/duplicate/out-of-order/revoked/stale-state coverage, missing measurement contracts and future evidence artifacts.
+- The audit distinguishes criteria that are behaviorally testable in part from those blocked by provider/route/legal evidence, unapproved thresholds or scope decisions. It does not alter the canonical threshold register or approve requirements.
+- Indexed the audit in README and linked it from the traceability matrix. This pass is documentation-only; no tests, interviews, route experiments, provider outreach, benchmarks, load tests, legal review or implementation were performed.
+- Phase 0 remains incomplete; product implementation and external activity remain unauthorized without separate explicit approval. PR #1 was merged to `main` as `0c7e6bb86806eec226f263b09b539eb7c269b6e0`. This new audit is on branch `docs/acceptance-testability-audit-2026-10-12`; it is not merged.
