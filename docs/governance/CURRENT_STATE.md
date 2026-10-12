@@ -157,3 +157,9 @@ README and linked documents must be verified against current main after this inc
 - Recorded the result and its limits in BASELINE_CONSISTENCY_AUDIT.md. This confirms identifier presence only, not requirement quality, semantic coverage, acceptance, legal sufficiency or implementation.
 - Added EXTERNAL_CLAIM_LEDGER.md and indexed it in README and RESEARCH_REGISTER.md. Existing README links had previously been checked as 49 valid local paths; the newly added ledger file and README link were separately confirmed, but a fresh full recursive-tree scan has not been run.
 - Phase 0 remains incomplete. No interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Implementation remains unauthorised.
+
+## Policy-source and conditional-UX reconciliation — 2026-10-12
+- Rechecked current Google Play SMS/Call Log policy, Exotel's official business-phone pricing and the DPDP Act commencement Gazette. The external claim ledger now records the specific limitations and avoids equating vendor package prices with an all-in route quote or a Rules index date with the Gazette's commencement-notification date.
+- Updated Android route and privacy research with explicit Play policy constraints and commencement caveats. No Play review or legal opinion has been obtained.
+- Updated UX screen inventory and wireflow to distinguish conditional contact preferences, optional transcript/audio, route-dependent takeover and user-confirmed tasks from a promised MVP. The core experience should not depend on broad contact-book access by default.
+- These are desk-research and document-consistency changes only. No customer interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation occurred. Phase 0 remains incomplete; implementation remains unauthorised.
