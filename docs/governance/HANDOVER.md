@@ -102,3 +102,9 @@ Update CURRENT_STATE, DECISION_LOG, research and requirement indexes; list compl
 - Indexed the semantic review in README and recorded the increment in CURRENT_STATE.
 - Remaining contract decisions must stay open where they depend on the route, provider, jurisdiction or owner choices. No provider-specific call state machine, retention period, authentication mechanism, endpoint schema or threshold is approved by this review.
 - Phase 0 remains incomplete; no interviews, provider outreach, route tests, legal opinions, benchmarks, load tests or implementation have occurred. Do not treat documentation work as permission for those activities. Implementation remains unauthorised.
+
+## State/event contract follow-up — 2026-10-12
+- Added `docs/architecture/STATE_AND_EVENT_CONTRACTS_DRAFT.md` to spell out conceptual lifecycle states for call sessions/provider legs, routing, deletion and usage reconciliation. It covers duplicate/out-of-order events, verified-vs-requested status, immutable usage adjustments and safe uncertainty.
+- Indexed the draft from README and linked it from the semantic review. These are provider-neutral candidates only; they must be mapped against actual route/provider contracts before implementation and do not prove route feasibility.
+- Revalidated modified Markdown table column consistency after the account/session and caller-disclosure changes: no row/column mismatches were found. REQ-001–REQ-016 remain present in traceability, and the semantic review is indexed from README.
+- Phase 0 remains incomplete; no interviews, provider outreach, live route tests, legal opinions, benchmarks, load tests or implementation have occurred. Product implementation remains unauthorised.
