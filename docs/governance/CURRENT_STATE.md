@@ -1,20 +1,22 @@
 # Current State
 
-Snapshot: 2026-10-12. Repository: brijeshsrivdev/antena-ai. Default branch: main.
+Snapshot: 2026-10-13. Repository: brijeshsrivdev/antena-ai. Default branch: main.
 
 - Product implementation: not started and not authorised.
 - Discovery: in progress; charter approval pending.
 - Commercial brand: not selected or cleared.
 - Owner's process requirement: complete research, product/marketing strategy, pricing, architecture, UX, dependency evaluation, requirements and roadmap before any coding. Owner explicitly approves implementation start.
 
-## Known direction
-- First investigate and replicate the core behaviour of a MyEqual.ai-style personal AI call assistant; later extend to domain-specific profiles.
-- Android-first is the current client direction, subject to telephony and platform feasibility.
-- Hospitality is the first candidate domain and should use existing Antena backend APIs, not direct database access.
-- Individual users configure personal context through structured forms.
-- A dedicated AI API service is expected to handle orchestration, sessions, configuration and provider abstraction.
-- Legal/advocate support is a future candidate, not a first-release dependency.
-- Target scale: 10,000 users; model registered, active and concurrent users separately.
+## Current primary product direction — 2026-10-13
+- Primary MVP hypothesis: configurable, multi-tenant AI business phone assistant.
+- Business/Organization is the preferred UI term; Tenant remains the backend isolation boundary; Caller/End Customer refers to the person calling the business.
+- Businesses configure versioned inbound workflows from constrained blocks; callers interact with the assistant; authorized business users review call records, outcomes, confirmed tickets/actions and pending work.
+- Product complaints and ticket creation are illustrative workflow examples, not yet validated vertical/integration decisions.
+- Personal AI call-assistant mode is a later candidate, not the primary MVP.
+- Business-number route, missed-call event coverage, caller identification, workflow schema, ticket connector, dashboard metrics, provider economics and jurisdiction-specific policy remain open.
+- Use trusted, tenant-scoped connectors only; no direct database access or client-supplied arbitrary URLs, SQL, scripts or permissions.
+- Hospitality may be a later domain integration through existing Antena APIs, after capability audit; legal/advocate support is not a first-release dependency.
+- Target scale: 10,000 registered users remains a planning target, not a concurrency specification; model business accounts, active tenants, calls, connected minutes and peak concurrency separately.
 
 ## Open questions
 Target segment, launch geography, core feature parity, call-routing model, provider stack, cost/minute, pricing, consent/retention, SLOs, acquisition strategy, open-source dependency choices, brand and domain availability.
@@ -235,3 +237,10 @@ README and linked documents must be verified against current main after this inc
 - The audit distinguishes criteria that are behaviorally testable in part from those blocked by provider/route/legal evidence, unapproved thresholds or scope decisions. It does not alter the canonical threshold register or approve requirements.
 - Indexed the audit in README and linked it from the traceability matrix. This pass is documentation-only; no tests, interviews, route experiments, provider outreach, benchmarks, load tests, legal review or implementation were performed.
 - Phase 0 remains incomplete; product implementation and external activity remain unauthorized without separate explicit approval. PR #1 was merged to `main` as `0c7e6bb86806eec226f263b09b539eb7c269b6e0`. This new audit is on branch `docs/acceptance-testability-audit-2026-10-12`; it is not merged.
+
+
+## Business phone assistant direction increment — 2026-10-13
+- Recorded the owner's direction to make the configurable AI business phone assistant the primary MVP hypothesis and move personal call-assistant mode to a later candidate.
+- Added `docs/discovery/BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md` defining actor vocabulary, business-admin and caller journeys, constrained workflow building blocks, product-complaint example, missed-call outcome semantics, dashboard information architecture, trust invariants and discovery gates.
+- This is a direction update, not demand validation or approval of detailed MVP requirements. Call routing, provider/event coverage, integrations, legal/privacy policy, unit economics and owner approval of the full baseline remain open.
+- Documentation-only change. No implementation, customer interviews, route tests, provider outreach, legal opinions, benchmarks or load tests were performed. Product implementation remains unauthorized.
