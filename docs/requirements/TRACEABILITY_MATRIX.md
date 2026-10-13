@@ -112,3 +112,8 @@ This crosswalk is a draft consistency aid. The mapped requirements do not approv
 ## Business phone assistant requirement/acceptance gap audit — 2026-10-13
 
 See [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md) for the business-oriented crosswalk across REQ-001–REQ-016 and NFR-001–NFR-010, semantic gaps, recommended requirement revisions and open discovery gates. The planned catalogue now also includes BPA-001–BPA-018 supplemental scenarios; they are planning-only and NOT RUN. They supplement, rather than replace, the original TC/NT scenarios. This is not approval of requirements, thresholds, integration choices or implementation.
+
+
+## Business assistant domain contract — 2026-10-13
+
+See [Business Assistant Domain Contract Draft](../architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) for the shared conceptual vocabulary and state boundaries needed to reconcile the API, data model, state/events, threat model and UX. It is not an approved architecture. Organization roles, workflow versioning, caller verification, source-provenanced call outcomes, connector reconciliation and metric definitions remain open requirements gaps; BPA-001–BPA-018 remain NOT RUN.
