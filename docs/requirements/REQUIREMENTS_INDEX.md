@@ -45,3 +45,9 @@ Every feature traces to a problem or labelled hypothesis → UX journey → requ
 - Added REQ-016 for account authentication and recovery after the P0 scope catalogue was found to include those capabilities without an explicit requirement.
 - Added a scope-to-requirement crosswalk to TRACEABILITY_MATRIX.md. SCOPE-011 follow-up tasks and SCOPE-012 caller/contact allowlists remain unmapped; they must be deferred or receive dedicated requirements before inclusion in an approved MVP.
 - All IDs and mappings remain draft and unapproved. This update does not authorize implementation.
+
+
+## Business phone assistant coverage review — 2026-10-13
+- Added [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md) to identify where the personal-assistant-oriented draft requirements do not yet specify organization roles, constrained workflow lifecycle, caller verification, call outcome provenance, missed-call event coverage, ticket connector semantics or dashboard metric definitions.
+- Added BPA-001–BPA-018 as supplemental planned scenarios in the acceptance catalogue. All are NOT RUN and blocked by the listed decisions/evidence where applicable.
+- Existing requirement IDs remain stable draft identifiers; no requirements, thresholds or implementation were approved.

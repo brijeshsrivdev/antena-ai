@@ -254,3 +254,10 @@ README and linked documents must be verified against current main after this inc
 - This is a direction update, not demand validation or approval of detailed MVP requirements. Call routing, provider/event coverage, integrations, legal/privacy policy, unit economics and owner approval of the full baseline remain open.
 - PR #3's planned acceptance-test catalogue is now merged to `main` as `ac3801d15c55e71d2c09609e0404c99fc12cfa53`; all catalogue scenarios remain planning-only and NOT RUN.
 - Documentation-only change. No implementation, customer interviews, route tests, provider outreach, legal opinions, benchmarks or load tests were performed. Product implementation remains unauthorized.
+
+
+
+## Business assistant requirement/acceptance gap audit — 2026-10-13
+- Mapped REQ-001–REQ-016 and NFR-001–NFR-010 against the business phone assistant hypothesis; documented semantic gaps in workflow lifecycle/versioning, organization membership/roles, caller verification, call outcome/event provenance, missed-call visibility, connector writes, dashboard metric contracts, business workload and data lifecycle.
+- Added 18 supplemental BPA scenarios to the planned acceptance catalogue. The original 68 scenarios and the 18 supplemental scenarios are all NOT RUN; this work is documentation-only.
+- Requirements, scope, thresholds and provider/integration choices remain unapproved. Phase 0 remains incomplete and product implementation remains unauthorized.
