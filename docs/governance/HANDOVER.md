@@ -163,3 +163,11 @@ The coverage review is an audit conclusion, not an approval. The full draft cont
 - Updated README and `TRACEABILITY_MATRIX.md` to index the audit. No canonical requirement, numeric threshold or approval status was changed.
 - No tests or external experiments were run. Provider/route, customer, legal/privacy, operating-model and owner decisions remain open. Phase 0 remains incomplete; product implementation remains unauthorized.
 - Stop at the review gate after validating links, identifier coverage and Markdown table shape. Open a PR against `main`; do not merge unless the owner explicitly instructs it.
+
+
+## Planned acceptance-test catalogue — 2026-10-13
+
+- Current work branch: `docs/acceptance-test-catalog-2026-10-13`, based on the PR #2 merge commit `ef6bb0c62d9c97f29dd2d07d3a21c6d281763fb5`.
+- Added `docs/quality/PLANNED_ACCEPTANCE_TEST_CATALOG.md`: 48 functional scenarios, 20 non-functional scenarios and 8 cross-cutting fault/abuse scenarios. All are planned, NOT RUN, and include dependency status plus future evidence.
+- Linked the catalogue from README, `TRACEABILITY_MATRIX.md` and `VERIFICATION_AND_TEST_STRATEGY.md`. The threshold register remains canonical; no numeric thresholds or requirements were approved.
+- Next: validate IDs, table shapes, local links and branch comparison; open a draft PR against `main`. Do not merge without explicit owner instruction. Do not begin implementation or external experiments without their separate authorization.

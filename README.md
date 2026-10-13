@@ -51,6 +51,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Initial threat model](docs/security/THREAT_MODEL.md)
 - [Data inventory and lifecycle](docs/security/DATA_INVENTORY_AND_LIFECYCLE.md)
 - [Verification and test strategy](docs/quality/VERIFICATION_AND_TEST_STRATEGY.md)
+- [Planned acceptance-test catalogue — scenarios drafted, all NOT RUN](docs/quality/PLANNED_ACCEPTANCE_TEST_CATALOG.md)
 - [Positioning and go-to-market hypotheses](docs/business/POSITIONING_AND_GO_TO_MARKET.md)
 - [System architecture options](docs/architecture/SYSTEM_ARCHITECTURE_OPTIONS.md)
 - [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
