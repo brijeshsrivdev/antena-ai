@@ -14,6 +14,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Requirement-to-contract coverage audit — API, state, security and verification gaps](docs/governance/REQUIREMENT_CONTRACT_COVERAGE_AUDIT.md)
 - [Deletion and verification reconciliation — data-class targets, ownership and future evidence](docs/governance/DELETION_AND_VERIFICATION_RECONCILIATION.md)
 - [Cross-document consistency review — findings, blockers and merge/implementation status](docs/governance/FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md)
+- [Acceptance criteria testability audit — draft, no tests run and no thresholds approved](docs/governance/ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md)
 - [UX/state contract reconciliation — lifecycle-backed UX claims and failure states](docs/governance/UX_STATE_CONTRACT_RECONCILIATION.md)
 - [Phase 0 exit criteria and evidence map — incomplete, owner review required](docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md)
 - [Phase 0 residual risk register — open risks, evidence and stop conditions](docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md)
