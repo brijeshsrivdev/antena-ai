@@ -4,13 +4,13 @@
 
 ## 1. Product hypothesis
 
-A personal AI call assistant helps a user handle eligible incoming calls when they cannot answer, communicates with callers within explicit boundaries, and returns a useful account of what happened. The product's value depends on a reliable call-routing path, caller trust, user control, language quality and affordable per-minute economics—not simply on generating speech.
+A configurable AI business phone assistant lets a business define bounded workflows for eligible inbound calls, use authorized customer data/actions, and review what happened through a tenant-isolated dashboard. Value depends on reliable business-number routing, useful workflow completion, caller trust, safe actions, operational visibility and affordable per-minute economics—not simply on generating speech.
 
 ## 2. Candidate first-release persona
 
-**Primary persona hypothesis:** an individual who receives enough legitimate calls to be interrupted or miss important information, but cannot answer every call personally.
+**Primary persona hypothesis:** an owner or operations/support lead at a small or mid-sized business that receives repetitive inbound customer calls and needs consistent intake, action capture and visibility into outcomes.
 
-Do not finalise this persona until interviews compare busy professionals, self-employed users, small business owners and other candidate segments.
+This is not yet a validated segment. Interviews must compare candidate business types, call volume, workflow value, existing phone systems, support tooling, willingness to pay and operational risks. Personal AI call-assistant users are a later candidate segment, not the primary MVP.
 
 ## 3. Candidate MVP capabilities
 
@@ -52,16 +52,16 @@ Do not finalise this persona until interviews compare busy professionals, self-e
 
 ## 5. Core end-to-end journey hypothesis
 
-1. User understands what the assistant will and will not do.
-2. User creates an account and configures a constrained profile/context.
-3. User selects a supported routing method and follows clear instructions.
-4. User performs a test call; app shows a verified, unverified or failed status honestly.
-5. Eligible call reaches the assistant through the supported network/media path.
-6. Assistant discloses AI identity and follows policy-bounded instructions.
-7. User can take over or terminate according to validated capabilities.
-8. System provides summary and any agreed records.
-9. User can correct, export or delete records and disable routing.
-10. Usage meter updates transparently; the user receives warnings before limits.
+1. Business creates an account and configures authorized team access.
+2. Business connects a phone number through a supported and verified route.
+3. Business configures and tests a versioned workflow using approved blocks and connectors.
+4. Eligible caller reaches the assistant; the platform resolves the tenant and published workflow from trusted configuration.
+5. Assistant discloses its AI role under the approved policy, identifies intent and follows bounded workflow steps.
+6. Caller identity is matched and verified according to policy before protected customer data is disclosed.
+7. The assistant records a complaint/enquiry and may invoke an authorized connector; writes are confirmed only from authoritative results.
+8. The dashboard shows call outcome, summary, workflow version, action/ticket status and pending failures.
+9. Authorized business users can correct supported fields, review audit history, request data lifecycle actions and pause/disable handling.
+10. Usage is metered transparently with server-enforced limits and safe exhaustion behavior.
 
 Each step needs normal, alternate, error, timeout, recovery and accessibility states in the UX spec.
 
@@ -91,3 +91,9 @@ Each step needs normal, alternate, error, timeout, recovery and accessibility st
 ## 8. Decision status
 
 All priorities and scope choices in this file are proposals. Owner approval is required before they become a committed product baseline.
+
+## Business workflow direction reconciliation — 2026-10-13
+
+The primary MVP hypothesis is a configurable AI business phone assistant, not a personal assistant. The candidate first-release buyer is a business owner or operations/support lead; the end customer is the caller. See [`BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md`](BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md) for the detailed actor vocabulary, call journeys, workflow building blocks, complaint example, missed-call semantics and dashboard concepts.
+
+Important additions to discovery: define a versioned workflow model and safe publication lifecycle; verify caller identity before protected disclosure; choose and contract-test a first typed connector before promising ticket creation; distinguish calls not observed by the platform from calls observed but missed/failed; and give each dashboard metric an authoritative event source and denominator. These remain proposed scope and do not authorize implementation.
