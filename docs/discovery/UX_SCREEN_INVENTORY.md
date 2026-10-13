@@ -88,3 +88,8 @@ Before baseline approval, mark each screen as MVP, conditional, deferred or excl
 ## Business phone assistant screen-scope reconciliation — 2026-10-13
 
 The existing inventory is largely personal-assistant-oriented. Before a baseline is approved, add/review business journeys for organization creation/membership and roles, phone-number/route setup, workflow list/builder/validation/test/publish/version history, call inbox/detail with outcome provenance, connector setup and action reconciliation, and organization usage/metric definitions. These are candidates, not automatically MVP screens. Workflow pause must not be represented as route disable; “missed call” and “ticket created” must only be shown when their evidence contracts support those claims. See [Business Assistant Domain Contract Draft](../architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md).
+
+
+## Business assistant wireflow reference — 2026-10-13
+
+See [Business Assistant UX Wireflows Draft](BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md) for business-admin onboarding, constrained workflow authoring/publication, caller interaction, call inbox/detail, action reconciliation, roles and uncertain/error states. This is a candidate flow, not user-validated design or an approved screen scope. The existing personal-assistant-oriented inventory needs a reviewed business-first revision before baseline approval.

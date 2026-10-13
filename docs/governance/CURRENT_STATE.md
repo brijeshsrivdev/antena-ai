@@ -268,3 +268,10 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md` to align organization/membership, workflow lifecycle/version pinning, caller verification, call observation/outcomes, connector action results and dashboard metric provenance.
 - Linked the conceptual contract from the API/data/state, threat-model, UX and traceability drafts. These are documentation cross-references, not approved endpoints, tables, events, roles, requirements or screens.
 - Organization role policy, workflow schema, caller verification, provider event coverage, ticket connector, data lifecycle, thresholds and initial workflow remain open. Phase 0 is incomplete; all original and BPA acceptance scenarios remain NOT RUN; implementation remains unauthorized.
+
+
+## Business assistant UX wireflows draft — 2026-10-13
+
+- Added `docs/discovery/BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md` with textual flows for organization/route onboarding, constrained workflow validation and publication, caller interaction, call inbox/detail, connector outcomes and high-impact controls.
+- The flows preserve unknown/unobserved states and distinguish workflow pause from route disable; they do not promise missed-call capture, handoff, recording or ticket creation without evidence and approval.
+- No user research or usability testing occurred. UX, initial workflow, role policy, route/provider, privacy/legal decisions and feature scope remain open; Phase 0 remains incomplete and product implementation remains unauthorized.
