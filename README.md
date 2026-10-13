@@ -29,6 +29,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Proposed product scope and feature catalogue](docs/discovery/PRODUCT_SCOPE_AND_FEATURE_CATALOG.md)
 - [MVP scope and feature gates](docs/discovery/MVP_SCOPE_AND_FEATURE_GATES.md)
 - [UX screen inventory](docs/discovery/UX_SCREEN_INVENTORY.md)
+- [Business assistant UX wireflows — admin setup, workflow builder, caller path and error states; draft only](docs/discovery/BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md)
 - [UX wireflow specification](docs/discovery/UX_WIREFLOW_SPEC.md)
 - [Decision log](docs/governance/DECISION_LOG.md)
 - [Owner decision pack — discovery choices and gates](docs/governance/OWNER_DECISION_PACK.md)
