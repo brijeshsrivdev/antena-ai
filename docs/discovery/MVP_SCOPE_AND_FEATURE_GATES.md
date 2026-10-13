@@ -62,3 +62,12 @@ Every feature decision must record user problem/evidence, persona, route depende
 Publish one versioned MVP list with included features, exclusions, supported route matrix, user-visible promises, usage limits, legal gates and measurable acceptance criteria. Map every item to the requirements and traceability matrix.
 
 No feature is approved merely because it appears in this document.
+
+
+## Business phone assistant direction — proposed reconciliation
+
+The primary MVP hypothesis has shifted from a personal call assistant to a configurable multi-tenant AI business phone assistant. The business configures versioned inbound workflows; callers interact with the assistant; authorized business users review call outcomes and approved actions. Personal mode is a later candidate.
+
+The following are business-MVP candidates, not yet approved scope: tenant-isolated workflow configuration and publishing; a proven business-number route; caller matching plus verification policy; bounded customer lookup; ticket/case creation through a selected typed connector; honest call/missed-call/route-failure outcome states; and a business dashboard for call history, summaries, confirmed actions, tickets and attention queues.
+
+**New mandatory discovery gates:** prove route and call-event coverage (including missed-call visibility), select the first target business/workflow, define workflow blocks and publication/versioning, select a first connector, define caller verification and dashboard event semantics, and revise requirements/traceability/tests. Do not infer that a ticket connector, missed-call coverage or human handoff exists. Personal-call-specific assumptions must be deferred or explicitly retained as secondary scope. This update does not authorize implementation.
