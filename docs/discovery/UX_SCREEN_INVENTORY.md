@@ -84,3 +84,7 @@ This inventory covers candidate screens and states across the product, not a com
 - UX-012/UX-013 live call/takeover states are route-dependent and must not be shown as available until the exact route supports them.
 
 Before baseline approval, mark each screen as MVP, conditional, deferred or excluded in the versioned MVP list. No screen in this inventory independently authorises a feature.
+
+## Business phone assistant screen-scope reconciliation — 2026-10-13
+
+The existing inventory is largely personal-assistant-oriented. Before a baseline is approved, add/review business journeys for organization creation/membership and roles, phone-number/route setup, workflow list/builder/validation/test/publish/version history, call inbox/detail with outcome provenance, connector setup and action reconciliation, and organization usage/metric definitions. These are candidates, not automatically MVP screens. Workflow pause must not be represented as route disable; “missed call” and “ticket created” must only be shown when their evidence contracts support those claims. See [Business Assistant Domain Contract Draft](../architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md).
