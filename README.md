@@ -55,6 +55,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Verification and test strategy](docs/quality/VERIFICATION_AND_TEST_STRATEGY.md)
 - [Planned acceptance-test catalogue — scenarios drafted, all NOT RUN](docs/quality/PLANNED_ACCEPTANCE_TEST_CATALOG.md)
 - [Positioning and go-to-market hypotheses](docs/business/POSITIONING_AND_GO_TO_MARKET.md)
+- [Business assistant domain contract draft — organization/workflow/call/action vocabulary; not approved](docs/architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md)
 - [System architecture options](docs/architecture/SYSTEM_ARCHITECTURE_OPTIONS.md)
 - [API contract draft](docs/architecture/API_CONTRACT_DRAFT.md)
 - [Data model draft](docs/architecture/DATA_MODEL_DRAFT.md)

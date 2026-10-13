@@ -71,3 +71,7 @@ Exact media transport; identity model; provider webhook signature support; sessi
 ## 6. Decision status
 
 This is an initial threat register. It is not a penetration test, legal opinion or completed security review. Update it when architecture, providers, data retention and MVP scope are approved.
+
+## Business phone assistant threat-model extension — 2026-10-13
+
+The business-oriented domain contract adds threat areas to include in the next reviewed threat model: organization membership/role bypass; workflow schema or publication abuse; caller-ID-based disclosure without verification; cross-tenant workflow/action execution; spoofed or incomplete call-observation events; connector write duplication after ambiguous timeout; and misleading dashboard metrics caused by missing events or undefined denominators. See [Business Assistant Domain Contract Draft](../architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md). This is a desk-only extension, not a completed threat assessment or security test.

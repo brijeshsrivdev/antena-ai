@@ -177,3 +177,8 @@ Do not accept account, tenant, session or operation authority solely because a w
 ## Approval status
 
 No state machine, event schema, deletion SLA, usage unit, provider mapping or recovery guarantee is approved. Use this draft to guide provider questions and later design reviews. It does not authorise provider outreach, test calls, spending, implementation or deployment.
+
+
+## Business assistant lifecycle alignment — 2026-10-13
+
+Use [Business Assistant Domain Contract Draft](BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) as the current vocabulary crosswalk for workflow publication, call observations, caller verification and connector action outcomes. Workflow pause and route disable are separate state dimensions. Preserve unknown/unobserved call states and ambiguous connector outcomes; do not turn missing events into “no call” or a timeout into confirmed action failure. All states/event names remain conceptual pending provider mapping and owner review.

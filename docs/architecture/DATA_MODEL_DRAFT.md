@@ -94,3 +94,7 @@ A deletion request should expose its state and record any legal/operational exce
 ## 7. Approval status
 
 No schema, database, field type, retention duration or migration is approved. Finalise this model only after product scope, provider contracts, data inventory and legal review are approved.
+
+## Business phone assistant domain alignment — 2026-10-13
+
+The [Business Assistant Domain Contract Draft](BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) identifies candidate domain records that need explicit review against this model: Organization, OrganizationMembership, WorkflowDefinition, immutable WorkflowVersion, WorkflowExecution, CallerReference, ActionExecution, and source-provenanced CallObservation/CallOutcome. These are conceptual candidates, not approved tables or migrations. Do not add them to a production schema until the owner approves the scope and the data lifecycle, authorization and provider evidence are reviewed.

@@ -261,3 +261,10 @@ README and linked documents must be verified against current main after this inc
 - Mapped REQ-001–REQ-016 and NFR-001–NFR-010 against the business phone assistant hypothesis; documented semantic gaps in workflow lifecycle/versioning, organization membership/roles, caller verification, call outcome/event provenance, missed-call visibility, connector writes, dashboard metric contracts, business workload and data lifecycle.
 - Added 18 supplemental BPA scenarios to the planned acceptance catalogue. The original 68 scenarios and the 18 supplemental scenarios are all NOT RUN; this work is documentation-only.
 - Requirements, scope, thresholds and provider/integration choices remain unapproved. Phase 0 remains incomplete and product implementation remains unauthorized.
+
+
+## Business assistant domain contract draft — 2026-10-13
+
+- Added `docs/architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md` to align organization/membership, workflow lifecycle/version pinning, caller verification, call observation/outcomes, connector action results and dashboard metric provenance.
+- Linked the conceptual contract from the API/data/state, threat-model, UX and traceability drafts. These are documentation cross-references, not approved endpoints, tables, events, roles, requirements or screens.
+- Organization role policy, workflow schema, caller verification, provider event coverage, ticket connector, data lifecycle, thresholds and initial workflow remain open. Phase 0 is incomplete; all original and BPA acceptance scenarios remain NOT RUN; implementation remains unauthorized.
