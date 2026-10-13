@@ -110,3 +110,8 @@ Use [Deletion and Verification Reconciliation](../governance/DELETION_AND_VERIFI
 A planned artifact or test layer is not proof of execution. Each future report should record requirement/threshold IDs, approved scope and configuration, test-plan/version, environment and provider versions, inputs, expected and observed outcomes, timestamps, evidence location, reviewer, failures and disposition. Preserve negative/partial outcomes; do not silently mark unknown or blocked cases as passed.
 
 The acceptance threshold register remains the canonical source for threshold values/status. All existing thresholds remain proposed or open until the owner approves them. No tests or experiments are claimed completed by this section.
+
+
+## Planned acceptance-test catalogue
+
+`PLANNED_ACCEPTANCE_TEST_CATALOG.md` provides proposed scenario IDs for REQ-001–REQ-016, NFR-001–NFR-010 and cross-cutting failure/abuse cases. All scenarios are planning-only and NOT RUN. Use it with `ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md` and `ACCEPTANCE_THRESHOLD_REGISTER.md`; do not record a pass until scope, provider/route/policy dependencies, test setup, threshold, denominator, evidence and reviewer are approved. The catalogue does not authorize implementation or external experiments.
