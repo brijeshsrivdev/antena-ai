@@ -235,3 +235,12 @@ README and linked documents must be verified against current main after this inc
 - The audit distinguishes criteria that are behaviorally testable in part from those blocked by provider/route/legal evidence, unapproved thresholds or scope decisions. It does not alter the canonical threshold register or approve requirements.
 - Indexed the audit in README and linked it from the traceability matrix. This pass is documentation-only; no tests, interviews, route experiments, provider outreach, benchmarks, load tests, legal review or implementation were performed.
 - Phase 0 remains incomplete; product implementation and external activity remain unauthorized without separate explicit approval. PR #1 was merged to `main` as `0c7e6bb86806eec226f263b09b539eb7c269b6e0`. This new audit is on branch `docs/acceptance-testability-audit-2026-10-12`; it is not merged.
+
+
+## Planned acceptance-test catalogue — 2026-10-13
+
+- Added `docs/quality/PLANNED_ACCEPTANCE_TEST_CATALOG.md` with 48 functional scenarios across REQ-001–REQ-016, 20 non-functional scenarios across NFR-001–NFR-010 and 8 cross-cutting fault/abuse scenarios.
+- Each row states preconditions, action/stimulus, expected observable result, planned evidence and current dependency/status. All scenarios are planning-only and NOT RUN.
+- Linked the catalogue from README, the traceability matrix and verification strategy. It complements rather than replaces the testability audit and threshold register; no thresholds or requirements were approved.
+- PR #2 was merged into `main` as `ef6bb0c62d9c97f29dd2d07d3a21c6d281763fb5`. The new catalogue is on branch `docs/acceptance-test-catalog-2026-10-13`; it is not merged.
+- Phase 0 remains incomplete. No product tests, interviews, route tests, provider outreach, legal review, benchmarks, load tests or implementation were performed. Implementation remains unauthorized.
