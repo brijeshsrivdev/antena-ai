@@ -104,3 +104,7 @@ Authentication protocol/provider; session ownership and concurrency; exact endpo
 ## 8. Approval status
 
 No endpoint, schema or provider contract is approved. Convert this draft into versioned OpenAPI and provider-specific contract tests only after the owner approves the baseline and implementation gate.
+
+## Business phone assistant domain alignment — 2026-10-13
+
+See [Business Assistant Domain Contract Draft](BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) for proposed organization/membership boundaries, workflow version publication, call observation/outcome semantics, caller verification and authoritative connector-action outcomes. These remain conceptual; do not treat the resource vocabulary as approved endpoints or schemas. In particular, organization membership is separate from account authentication, caller ID is not authentication, and a connector timeout is not proof of action failure or success.
