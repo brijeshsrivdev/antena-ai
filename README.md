@@ -2,12 +2,13 @@
 
 > Working repository name only. Commercial brand is not approved.
 
-This repository is for discovery and specification of a reusable AI voice platform. The current direction is to investigate a MyEqual.ai-style personal AI call assistant first, then add trusted domain-specific capabilities, initially hospitality.
+This repository is for discovery and specification of a reusable AI voice platform. The primary MVP hypothesis is now a configurable, multi-tenant AI business phone assistant: businesses configure inbound call workflows, callers interact with the assistant, and authorized business users review call outcomes and approved actions. Personal call-assistant mode is a later candidate, not the primary MVP.
 
 **Phase: discovery and documentation only. Product implementation is not authorised.**
 
 ## Start here
 - [Project charter](docs/governance/PROJECT_CHARTER.md)
+- [Business phone assistant product direction — discovery hypothesis; detailed MVP still unapproved](docs/discovery/BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md)
 - [Current state](docs/governance/CURRENT_STATE.md)
 - [Baseline consistency and readiness audit](docs/governance/BASELINE_CONSISTENCY_AUDIT.md)
 - [Architecture/API/data/security semantic review — findings open, baseline not approved](docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md)
