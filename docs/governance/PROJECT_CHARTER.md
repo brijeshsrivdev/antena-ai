@@ -3,15 +3,16 @@
 Status: PROPOSED — owner approval pending. Date: 2026-10-11. Phase: discovery and documentation only.
 
 ## Purpose
-Discover and specify a reusable AI voice platform that starts with personal AI call-assistant behaviour and later supports trusted domain workflows. Hospitality is the first proposed domain; legal/advocate and other professional domains are future candidates, not launch commitments.
+Discover and specify a reusable, multi-tenant AI voice platform whose primary MVP hypothesis is a configurable AI business phone assistant. Businesses configure supported inbound call workflows, authorized customer lookups/actions, and dashboard visibility into call outcomes. Personal call-assistant mode is a later candidate, not the primary MVP. Hospitality may be a future domain integration through trusted Antena APIs; legal/advocate and other professional domains are not launch commitments.
 
 ## Candidate capabilities to research
-- AI-assisted handling of calls routed through a supported telephony/call-forwarding arrangement.
-- User-controlled assistant configuration and personal context.
-- Call history, transcripts, summaries and controls, subject to consent and law.
-- Consistent client experience with profile-specific configuration.
-- Dedicated AI API for orchestration, sessions, provider abstraction and policy enforcement.
-- Trusted domain connectors; hospitality may use Antena APIs.
+- Business-owned assistant configuration and versioned inbound call workflows using constrained, approved blocks.
+- Handling of calls delivered through a proven, supported business-number/telephony route.
+- Caller identification and verification rules; customer lookup must not treat caller ID as proof of identity.
+- Tenant-scoped, allowlisted read/write connectors, initially to be selected through discovery; ticket/case creation is a candidate action, not an assumed integration.
+- Call history, missed-call/route outcome distinctions, summaries and operational dashboard, subject to event availability, consent, law and retention policy.
+- Dedicated AI API for orchestration, sessions, tenant/workflow resolution, provider abstraction and policy enforcement.
+- Human escalation only where supported by the chosen route/provider; otherwise provide a validated fallback.
 
 These are hypotheses, not a final product promise.
 
