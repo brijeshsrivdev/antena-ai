@@ -125,12 +125,6 @@ This catalogue converts the testability audit into concrete scenario IDs, precon
 4. Threshold, measurement boundary, sample/denominator and pass/fail rubric are approved before collecting results.
 5. Test data, access, spend caps, rollback/recovery, logging and evidence retention are defined.
 6. The test has a named responsible person and a safe stop/abort condition.
-
-## 7. Conclusion
-
-This is a future test plan, not verification evidence. Phase 0 remains incomplete. No acceptance threshold or requirement has been approved by this catalogue, and product implementation remains unauthorized.
-
-
 ## 4. Supplemental business phone assistant scenarios — proposed, NOT RUN
 
 These scenarios were added after the product-direction pivot to identify gaps not covered by the original personal-assistant-oriented requirement catalogue. They do not replace the original 68 scenarios or approve a business-oriented baseline. See [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md) for the requirement crosswalk and disposition plan.
@@ -155,3 +149,8 @@ These scenarios were added after the product-direction pivot to identify gaps no
 | Dashboard metric provenance | BPA-016 | Metric dictionary defines source, denominator, exclusions and freshness | Calculate call, completion and ticket metrics with unknown/late events | Every metric is reproducible; unknown events are not silently treated as success or absence | Query fixtures + reconciliation report | NOT RUN — metric dictionary open |
 | Handoff capability gate | BPA-017 | One route is unsupported for handoff and another has verified support | Attempt handoff and process success/failure/timeout | Unsupported handoff is unavailable; success is shown only after authoritative confirmation; safe fallback remains available | Route capability matrix + provider event trace | NOT RUN — route evidence open |
 | Workflow/route urgent pause | BPA-018 | Workflow and telephony route have separate control states | Authorized operator pauses workflow or requests route disable during an incident | Distinguish workflow pause from route disable and requested/pending/confirmed/unverified state | State transition + audit trace | NOT RUN — authority/state contract open |
+
+
+## 7. Conclusion
+
+This is a future test plan, not verification evidence. Phase 0 remains incomplete. No acceptance threshold or requirement has been approved by this catalogue, and product implementation remains unauthorized.
