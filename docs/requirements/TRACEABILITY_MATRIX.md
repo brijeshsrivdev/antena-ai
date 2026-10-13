@@ -107,3 +107,8 @@ This crosswalk is a draft consistency aid. The mapped requirements do not approv
 - **UX-006 (assistant permissions / system role)** is conditionally traced to REQ-001/REQ-002. It must only be presented when required by the selected platform/route; a permission grant is not proof that call routing is supported or verified.
 - **UX-022 (notifications and permission status)** is traced to REQ-001/REQ-015 for truthful status, stale-state handling and notification failure. Notifications are not authoritative route-state evidence, and private lock-screen content must remain minimised.
 - **UX-011 (caller handling preferences/contact access)** and **UX-017 (follow-up tasks)** remain conditional and unmapped to dedicated functional requirements. Keep them deferred or create/review explicit requirements before MVP inclusion, consistent with the scope crosswalk.
+
+
+## Business phone assistant requirement/acceptance gap audit — 2026-10-13
+
+See [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md) for the business-oriented crosswalk across REQ-001–REQ-016 and NFR-001–NFR-010, semantic gaps, recommended requirement revisions and open discovery gates. The planned catalogue now also includes BPA-001–BPA-018 supplemental scenarios; they are planning-only and NOT RUN. They supplement, rather than replace, the original TC/NT scenarios. This is not approval of requirements, thresholds, integration choices or implementation.
