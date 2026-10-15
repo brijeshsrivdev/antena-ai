@@ -319,3 +319,11 @@ README and linked documents must be verified against current main after this inc
 - Reframed the customer interview pack, validation plan and GTM experiment hypotheses around business decision-makers, front-line call handlers and bounded inbound workflows.
 - Added a market-demand note distinguishing consumer category signals from unvalidated B2B demand and expanded the competitor matrix's comparison boundaries across consumer assistants, voice-agent platforms and business telephony vendors.
 - No interviews, outreach, campaigns, route tests, provider quotes or spend occurred. All fieldwork remains subject to separate owner approval; Phase 0 remains incomplete and implementation remains unauthorized.
+
+
+
+## Business unit-economics and workload reconciliation — 2026-10-15
+- Updated pricing framing to treat B2B pricing units as open options rather than assuming a consumer subscription.
+- Added a business workload/cost attribution template for organizations, active numbers, call volumes, call legs, connector actions and support/reconciliation.
+- All business workload inputs are intentionally TBD; the prior registered-user scenarios remain sensitivity assumptions, not forecasts or concurrency specs.
+- No price, margin target, provider or workload has been approved. No quotes, interviews or load tests occurred; Phase 0 remains incomplete and product implementation remains unauthorized.
