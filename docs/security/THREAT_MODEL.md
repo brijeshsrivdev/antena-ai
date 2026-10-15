@@ -75,3 +75,19 @@ This is an initial threat register. It is not a penetration test, legal opinion 
 ## Business phone assistant threat-model extension — 2026-10-13
 
 The business-oriented domain contract adds threat areas to include in the next reviewed threat model: organization membership/role bypass; workflow schema or publication abuse; caller-ID-based disclosure without verification; cross-tenant workflow/action execution; spoofed or incomplete call-observation events; connector write duplication after ambiguous timeout; and misleading dashboard metrics caused by missing events or undefined denominators. See [Business Assistant Domain Contract Draft](../architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md). This is a desk-only extension, not a completed threat assessment or security test.
+
+
+## Proposed business requirement threat mapping — 2026-10-15
+
+Map the following threats to the proposed REQ-017–REQ-022 before approving the threat model. This desk review adds traceability only; it is not a completed threat assessment.
+
+| Proposed requirement | Threat areas to verify | Planned evidence |
+|---|---|---|
+| REQ-017 | Cross-tenant object access, membership/role bypass, stale authorization, support-access misuse | BPA-001/BPA-002; negative authorization matrix and audit review |
+| REQ-018 | Malicious workflow configuration, publication privilege abuse, version confusion, prompt injection into configuration | BPA-003/BPA-004/BPA-005/BPA-018; schema abuse fixtures and state-transition review |
+| REQ-019 | Caller-ID spoofing, social engineering, account/customer enumeration, verification retry abuse | BPA-006/BPA-007; caller verification abuse cases and non-disclosure tests |
+| REQ-020 | Forged/incomplete/replayed provider events, false missed-call claims, misleading status after route failure | BPA-012–BPA-015/BPA-017/BPA-018; provider capability mapping and event reconciliation tests |
+| REQ-021 | Unauthorized connector writes, cross-tenant action, duplicate side effects after timeout, false success claim | BPA-009–BPA-011; connector authorization/idempotency/reconciliation tests |
+| REQ-022 | Cross-tenant aggregation leakage, misleading denominator, stale or silently corrected metrics | BPA-016; metric dictionary, tenant-scope review and late-event fixtures |
+
+No tests have been run and no provider/integration has been selected. Add these to the reviewed threat model after the first workflow, data classes and connector contract are chosen.
