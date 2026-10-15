@@ -2,9 +2,9 @@
 
 **Date:** 2026-10-13  
 **Status:** PLANNING ONLY — NOT APPROVED; ALL TESTS NOT RUN.  
-**Scope:** Proposed future verification scenarios for REQ-001–REQ-016 and NFR-001–NFR-010.
+**Scope:** 68 original planned scenarios for REQ-001–REQ-016 and NFR-001–NFR-010, plus 18 supplemental business phone assistant scenarios (BPA-001–BPA-018) mapped to proposed REQ-017–REQ-022. All 86 scenarios remain NOT RUN; the six addendum requirements are unapproved.
 
-This catalogue converts the testability audit into concrete scenario IDs, preconditions, stimuli, expected observable outcomes and planned evidence. It is a test-design artifact only: it does not establish that a route/provider supports a scenario, approve a threshold, authorize interviews or experiments, establish legal compliance, or authorize product implementation.
+This catalogue converts the testability audit and business-assistant gap audit into concrete scenario IDs, preconditions, stimuli, expected observable outcomes and planned evidence. BPA scenarios are supplemental and do not mean proposed REQ-017–REQ-022 are approved or that every new acceptance criterion is fully covered. It is a test-design artifact only: it does not establish that a route/provider supports a scenario, approve a threshold, authorize interviews or experiments, establish legal compliance, or authorize product implementation.
 
 ## 1. Execution and evidence rules
 
@@ -153,4 +153,4 @@ These scenarios were added after the product-direction pivot to identify gaps no
 
 ## 8. Conclusion
 
-This is a future test plan, not verification evidence. Phase 0 remains incomplete. No acceptance threshold or requirement has been approved by this catalogue, and product implementation remains unauthorized.
+This is a future test plan, not verification evidence. The 68 original TC/NT scenarios and 18 supplemental BPA scenarios are all NOT RUN. Proposed REQ-017–REQ-022, the inherited REQ/NFR set and all acceptance thresholds remain unapproved. Phase 0 remains incomplete and product implementation remains unauthorized.
