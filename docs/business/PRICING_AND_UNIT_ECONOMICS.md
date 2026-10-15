@@ -4,7 +4,7 @@
 
 ## 1. Core pricing question
 
-Can a consumer subscription cover a variable voice cost that may scale with every connected minute, while leaving enough gross margin for support, infrastructure, payment fees, acquisition, taxes, refunds, and failed calls?
+Can a business-oriented offer cover telephony, AI/media, connector, support and operational costs while delivering measurable value to a business buyer? The pricing unit could be per organization, phone number, workflow, connected minute, included usage allowance or a hybrid; none is selected.
 
 Do not price from competitor sticker prices alone. Validate willingness to pay and distinguish a provider's bundled price from a self-managed stack.
 
@@ -65,7 +65,8 @@ This excludes all other costs. A ₹299 plan including 40 minutes would not work
 - Metered starter plan with a small included minute allowance and transparent top-up/overage.
 - Subscription tiers with capped included minutes, clear maximum call duration and alerts near the limit.
 - Premium tier only if additional value is clear (e.g. longer history, advanced actions, more profiles), not merely a large unbounded voice allowance.
-- Separate business/voice-agent pricing only if the product scope and call-routing economics genuinely differ.
+- Treat business pricing as the primary model to validate: compare per-organization, per-number, included-minutes/overage, per-connected-minute and hybrid models against the buyer's measurable workflow value and support burden.
+- Keep consumer/personal-assistant pricing as a later, separate scenario; do not infer B2B willingness to pay from consumer sticker prices.
 
 Do not publish these as plans until user research and a verified provider quote exist. Never advertise “unlimited” without a measured abuse model and worst-case margin analysis.
 
@@ -83,3 +84,34 @@ Do not publish these as plans until user research and a verified provider quote 
 ## 8. Decision status
 
 No price, usage allowance, provider or gross-margin target is approved. This document is a starting economic model that must be updated with verified quotes, customer evidence and explicit assumptions.
+
+
+## 9. Business-first pricing model — proposed, not an offer
+
+The primary hypothesis is a configurable AI business phone assistant. Existing consumer subscription arithmetic is useful only as a cost sensitivity reference; it does not establish the right B2B pricing unit or a buyer's willingness to pay.
+
+### Candidate pricing units to compare
+
+| Unit | Potential advantage | Risk / question to validate |
+|---|---|---|
+| Per organization / workspace | Predictable base fee for team access and workflow management | May not reflect large differences in call volume or number count. |
+| Per active business number | Maps to a route/number that generates operational value and provider cost | Number rental and route/provider fees may be separate; multiple numbers may share a tenant. |
+| Included connected minutes plus overage | Aligns revenue with a major variable cost and makes usage allowance visible | Billing units, rounding, failed-call charges and all call legs must be verified. |
+| Per connected minute / usage-based | Scales with observed usage | Can create unpredictable bills; needs clear caps, alerts and billable-event reconciliation. |
+| Workflow/integration tier | Can reflect the value and support burden of approved workflows | Do not charge for or promise a connector that is not selected and operationally supported. |
+| Hybrid base + usage | Can cover fixed tenant/number costs plus variable usage | Requires evidence for base fee, included allowance and margin at upper-tail usage. |
+
+### Business unit-economics formula
+
+For a defined month and segment:
+- **Net revenue** = organization subscriptions + usage revenue + approved add-ons − discounts/refunds/taxes excluded from revenue as appropriate.
+- **Variable cost** = telephony and every call leg + streaming/media + STT/TTS/model + connector usage + storage/retention + payment fees + usage-dependent support.
+- **Contribution before acquisition/fixed overhead** = net revenue − variable cost.
+- **Per-organization contribution** = revenue allocated to organization − all attributable variable costs and support.
+- **Gross margin** must use a clearly stated revenue and cost basis; do not compare a bundled provider rate with an incomplete self-managed cost stack.
+
+Model the distribution, not only the average: low/base/high organizations, active numbers per organization, calls per number, duration tail, peak concurrency, action/connector rate, failure/retry rate, support minutes and payment/collection behavior. Do not invent these values; collect them through approved interviews, provider quotes and later controlled evidence.
+
+### Current decision boundary
+
+No B2B price, included minutes, overage, minimum commitment, trial length, provider, segment or gross-margin target is approved. Do not publish a pricing page, accept pre-orders or incur acquisition spend based on these scenarios. The consumer price benchmarks in this document are adjacent evidence only, not a business quote.

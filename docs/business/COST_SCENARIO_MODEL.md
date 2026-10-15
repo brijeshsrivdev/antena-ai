@@ -80,3 +80,35 @@ First-order average concurrent calls = connected call minutes per hour / 60. Thi
 Ask each provider about: supported Indian operators; forwarding modes and charges; inbound/outbound rates, billing pulse, failed-call charges, transfer legs, recording, transcription, number rental, minimums, taxes and currency; real-time streaming, codecs, latency, concurrency/CPS caps, webhook security/retries, residency, subprocessors, retention, deletion, SLA and support; caller ID and takeover; permitted use for personal call screening and disclosure requirements; quote validity and cancellation terms.
 
 **Gate:** no architecture or consumer pricing decision until at least two comparable written provider quotes and one controlled end-to-end route test exist.
+
+
+## 9. Business assistant workload and cost attribution — required extension
+
+The current registered-user scenario is a legacy planning sensitivity, not a complete business phone assistant capacity or pricing model. Keep it for comparison but do not use it as the sole basis for B2B cost or pricing decisions.
+
+For the business model, capture these dimensions separately:
+- registered accounts, organizations/tenants and monthly active business users;
+- active business numbers/routes per organization and their provider/number rental;
+- inbound call arrivals by hour/day, calls per number, call-duration distribution and peak concurrency;
+- provider call legs per session, forwarding/bridge/transfer legs and billable units per leg;
+- connected minutes, AI-active minutes, streaming seconds, model/audio usage and summary workload where separately billed;
+- workflow execution count, connector-action rate, connector costs, retries and ambiguous-write reconciliation;
+- recording/transcription/storage/search only if enabled and approved;
+- support incidents, manual reconciliation time, provider outages, refunds and failed-call charges.
+
+**Cost attribution rule:** allocate cost to the organization/number/workflow only when a trustworthy usage event supports that attribution. Preserve unattributed or disputed provider costs for reconciliation; do not silently spread them into precise per-tenant profitability claims.
+
+Use a blank template until evidence exists:
+
+| Input | Low | Base | High | Evidence/source | Confidence / limitation |
+|---|---|---|---|---|---|
+| Organizations / tenants | TBD | TBD | TBD | Interview/research evidence | Not yet measured |
+| Active numbers per organization | TBD | TBD | TBD | Selected route and customer process | Not yet measured |
+| Calls per active number per day | TBD | TBD | TBD | Customer evidence | Not yet measured |
+| Average and p95 connected minutes per call | TBD | TBD | TBD | Customer evidence/provider semantics | Not yet measured |
+| Peak concurrency / calls per second | TBD | TBD | TBD | Provider limits and measured arrival pattern | Not yet measured |
+| Billable legs and non-minute fees | TBD | TBD | TBD | Comparable written provider quotes | No quotes received |
+| Connector action rate and cost | TBD | TBD | TBD | Selected integration contract | Connector unselected |
+| Support/reconciliation time per organization | TBD | TBD | TBD | Controlled pilot evidence later | No pilot evidence |
+
+No numeric value should be filled from intuition and then presented as an observed baseline. Registered-user count remains a planning target only and must be reconciled to tenant/number/call workloads before sizing or pricing.

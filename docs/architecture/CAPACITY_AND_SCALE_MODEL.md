@@ -111,3 +111,9 @@ Targets must come from customer expectations, carrier/provider constraints and e
 ## 8. Decision status
 
 10,000 is a registration target only. No production concurrency target, provider, SLO, infrastructure shape or budget is approved.
+
+## Business workload caveat — 2026-10-15
+
+The primary hypothesis is a multi-tenant business phone assistant. The registered-user scenario above is a generic sensitivity model, not a business workload specification. Before capacity sizing, model organizations/tenants, active business users, active numbers/routes per organization, inbound call arrival distributions, duration tails, provider call legs, connector traffic and support/reconciliation workload. A 10,000 registered-user target does not determine tenant count, active numbers or peak concurrency.
+
+Use the business workload template in [WORKLOAD_SCENARIO_BASELINE.md](WORKLOAD_SCENARIO_BASELINE.md). Its business-specific values are TBD until customer evidence, route/provider limits and later authorized measurements exist. No load test or provider capacity test has been run.
