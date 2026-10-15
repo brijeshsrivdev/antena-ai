@@ -98,3 +98,19 @@ No schema, database, field type, retention duration or migration is approved. Fi
 ## Business phone assistant domain alignment — 2026-10-13
 
 The [Business Assistant Domain Contract Draft](BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) identifies candidate domain records that need explicit review against this model: Organization, OrganizationMembership, WorkflowDefinition, immutable WorkflowVersion, WorkflowExecution, CallerReference, ActionExecution, and source-provenanced CallObservation/CallOutcome. These are conceptual candidates, not approved tables or migrations. Do not add them to a production schema until the owner approves the scope and the data lifecycle, authorization and provider evidence are reviewed.
+
+
+## Proposed business requirement entity alignment — 2026-10-15
+
+The following entity relationships are candidates for the proposed REQ-017–REQ-022 addendum. They are not approved tables, ORM models or migrations.
+
+| Proposed requirement | Candidate entities / relationships | Required ownership, authorization and lifecycle decisions |
+|---|---|---|
+| REQ-017 | Organization; OrganizationMembership; role/grant record; AuditEvent | Organization owns business resources; membership is separate from Account; every read/write/search/export/job/callback needs server-side organization authorization. Define member removal and historical audit retention. |
+| REQ-018 | WorkflowDefinition 1:N immutable WorkflowVersion; WorkflowExecution references exactly one version | Define draft/published/paused/retired state, validation result, publisher, timestamps, rollback policy and version pinning. Retain only the approved metadata needed for audit; workflow content may itself contain sensitive business data. |
+| REQ-019 | CallerReference; CallerMatchResult or minimal match metadata; VerificationAttempt/VerificationState | Avoid copying full customer records into the AI system. Define identifier minimization, match ambiguity, verification evidence retention and deletion exceptions. Caller phone number alone is not an authenticated identity. |
+| REQ-020 | CallObservation; CallSession; ProviderLeg; CallOutcome/ReconciliationRecord | Separate provider observations from the assistant session; store source/provenance and event/receive times. Define deduplication, late/conflicting event handling and data lifecycle. |
+| REQ-021 | ActionExecution; ConnectorOperationVersion; ActionResult/ReconciliationReference | Bind action to organization, call, workflow version and approved operation. Store minimal request/result metadata, idempotency reference and authoritative outcome; secrets stay in managed credential storage. |
+| REQ-022 | MetricDefinition/version; derived tenant-scoped query/report results; optional correction/audit metadata | Prefer derived metrics unless a justified snapshot is needed. Define data source, denominator, freshness, late-event correction, aggregation leakage controls and retention. |
+
+Cross-cutting: document the retention/deletion target for workflow versions, caller references, verification attempts, call observations, action payload/result metadata, audit events and any derived reports. Do not assume deleting a CallSession automatically deletes provider-side observations or downstream business-system records; record external-system ownership and deletion limitations.
