@@ -51,3 +51,9 @@ Every feature traces to a problem or labelled hypothesis → UX journey → requ
 - Added [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md) to identify where the personal-assistant-oriented draft requirements do not yet specify organization roles, constrained workflow lifecycle, caller verification, call outcome provenance, missed-call event coverage, ticket connector semantics or dashboard metric definitions.
 - Added BPA-001–BPA-018 as supplemental planned scenarios in the acceptance catalogue. All are NOT RUN and blocked by the listed decisions/evidence where applicable.
 - Existing requirement IDs remain stable draft identifiers; no requirements, thresholds or implementation were approved.
+
+
+## Business phone assistant requirement addendum — proposed, 2026-10-15
+- [Business Phone Assistant Requirements Addendum — Draft](BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md) proposes REQ-017–REQ-022 to cover business-specific gaps identified after the product-direction pivot.
+- These IDs are proposed working IDs only; the addendum is not approved or baselined. Existing REQ-001–REQ-016 and NFR-001–NFR-010 remain draft and require semantic review for business-assistant applicability.
+- BPA-001–BPA-018 are planned scenarios, all NOT RUN; their presence does not constitute validation or implementation authorization.
