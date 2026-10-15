@@ -91,3 +91,43 @@ Consult `PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md`, `PHASE_0_RESIDUAL_RISK_REGI
 - [Owner decision pack](OWNER_DECISION_PACK.md)
 - [Acceptance threshold register](../requirements/ACCEPTANCE_THRESHOLD_REGISTER.md)
 - [Requirements traceability matrix](../requirements/TRACEABILITY_MATRIX.md)
+
+
+
+## 8. Business pivot consistency pass — 2026-10-15
+
+**Status:** Desk-only consistency review of the business-assistant documentation updates merged into `main`; not owner approval, not evidence that Phase 0 passed, and not implementation authorization.
+
+### Cross-document alignment checks
+
+| Area | Current draft alignment | Remaining limitation |
+|---|---|---|
+| Product direction | Business phone assistant is the primary hypothesis; personal call assistant is a later candidate. | Segment, geography and first workflow are unvalidated. |
+| Requirements | Inherited REQ-001–REQ-016/NFR-001–NFR-010 are explicitly identified as originating from the personal-assistant draft; proposed REQ-017–REQ-022 add business authorization, workflow lifecycle, caller verification, call outcomes, connector actions and metric provenance. | The entire requirement set remains draft. Proposed IDs require owner review and may change before baseline approval. |
+| Acceptance catalogue | 68 original TC/NT scenarios plus 18 supplemental BPA scenarios are represented. | All 86 scenarios remain NOT RUN; the BPA scenarios are gap indicators, not proof of complete criterion coverage. |
+| Scope | SCOPE-022–SCOPE-028 add business-specific candidate capabilities; SCOPE-002/003 personal profile/context are deferred for the primary business MVP. | No feature or first workflow is approved. |
+| UX | UX-023–UX-033 add business-specific screen candidates; the generic UX wireflow is labelled legacy personal-assistant material. | No participant walkthroughs or accessibility validation have occurred; form factor remains open. |
+| Architecture/data/security | API, data, state/event, domain and threat-model drafts map the proposed REQ-017–REQ-022. | Names and schemas remain conceptual; no provider/connector contract or production design is approved. |
+| Customer validation/GTM | Interview pack, validation plan and GTM experiments now focus on business decision-makers, call handlers and bounded inbound workflows. | No interviews, outreach, campaigns or willingness-to-pay evidence exists. |
+| Pricing/capacity | B2B pricing-unit options and a separate business workload template are present. | Business workload values are intentionally TBD; existing minute prices are sensitivity anchors, not quotes or forecasts. |
+| Phase 0 governance | Owner decision pack, decision log, roadmap, exit map and residual risk register reflect business-specific gates. | Route/provider, legal/privacy, customer, connector and unit-economics evidence is still missing. |
+
+### Remaining blockers before a coherent baseline can be approved
+
+1. Select a candidate business segment and first inbound workflow based on reviewed customer evidence.
+2. Choose the launch geography and determine the applicable privacy, disclosure, recording, telecom and provider-contract review.
+3. Establish a route/provider candidate and evidence the supported call/media/event subset, including explicit limits on missed-call visibility and safe disable/recovery.
+4. Decide whether the first workflow needs a customer lookup or write connector; if yes, select one and document authorization, idempotency, authoritative outcome and reconciliation.
+5. Define caller verification for protected data/actions and its failure/abandonment behavior.
+6. Define dashboard metrics from explicit sources, denominators, exclusions, freshness and unknown-state handling.
+7. Obtain comparable written provider quotes and populate the business workload model with sourced assumptions; validate contribution economics.
+8. Review proposed REQ-017–REQ-022, SCOPE-022–SCOPE-028 and UX-023–UX-033; approve or revise the complete requirement/scope set.
+9. Review data lifecycle, threat model, dependencies/licences, operating ownership and acceptance thresholds; then perform a final baseline consistency review.
+
+### Approval boundary and next action
+
+Desk-only documentation can continue, but customer interviews, participant UX validation, provider outreach/quotes, controlled route tests, legal advice, paid experiments and implementation each require the relevant separate owner approval. The existence of the new templates does not authorize those activities.
+
+**Recommendation:** The next high-value owner decision is to select the first business segment/workflow for validation and, separately, approve the exact Phase 0 interview activity. Until then, keep the interview pack and evidence workbook prepared but unused. Phase 0 remains incomplete; implementation remains unauthorized.
+
+This pass did not execute any product test, external experiment or fieldwork. It does not make a legal conclusion, select a provider/connector, approve thresholds, or claim demand validation.
