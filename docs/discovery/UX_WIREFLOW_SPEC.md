@@ -1,6 +1,8 @@
-# UX Wireflow Specification — Discovery Draft
+# UX Wireflow Specification — Legacy Personal Assistant Discovery Draft
 
-**Status:** Textual wireflows only; no visual prototype or implementation created. Flows are hypotheses pending interviews, feasibility and owner approval.
+**Applicability warning (2026-10-15):** This document originated from the personal call-assistant hypothesis. It is not the source of truth for the primary business phone assistant. Use `BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md` for business-admin/caller journeys; retain this document only as a secondary-mode reference until reviewed.
+
+**Status:** Textual wireflows only; no visual prototype or implementation created. Flows are hypotheses pending interviews, feasibility and owner approval. No implementation is authorized.
 
 ## Proposed navigation
 - **Home:** feature state, next action, usage allowance, pause/disable.
@@ -100,3 +102,7 @@ This wireflow is a discovery model, not a promise that every branch ships in the
 - Follow-up tasks/reminders require user confirmation and must not execute external or consequential actions autonomously.
 
 Keep the final wireflow versioned to the approved MVP and the requirement/acceptance-threshold registers.
+
+## Applicability and migration note — 2026-10-15
+
+The Home, Assistant profile, personal Call rules, user takeover and personal call-history flows above must not be copied directly into the business MVP. Before baseline approval, map each legacy flow to a disposition: shared foundation, business-specific replacement, secondary-mode only, deferred or excluded. Business-specific workflows must preserve organization authorization, constrained workflow versioning, caller verification policy, authoritative call/action outcomes and tenant-scoped metrics.
