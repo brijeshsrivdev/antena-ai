@@ -312,3 +312,10 @@ README and linked documents must be verified against current main after this inc
 - Updated owner decision items and decision log to reflect the business phone assistant as the primary hypothesis, while leaving segment, workflow, route, form factor, connector and metric semantics open.
 - Reconciled Phase 1 roadmap language to the business assistant and added evidence gates for first workflow, route/event coverage, workflow lifecycle, caller verification, connector and dashboard metrics.
 - No product decision was marked approved from these desk-only edits. Phase 0 remains incomplete; product implementation remains unauthorized.
+
+
+
+## Business customer-validation materials reconciliation — 2026-10-15
+- Reframed the customer interview pack, validation plan and GTM experiment hypotheses around business decision-makers, front-line call handlers and bounded inbound workflows.
+- Added a market-demand note distinguishing consumer category signals from unvalidated B2B demand and expanded the competitor matrix's comparison boundaries across consumer assistants, voice-agent platforms and business telephony vendors.
+- No interviews, outreach, campaigns, route tests, provider quotes or spend occurred. All fieldwork remains subject to separate owner approval; Phase 0 remains incomplete and implementation remains unauthorized.
