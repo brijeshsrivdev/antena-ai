@@ -291,3 +291,11 @@ README and linked documents must be verified against current main after this inc
 - Marked SCOPE-002/003 personal profile/context as legacy/secondary-mode candidates, deferred for the primary business assistant hypothesis; they are not substitutes for workflow configuration.
 - Added a business-first MVP candidate matrix mapped to existing and proposed requirements. No feature, route, integration, caller verification method or threshold is approved by this documentation update.
 - All BPA scenarios remain NOT RUN; Phase 0 remains incomplete; product implementation remains unauthorized.
+
+
+
+## Business-first UX inventory reconciliation — 2026-10-15
+- Added proposed UX-023–UX-033 for organization membership/roles, constrained workflow lifecycle, business route state, call inbox/detail, connector reconciliation, dashboard metrics, caller verification and action outcomes.
+- Explicitly labelled UX_WIREFLOW_SPEC.md as inherited personal-assistant material; BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md remains the candidate business-flow reference.
+- Form factor, screen inclusion, navigation, route, connector and first workflow remain undecided. No customer UX validation has occurred.
+- All screen IDs and flows remain draft; Phase 0 remains incomplete and product implementation remains unauthorized.
