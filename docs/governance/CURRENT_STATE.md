@@ -275,3 +275,11 @@ README and linked documents must be verified against current main after this inc
 - Added `docs/discovery/BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md` with textual flows for organization/route onboarding, constrained workflow validation and publication, caller interaction, call inbox/detail, connector outcomes and high-impact controls.
 - The flows preserve unknown/unobserved states and distinguish workflow pause from route disable; they do not promise missed-call capture, handoff, recording or ticket creation without evidence and approval.
 - No user research or usability testing occurred. UX, initial workflow, role policy, route/provider, privacy/legal decisions and feature scope remain open; Phase 0 remains incomplete and product implementation remains unauthorized.
+
+
+
+## Business assistant requirements addendum — 2026-10-15
+- Added a proposed, unapproved REQ-017–REQ-022 addendum for organization authorization, constrained workflow lifecycle/version binding, caller verification, evidence-backed call outcomes, authoritative connector actions and dashboard metric provenance.
+- Mapped proposed requirements to BPA-001–BPA-018 in the traceability matrix. All scenarios remain NOT RUN; requirement IDs, priorities and scope remain proposed.
+- The inherited core requirement draft was explicitly labelled as personal-assistant-origin material pending semantic review. This does not approve or silently repurpose any existing requirement.
+- Phase 0 remains incomplete. Product implementation remains unauthorized.
