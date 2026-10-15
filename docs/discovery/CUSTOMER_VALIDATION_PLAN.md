@@ -1,81 +1,78 @@
-# Customer Validation Plan — Personal AI Call Assistant
+# Customer Validation Plan — AI Business Phone Assistant
 
-**Status:** Proposed research plan; no interviews conducted by this document. **Implementation gate:** closed.
+**Status:** Proposed research plan; no interviews conducted. **Implementation gate:** closed. Fieldwork requires separate, explicit owner approval.
 
 ## Objective
-Determine which people experience enough interruption or missed-call pain to try and pay for a personal AI call assistant, which calls they would trust it to handle, and which concerns prevent adoption. Do not pitch the proposed solution too early or treat polite interest as demand.
 
-## Initial hypotheses to test
+Find out whether one clearly defined business segment has a costly, repeated inbound-call workflow that merits a configurable AI phone assistant; identify the buyer, operator, caller needs, current workaround, trusted action boundary, route feasibility and plausible economics. Do not treat broad category interest or personal call-assistant demand as proof of B2B demand.
 
-- H1: A specific segment has frequent, costly interruption or missed-call problems.
-- H2: The strongest job is not generic spam blocking, but handling legitimate calls when the user cannot answer and capturing intent/action.
-- H3: Users will accept a call-forwarding or alternative routing setup if setup is reliable and reversible.
-- H4: Trust, privacy, caller disclosure, language quality and takeover are adoption-critical.
-- H5: A sustainable price can cover variable telephony and AI cost while delivering value users can explain.
+## Hypotheses to test
 
-These are hypotheses only; no evidence of validation is claimed.
+- **H1 — Repeated workflow pain:** a narrow business segment receives enough repeated inbound calls of a similar type that consistent intake or resolution would matter.
+- **H2 — Consequential outcome:** the current process causes measurable lost leads, delays, repeat work, service inconsistency or staff burden.
+- **H3 — Workflow boundedness:** an initial workflow can be described using constrained steps, explicit stop conditions and clear human escalation.
+- **H4 — Buyer and budget:** a named role owns the problem and can identify a plausible budget or existing cost to replace.
+- **H5 — Caller trust:** callers can be informed appropriately, and the business accepts the limits, verification needs and fallback behavior.
+- **H6 — Route/event feasibility:** a supported business-number route can meet the workflow's call/media needs and provide enough authoritative evidence for honest outcome reporting.
+- **H7 — Integration feasibility:** any required customer lookup or write action has an authorized, typed, supportable integration with authoritative outcomes; otherwise the first workflow can succeed without it.
+- **H8 — Unit economics:** observed call volume/duration and comparable written provider pricing can plausibly support a sustainable offer.
 
-## Candidate segments to compare
+These are hypotheses only; none has been validated.
 
-1. Busy individual professionals who miss calls during meetings or focused work.
-2. Self-employed people and small business owners who depend on phone calls but cannot answer every call.
-3. People receiving frequent delivery, service and unknown-number calls.
-4. People who need calls handled in a preferred Indian language or mixed-language conversation.
-5. Small teams and hospitality operators, considered later and separately from the consumer core.
+## Candidate segments
 
-Do not pick a segment solely because it is easy to reach. Compare call frequency, pain severity, current workaround, trust threshold, willingness to pay, routing feasibility and acquisition access.
+Compare, do not prematurely select:
+1. Small service businesses (repair, maintenance, appointment-based local services).
+2. Small businesses receiving repetitive sales/enquiry calls.
+3. Customer support/order-status/complaint intake teams with a bounded repetitive workflow.
+4. Hospitality operators, separately analyzed due to different systems and risk profile.
 
-## Recruitment
+Keep decision-maker interviews separate from front-line call-handler interviews. Personal professionals and consumer missed-call screening are secondary-mode research, not part of the same B2B sample.
 
-Start with 12–18 interviews across at least three segments; this is qualitative discovery, not statistically representative market sizing. Avoid interviewing only friends or people already enthusiastic about AI. Record segment, recruitment channel and relevant call context without collecting actual call recordings or sensitive phone data.
+## Recruitment and governance
 
-## Interview guide (20–30 minutes)
+Proposed first round: 12–18 qualitative interviews across three or four segments, with enough role coverage to distinguish buyer, operator and caller impact. This is exploratory, not statistically representative market sizing. Avoid sampling only friends or AI enthusiasts.
 
-### Recent behaviour first
-1. Tell me about the last time you missed or had to interrupt something for a phone call.
-2. How often has that happened in the last seven days? What types of calls were involved?
-3. What happened because you missed or answered the call? Was there a concrete cost, delay or risk?
-4. Which calls do you always want to answer personally? Which can wait? Why?
-5. What do you currently do—silence, reject, voicemail, forwarding, ask someone else, or call back?
-6. What have you tried, paid for or abandoned? What was frustrating?
+Before recruitment, complete the experiment approval checklist with the segment, participant criteria, recruitment channel, questions, consent/data handling, risks, researcher, stop conditions and success/failure criteria. No recording, live call testing, provider outreach, paid campaign or collection of personal/customer data is authorized by this plan.
 
-### Trust and workflow
-7. Would you let an assistant speak to a caller on your behalf? Which callers or topics would be off-limits?
-8. What must the assistant say about being AI? Would you require a notice before recording or transcription?
-9. Would you want to hear the live conversation, see text, take over, or only get a summary? When?
-10. What mistakes would be unacceptable (e.g. disclosing personal information, accepting an appointment, giving directions, missing an emergency)?
-11. What would make setup and call forwarding feel safe and reversible?
-12. Which language(s) do callers actually use, including code-switching?
+## Interview and concept-test sequence
 
-### Value and pricing
-13. What is the value of a typical call handled well? What is the cost of a mistake?
-14. What would you need to see in a one-week trial to keep using it?
-15. Have you paid for a phone, productivity or assistant service? What did you pay and why?
-16. Which pricing would be easiest to understand: fixed subscription with included minutes, usage-based, or a hybrid? Why?
-17. What would make you stop using the product immediately?
+1. Ask for recent call workflows and observed consequences before showing the product concept.
+2. Map one call from arrival through outcome, including what happens if nobody answers, the caller abandons, routing fails or a human is required.
+3. Capture current tools, volumes, cost, system of record, decision rights and existing workaround.
+4. Identify the smallest bounded workflow and its observable success condition.
+5. Ask which information is protected, when caller verification is required and which actions must stay human-approved.
+6. Only then show the concept of a constrained workflow, caller interaction and business call inbox. State clearly that route, missed-call coverage, connectors, handoff and ticket creation are unverified/conditional.
+7. Test comprehension: ask the participant to explain what the product does not guarantee, how to pause it, and when an outcome should be shown as unknown.
+8. Explore buyer, budget, pricing unit and willingness to run a controlled test without asking for a premature purchase commitment.
 
-Avoid leading questions like “Would you use our AI assistant?” Prefer recent examples and observed behaviour. Do not promise features not yet proven.
+## Evidence and synthesis
 
-## Evidence capture template
+Record pseudonymous notes only; do not upload call recordings, customer identifiers, ticket content or credentials. Preserve negative and contradictory cases.
 
-For each interview record: anonymized participant ID; segment; recent incident; call volume range; current workaround; impact; must-answer/off-limits categories; trust blockers; language needs; routing willingness; price evidence; surprising findings; quote with consent; researcher confidence; follow-up. Do not record unnecessary personal data.
+Score each segment on problem frequency/severity, workflow repeatability, cost of current workaround, buyer/budget clarity, willingness to trial, route fit, connector dependency, trust/privacy burden, acquisition reachability and plausible margin. Keep observed facts separate from interpretations and decisions.
 
-## Concept test
+## Proposed decision criteria
 
-After interviews, show a neutral one-page concept with a clearly labelled AI assistant, sample caller disclosure, sample transcript/summary and immediate disable/takeover controls. Ask participants to explain what they think happens, identify risks and compare it with their current workaround. Do not present speculative features as working software.
+Agree exact thresholds before fieldwork. A segment advances only if:
+- multiple independent participants describe recent concrete examples of the same workflow pain;
+- the current workaround and consequence are evidenced, not guessed;
+- a buyer and budget path are identifiable;
+- a bounded first workflow has a measurable success/failure definition;
+- route/event coverage, caller trust, privacy and action safety have plausible evidence paths;
+- unit economics can be tested with a defined usage profile and comparable written provider quotes.
 
-## Suggested decision criteria
-
-Before interviews, agree how to score each segment on pain frequency, impact, workaround weakness, routing feasibility, trust acceptance, willingness-to-pay evidence and reachability. A segment advances only if multiple independent participants provide recent concrete examples and a plausible path to test the solution. Interest alone is insufficient.
+If a required route or connector cannot be validated, remove the dependent promise or choose a workflow that does not need it. Do not assume missed-call visibility, customer lookup, ticket creation or handoff.
 
 ## Outputs
 
-- Anonymized interview notes and evidence matrix.
-- Segment comparison and problem statement.
-- Top adoption blockers and non-negotiable safety controls.
-- Updated product assumptions and research register.
-- A small validation experiment with success/failure thresholds.
+- Segment comparison and evidence-backed problem statement.
+- Buyer/operator map and current-state workflow.
+- Candidate first workflow, required data/actions and safe failure branches.
+- Explicit assumptions and unresolved route/provider/connector dependencies.
+- Updated requirements, scope, UX and acceptance scenarios.
+- Decision recommendation with negative evidence, confidence and revisit trigger.
 
 ## Ethics and privacy
 
-Obtain informed participation; do not capture or upload third-party calls as part of discovery. Do not request real phone numbers, sensitive call content or contact lists. If future experiments involve actual calls, use explicit consent, appropriate notices, controlled test participants and legal review.
+Participation must be informed and voluntary. Do not collect real customer call recordings or sensitive case content for discovery. Actual call experiments, provider outreach, participant UX validation, spending or legal review require separate approval for that activity. A static concept is not working software; simulated outcomes must be labelled as simulated.
