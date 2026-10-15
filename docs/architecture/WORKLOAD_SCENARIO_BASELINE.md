@@ -77,3 +77,23 @@ Use measured p95/p99 peak concurrency and a burst scenario to approve capacity a
 5. Owner approval of the planning assumptions before they are used as committed budget or SLO inputs.
 
 No product or infrastructure choice is made by this scenario document.
+
+
+## Business phone assistant workload dimensions — 2026-10-15
+
+The existing low/base/high table uses registered accounts and MAU as a generic sensitivity set. For the primary B2B hypothesis, do not assume that “10,000 registered users” means 10,000 organizations, 10,000 active numbers or 10,000 concurrent calls. Keep the existing scenario set for historical comparison and build a separate business workload once the target segment and route are selected.
+
+| Business workload input | Low | Base | High | Evidence needed |
+|---|---|---|---|---|
+| Organizations / tenants | TBD | TBD | TBD | Segment sizing and customer evidence |
+| Active business users per organization | TBD | TBD | TBD | Role/team workflow evidence |
+| Active phone numbers/routes per organization | TBD | TBD | TBD | Route model and customer interviews |
+| Calls per active number per day/week | TBD | TBD | TBD | Interview evidence, later pilot telemetry |
+| Call duration distribution (average/p95/long tail) | TBD | TBD | TBD | Customer estimates and later observed evidence |
+| Peak-hour arrival concentration | TBD | TBD | TBD | Workflow/time-of-day evidence |
+| Peak concurrent calls and calls per second | TBD | TBD | TBD | Provider limits and measured burst profile |
+| Connector actions per call | TBD | TBD | TBD | First workflow and selected connector |
+| Billable call legs/usage units | TBD | TBD | TBD | Written route/provider billing contract |
+| Support/reconciliation effort | TBD | TBD | TBD | Operational evidence when available |
+
+All entries are intentionally TBD. Do not replace these with guessed values or merge this template into the existing 10k registered-user sensitivity table without documenting a versioned rationale and owner review. Cost, capacity and pricing should use the same approved business workload version.
