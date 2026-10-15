@@ -299,3 +299,9 @@ README and linked documents must be verified against current main after this inc
 - Explicitly labelled UX_WIREFLOW_SPEC.md as inherited personal-assistant material; BUSINESS_ASSISTANT_UX_WIREFLOWS_DRAFT.md remains the candidate business-flow reference.
 - Form factor, screen inclusion, navigation, route, connector and first workflow remain undecided. No customer UX validation has occurred.
 - All screen IDs and flows remain draft; Phase 0 remains incomplete and product implementation remains unauthorized.
+
+
+## Business assistant architecture contract alignment — 2026-10-15
+- Added conceptual mappings for proposed REQ-017–REQ-022 across API resource families, candidate data entities, state/event contracts, business domain vocabulary and threat areas.
+- API schemas, entities, states, event names and threats remain drafts; no provider route or connector was selected, and no tests were run.
+- All BPA scenarios remain NOT RUN; Phase 0 remains incomplete and product implementation remains unauthorized.

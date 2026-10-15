@@ -157,3 +157,17 @@ See the business assistant coverage gap audit for the recommended requirement re
 ## 12. Approval status
 
 This is a consistency contract for further discovery. It is not customer validation, a legal opinion, a provider capability statement, a finalized schema, a production design or authorization to implement. Phase 0 remains incomplete; all acceptance scenarios remain NOT RUN.
+
+
+## Proposed requirement addendum mapping — 2026-10-15
+
+The proposed [Business Phone Assistant Requirements Addendum](../requirements/BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md) adds working IDs REQ-017–REQ-022. Their intended conceptual contract alignment is:
+
+- **REQ-017:** Section 3 organization/membership authorization; BPA-001–BPA-002.
+- **REQ-018:** Section 4 workflow definition/publication and version binding; BPA-003–BPA-005 and BPA-018.
+- **REQ-019:** Section 5 caller matching/verification; BPA-006–BPA-007.
+- **REQ-020:** Section 6 call observations/outcomes and route evidence; BPA-012–BPA-015, BPA-017–BPA-018.
+- **REQ-021:** Section 7 typed connector actions and authoritative outcomes; BPA-009–BPA-011.
+- **REQ-022:** Section 8 dashboard metric provenance and tenant-scoped reporting; BPA-016 plus relevant outcome-source scenarios.
+
+These are cross-document mappings for review, not a finalized schema. The original REQ-001–REQ-016/NFR-001–NFR-010 remain draft, and the six addendum IDs remain proposed. All scenarios remain NOT RUN.

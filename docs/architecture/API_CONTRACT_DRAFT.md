@@ -108,3 +108,21 @@ No endpoint, schema or provider contract is approved. Convert this draft into ve
 ## Business phone assistant domain alignment — 2026-10-13
 
 See [Business Assistant Domain Contract Draft](BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) for proposed organization/membership boundaries, workflow version publication, call observation/outcome semantics, caller verification and authoritative connector-action outcomes. These remain conceptual; do not treat the resource vocabulary as approved endpoints or schemas. In particular, organization membership is separate from account authentication, caller ID is not authentication, and a connector timeout is not proof of action failure or success.
+
+
+## Proposed REQ-017–REQ-022 contract alignment — 2026-10-15
+
+The following is a resource/operation review checklist, not an approved API or endpoint design. It extends the conceptual business domain contract and the proposed [Business Phone Assistant Requirements Addendum](../requirements/BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md).
+
+| Proposed requirement | Candidate API resource/operation families | Contract conditions to resolve before schema approval |
+|---|---|---|
+| REQ-017 organization authorization | Organizations, invitations, memberships, roles, organization-scoped list/read/write/export | Derive organization scope server-side; define membership status, role matrix, revocation timing, non-disclosing denial behavior and support-access exception. |
+| REQ-018 workflow lifecycle/version binding | Workflow definitions, immutable versions, validation, synthetic test, publish, pause, retire, version history | Typed block/schema registry; actor permissions; transition preconditions; per-call version binding; synthetic tests cannot create real side effects. |
+| REQ-019 caller verification | Caller match lookup, verification attempt/state, protected-data/action gate | Do not treat caller ID as authentication; minimize exposed match details; define retry, expiry, failure, abandonment and audit semantics. |
+| REQ-020 call outcomes/observation | Call observations, call sessions/provider legs, outcome query and reconciliation | Preserve source and event-time/receive-time provenance; unknown/unobserved remains distinct; route coverage must be documented before any complete missed-call claim. |
+| REQ-021 connector actions | Registered connector operations, action execution, result lookup/reconciliation | Server-side allowlist, tenant/resource scope, typed input/output, authorization, idempotency, confirmation policy and authoritative outcome state. |
+| REQ-022 metric provenance | Tenant-scoped overview/report queries and metric definitions | Each metric needs source, denominator, exclusions, freshness and late-event correction semantics; query authorization applies at resource and aggregation levels. |
+
+Candidate action outcome states: `not_requested`, `denied`, `pending`, `confirmed_success`, `confirmed_failure`, `unknown_reconciliation_required`. Candidate names are illustrative only and must be reconciled with the state/event contract before API naming is approved.
+
+Do not publish an OpenAPI schema or implement these resource families until the owner approves the business requirement baseline, the first workflow and applicable provider/connector contracts.

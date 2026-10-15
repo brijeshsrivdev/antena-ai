@@ -182,3 +182,19 @@ No state machine, event schema, deletion SLA, usage unit, provider mapping or re
 ## Business assistant lifecycle alignment — 2026-10-13
 
 Use [Business Assistant Domain Contract Draft](BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) as the current vocabulary crosswalk for workflow publication, call observations, caller verification and connector action outcomes. Workflow pause and route disable are separate state dimensions. Preserve unknown/unobserved call states and ambiguous connector outcomes; do not turn missing events into “no call” or a timeout into confirmed action failure. All states/event names remain conceptual pending provider mapping and owner review.
+
+
+## Proposed REQ-017–REQ-022 lifecycle crosswalk — 2026-10-15
+
+This section links the proposed business requirements to conceptual state/event contracts. State and event names below are not finalized or provider-supported.
+
+| Proposed requirement | State/event contract to define | Failure/unknown invariant |
+|---|---|---|
+| REQ-017 | Membership active/suspended/revoked; role/grant changes; authorization decision audit | Authentication does not imply membership. Revocation must affect future authorization checks according to an approved policy. |
+| REQ-018 | Workflow draft → validated → published → paused/retired; per-execution version reference | Invalid/unpublished workflows do not handle new calls. A new publication does not silently rewrite active execution version. |
+| REQ-019 | Match unresolved/none/unique/ambiguous; verification not_required/required/pending/passed/failed/abandoned/expired | Caller ID alone cannot move verification to passed; no protected disclosure/action on unknown or failed verification. |
+| REQ-020 | Observation received/validated/deduplicated/reconciliation_required; call outcome classifications | No observed event is not proof no call occurred. Preserve conflicting/late evidence and source coverage limits. |
+| REQ-021 | Action not_requested/denied/pending/confirmed_success/confirmed_failure/unknown_reconciliation_required | Timeout is ambiguous unless the connector contract proves no side effect; retries cannot blindly duplicate writes. |
+| REQ-022 | Metric computed with source version, event-time window, freshness and reconciliation state | Unknown/unobserved events cannot be silently counted as success or as absence; late corrections must follow documented policy. |
+
+Proposed scenarios: BPA-001–BPA-018. All remain NOT RUN. Do not finalize event names or implement state transitions until the route/provider, connector, accepted requirements and operational ownership are reviewed.
