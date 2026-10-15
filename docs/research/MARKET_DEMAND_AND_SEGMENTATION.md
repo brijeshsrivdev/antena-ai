@@ -72,3 +72,19 @@ The category merits validation; it is not yet evidence that this product should 
 ## 8. Decision status
 
 No market-size number, segment, launch country, price, marketing claim or investment decision is approved.
+
+## 9. Business phone assistant hypothesis after product pivot — 2026-10-15
+
+The primary hypothesis is now a configurable AI business phone assistant. The earlier Equal AI/consumer assistant evidence is a category signal only; it is not evidence that a small business segment will buy this product. The business case needs its own bottom-up validation.
+
+Candidate segments to compare, not select:
+- small service businesses with repetitive inbound enquiries;
+- small businesses where missed or inconsistently handled calls may lose leads;
+- support/order-status/complaint intake teams with bounded repeatable workflows;
+- hospitality operators as a separate cohort because integrations and buyer economics may differ.
+
+For each segment, establish the buyer and operator, inbound call volume and distribution, workflow repeatability, current systems/workaround, cost of failure, data sensitivity, caller-verification needs, route/provider constraints, required connector, support burden and plausible budget. A high call count alone does not prove willingness to pay or automation suitability.
+
+Do not calculate a B2B TAM from total mobile subscribers or consumer assistant metrics. Use a sourced count of businesses in the chosen segment, explicit size/geography filters, estimated eligible call volumes and supported-route constraints, then low/base/high adoption and price scenarios with confidence labels. Keep assumptions separate from sourced facts.
+
+**Open gate:** No B2B segment, first workflow, geography, buyer, pricing or acquisition channel is approved. Interviews, provider outreach and participant testing require separate owner approval. This section is a research plan, not a demand conclusion.
