@@ -327,3 +327,11 @@ README and linked documents must be verified against current main after this inc
 - Added a business workload/cost attribution template for organizations, active numbers, call volumes, call legs, connector actions and support/reconciliation.
 - All business workload inputs are intentionally TBD; the prior registered-user scenarios remain sensitivity assumptions, not forecasts or concurrency specs.
 - No price, margin target, provider or workload has been approved. No quotes, interviews or load tests occurred; Phase 0 remains incomplete and product implementation remains unauthorized.
+
+
+
+## Business Phase 0 evidence-template reconciliation — 2026-10-15
+- Added business workflow interview, route/event coverage and connector-contract templates to the Phase 0 evidence workbook; replaced the inherited personal-use-case provider outreach template with a business phone assistant version that remains unsent and requires approval.
+- Added G0-21–G0-26 exit gates for business segment/workflow, tenant/workflow contract, route/event coverage, connector outcomes, dashboard metrics and business workload/pricing.
+- Added RSK-019–RSK-023 for tenant authorization, workflow abuse, missed-call overclaim, ambiguous connector writes and misleading dashboard metrics.
+- No interviews, provider outreach, quotes, route tests or other fieldwork occurred. Phase 0 remains incomplete and product implementation remains unauthorized.
