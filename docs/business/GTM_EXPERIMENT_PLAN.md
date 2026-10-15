@@ -3,29 +3,29 @@
 **Status:** Proposed experiments only. No campaign has run and no demand result is claimed.
 
 ## Objective
-Find one reachable initial segment with a frequent call-handling problem, willingness to configure the actual route, and plausible contribution margin. Avoid broad paid acquisition before the core experience and route work.
+Find one reachable business segment with a repeated, consequential inbound-call workflow, an identifiable buyer, willingness to configure a supported route, and plausible contribution margin. The primary hypothesis is a configurable AI business phone assistant; consumer/personal call-assistant demand is separate. Avoid paid acquisition before the workflow, route and operating model are validated.
 
 ## Segment hypotheses
 
-| Segment | Job/problem hypothesis | Acquisition test | Strong signal | Stop/revise signal |
+| Segment hypothesis | Job/problem hypothesis | Discovery channel (after approval) | Strong signal | Stop/revise signal |
 |---|---|---|---|---|
-| Professionals interrupted by unknown calls | Need a filter that captures useful intent without interruption | 1:1 interviews and waitlist page with clear route limitations | Willingness to test real route after setup/privacy disclosure | Likes the idea but refuses required setup |
-| Self-employed/small business owners | Missed calls may lose leads or revenue | Direct outreach and workflow interviews | Can name recent lost lead and opts into pilot | Problem solved by voicemail/WhatsApp or too infrequent |
-| Delivery/courier-heavy users | Need call intent without picking up | Diary study around real incidents; synthetic demo | Repeated pain and measurable recovery time saved | Too few useful calls or no willingness to pay |
-| Hospitality operators | Need call capture and reliable FAQ/enquiry handling | Interview front-desk/owner roles separately; map workflow | Operational pain, trusted API path, buyer and budget identified | Needs full contact-centre/PMS replacement or API unavailable |
+| Small service businesses | Capture and consistently route repetitive inbound enquiries while staff are busy | Founder-led interviews with owners and call handlers | Recent examples, measurable lost work/time, buyer and trial path identified | Low frequency, no meaningful consequence or existing process is sufficient |
+| Small-business inbound sales/enquiries | Capture lead details and ensure follow-up for calls not answered promptly | Workflow interviews and current-state mapping | Can show repeated dropped enquiries and define a measurable outcome | Value depends on unverified missed-call capture or an unselected CRM write |
+| Support/order-status/complaint intake | Standardize bounded repetitive intake and create a reliable handoff record | Separate interviews with support leads and front-line agents | Repetitive intent, defined fields, system of record and safe fallback | Most calls require judgment or sensitive access the workflow cannot safely support |
+| Hospitality operators (separate cohort) | Capture guest enquiries with approved answers and handoff | Separate owner/front-desk interviews; API capability review only after approval | Clear operational ROI, buyer/budget and trusted API path | Requires contact-centre/PMS replacement or unsupported integration |
 
-Do not combine consumer and hospitality demand into one market-size claim.
+Keep personal consumer demand, hospitality and other business segments separate in synthesis and any market-size claim.
 
 ## Experiment sequence
 
-### Experiment 1 — Problem interviews
-Recruit 12–18 participants across segments. Use CUSTOMER_INTERVIEW_PACK.md. Capture last incident, frequency, workaround, consequence, trust boundaries and pilot commitment. Do not record audio without separate consent and legal review. Outcome: rank segments by evidence.
+### Experiment 1 — Business workflow interviews
+After separate owner approval, recruit 12–18 decision-makers and front-line call handlers across business segment hypotheses. Use CUSTOMER_INTERVIEW_PACK.md. Capture the last concrete call workflow, volumes, consequences, current system/workaround, buyer/budget, action boundary and pilot commitment. Do not record calls or collect customer data. Outcome: rank segments and identify one candidate workflow by evidence.
 
 ### Experiment 2 — Transparent concept test
 Show a short description and static workflow only after behaviour questions. Disclose that route and supported carriers are not yet confirmed. Test whether users understand capabilities and limitations.
 
-### Experiment 3 — Route feasibility opt-in
-Invite only consenting participants with test SIM/device arrangements after route review. No real customer calls; use the controlled protocol. Measure willingness to perform setup, failure tolerance and route coverage.
+### Experiment 3 — Business route and event-coverage feasibility
+Only after separate owner approval, evaluate the selected business-number route with a controlled test setup and written provider support. Map call connection, media, provider events, caller-ID behavior, transfer/handoff if relevant, disable/recovery and missed-call visibility. Do not use live customer traffic. Measure only the route's evidenced coverage; do not infer complete missed-call capture.
 
 ### Experiment 4 — Concierge/manual outcome test
 If cellular routing is not ready, test the underlying job with synthetic or appropriately consented examples—not covert live calls. Measure whether structured summaries or follow-up tasks are valuable independently of automated interception. Never represent simulated service as live automation.
@@ -57,3 +57,11 @@ Do not begin broad Google/Meta ads before evidence of retention and cost coverag
 
 ## Weekly evidence review
 Record hypothesis, experiment, sample, observations, negative cases, costs, decision, confidence and next test. Keep raw personal data out of the repository. No result is complete without its evidence source and limitations.
+
+
+## Business-first guardrails — 2026-10-15
+
+- Select one business segment and one workflow before designing a waitlist or acquisition message. Do not use consumer AI-assistant adoption as proof of B2B demand.
+- Do not market ticket creation, CRM updates, caller verification, transfer/handoff, missed-call capture or complete call analytics until the exact route, connector and outcome contract are evidenced and approved.
+- Track buyer, operator and caller separately. Signup interest without workflow fit, setup acceptance, repeat use and contribution margin is not validation.
+- Keep this plan as preparation only. No outreach, interviews, ads, route tests, provider contact or spend have occurred or are authorized by this document.
