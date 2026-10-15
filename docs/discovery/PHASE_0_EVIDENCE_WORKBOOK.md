@@ -19,7 +19,7 @@
 | Field | Entry |
 |---|---|
 | Participant ID | P-___ |
-| Segment hypothesis | Professional / delivery-heavy / self-employed / other |
+| Segment hypothesis | Small service business / inbound sales / support-intake / hospitality (separate cohort) / other |
 | Recruitment source |  |
 | Interview date |  |
 | Consent for notes | Yes / No — stop if no |
@@ -88,7 +88,7 @@ Send the same VOICE_PROVIDER_RFP.md questionnaire to each candidate only after o
 
 | Item | Provider A | Provider B | Provider C |
 |---|---|---|---|
-| Exact personal-call-assistant use expressly supported? | Not requested | Not requested | Not requested |
+| Exact proposed business phone-assistant use expressly supported? | Not requested | Not requested | Not requested |
 | Supported operators/forwarding modes | Unknown | Unknown | Unknown |
 | Caller ID behaviour | Unknown | Unknown | Unknown |
 | Transfer/takeover behaviour | Unknown | Unknown | Unknown |
@@ -108,6 +108,28 @@ Do not compute a winner until quotes describe comparable components and the inte
 | Evidence ID | Observation (fact) | Interpretation (hypothesis) | Counter-evidence / uncertainty | Requirement or decision affected | Next test / owner | Status |
 |---|---|---|---|---|---|---|
 | EV-001 | No evidence collected | None | All major assumptions remain open | ODP-001 / ODP-003 / ODP-005 | Owner to approve fieldwork | OPEN |
+
+
+
+## Workstream E — Business workflow discovery and segment comparison
+
+Use only after owner approval of the interview scope. Do not put participant identities or raw customer data in this public repository.
+
+| Evidence ID | Segment hypothesis | Participant role (buyer/operator) | Recent workflow incident | Calls per day/week (range + basis) | Current workaround/system | Consequence/cost evidence | Candidate bounded workflow | Buyer/budget signal | Trust/privacy constraints | Route/connector dependencies | Counter-evidence | Confidence / next action |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| BIZ-001 | TBD | TBD | Not collected | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | OPEN |
+
+For each candidate workflow, record the start event, required fields, protected data, verification need, authorized action, success condition, failure/unknown states, human fallback and system of record. Do not assume ticket creation, missed-call coverage or transfer support.
+
+## Workstream F — Business route, event coverage and connector contract
+
+Complete only after separate owner approval, a selected candidate segment/workflow and provider shortlist. No provider outreach or live route testing is authorized by this template.
+
+| Evidence ID | Route/provider candidate | Number/route model | Call connection/media evidence | Provider/carrier event coverage | Caller-ID behavior | Missed-before-connection observability | Handoff support/evidence | Disable/recovery evidence | Connector/action dependency | Written terms/quote | Unknowns / stop condition | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ROUTE-BIZ-001 | TBD | TBD | Not tested | Unknown | Unknown | Unknown | Unknown | Not tested | TBD | No quote | Do not promise coverage or activate route | BLOCKED |
+
+For any connector proposed by the workflow, record operation name/version, typed input/output, organization scope, permission source, required confirmation, idempotency key, timeout/retry behavior, authoritative success source, ambiguous-result reconciliation, data retained and cost basis. A connector timeout is not automatically a failure or success.
 
 ## Suggested sequencing and stop conditions
 
@@ -130,28 +152,32 @@ Do not compute a winner until quotes describe comparable components and the inte
 
 ## Provider outreach email template (draft; send only after owner approval)
 
-**Subject:** Request for written feasibility and pricing — India AI call-assistant route evaluation
+**Subject:** Request for written feasibility and pricing — AI business phone assistant
 
 Hello,
 
-We are evaluating a potential India-first AI call-assistant service and are conducting discovery only. No production deployment or customer traffic is planned at this stage.
+We are evaluating a potential AI business phone assistant during discovery only. No production deployment or customer traffic is planned at this stage, and no provider has been selected.
 
-We need written confirmation of whether your service terms and technical platform support this exact use case: a consenting user may configure a supported call-forwarding or hosted-number route so an AI assistant can answer selected incoming calls, disclose that it is an AI assistant, capture the caller's stated purpose and deliver a summary to the user. We will not use the service for emergency calls, OTP/bank authentication, deceptive impersonation or sensitive production testing.
+The current product hypothesis is a business-configured inbound call workflow: callers interact with an AI assistant over a supported business-number route, and authorized business users review call outcomes and any confirmed actions. The first business segment/workflow and any ticket/CRM connector remain undecided. We need to understand whether your terms and platform support the specific route and workflow we may select.
 
-Could you please confirm in writing:
+Could you please provide written answers to the following, separating contractual commitments from general product capabilities?
 
-1. Whether this personal consumer use case is allowed under your current terms, and any country/operator/number/KYC restrictions.
-2. Which Indian operators and forwarding types are supported, including no-answer, busy, unreachable and unconditional forwarding.
-3. Caller ID behaviour, transfer/takeover options, failure fallback and any known carrier limitations.
-4. An itemised written quote covering all inbound/outbound/forwarding/bridge legs, number rental, media streaming, speech/model components, failed-call billing, billing pulse, taxes, concurrency/CPS, overages and minimum commitments.
-5. Data processing locations, subprocessors, audio/transcript retention, deletion timelines, training use, security documentation, incident notification and applicable contractual documents.
-6. Sandbox/test-number availability and the process for a small controlled feasibility test using consenting participants.
+1. Which business-number models are supported for inbound calls (hosted number, forwarding, SIP/PBX or other), in which countries/operators, and under what KYC/contract restrictions?
+2. For each supported route, which call lifecycle/media events are exposed (ringing/offered, connected, abandoned, failed, missed before assistant connection, transfer/handoff, disconnected), with event IDs, timestamps, retries, ordering and reconciliation behavior?
+3. What caller-ID information is preserved and what are the known limitations? Can missed-call visibility be guaranteed for calls that never connect to the assistant? If not, please state the precise coverage boundary.
+4. What real-time media/streaming capabilities, codecs, latency characteristics, concurrency/CPS limits and failover behavior are contractually supported?
+5. What transfer/handoff mechanisms exist, and what authoritative events confirm success, failure or timeout?
+6. Please provide itemized pricing for numbers, inbound/forwarding/bridge/transfer legs, media streaming, STT/TTS/model usage, recording/transcription, failed calls, billing pulse/rounding, taxes, minimum commitments, overages and support.
+7. What data locations, subprocessors, retention/deletion behavior, training use, security documentation, incident notification and contractual data-processing terms apply?
+8. What typed APIs/connectors, authentication scopes, idempotency controls, webhook security and authoritative action-result/reconciliation interfaces are available? Please do not assume a generic ticket/CRM connector is in scope.
+9. Are sandbox/test numbers available for a small, controlled feasibility test using consenting test participants, and what approval or spend limits apply?
+10. Please state quote validity, cancellation/exit terms, service/support commitments and all excluded charges.
 
-Please distinguish contractual commitments from general marketing capabilities, and list any excluded charges or unsupported scenarios. We would appreciate a response valid through a stated date and an example invoice for 20,000, 150,000 and 600,000 connected minutes per month, with assumptions and excluded costs shown separately.
+Please include example pricing for a clearly stated low/base/high workload only if each scenario's assumptions and excluded costs are shown. We do not yet have approved business workload values, so do not treat 10,000 registered users as a concurrency specification.
 
 Thank you,
 Product Discovery Team
 
 ---
 
-Do not send this email or share personal/business information until the owner has selected the intended route and approved the provider shortlist. A response is evidence of a vendor statement, not proof of capability; contractual review and controlled tests remain necessary.
+Do not send this email or share project/business details until the owner approves the provider shortlist and exact outreach scope. A response is evidence of a vendor statement, not proof of capability; contract review and controlled tests remain necessary.
