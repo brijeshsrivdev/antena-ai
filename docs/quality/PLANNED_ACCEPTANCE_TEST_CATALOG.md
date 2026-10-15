@@ -117,15 +117,7 @@ This catalogue converts the testability audit into concrete scenario IDs, precon
 - The test catalogue does not replace the route configuration matrix, labelled conversation corpus, data-class deletion inventory, incident runbooks, provider invoice reconciliation, accessibility audit or independent security review. Those are separate evidence artifacts.
 - No scenario was executed as part of this documentation increment. There are no pass/fail results, benchmarks, coverage claims or proof of product behavior here.
 
-## 6. Entry criteria before a scenario can be executed
-
-1. The owner has approved the applicable scope and requirement version.
-2. Required route/provider capability and supported configuration are evidenced, or the test is explicitly limited to a named mock/contract test.
-3. Any legal/privacy-dependent policy is reviewed for the target jurisdiction and data flow.
-4. Threshold, measurement boundary, sample/denominator and pass/fail rubric are approved before collecting results.
-5. Test data, access, spend caps, rollback/recovery, logging and evidence retention are defined.
-6. The test has a named responsible person and a safe stop/abort condition.
-## 4. Supplemental business phone assistant scenarios — proposed, NOT RUN
+## 6. Supplemental business phone assistant scenarios — proposed, NOT RUN
 
 These scenarios were added after the product-direction pivot to identify gaps not covered by the original personal-assistant-oriented requirement catalogue. They do not replace the original 68 scenarios or approve a business-oriented baseline. See [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md) for the requirement crosswalk and disposition plan.
 
@@ -150,7 +142,15 @@ These scenarios were added after the product-direction pivot to identify gaps no
 | Handoff capability gate | BPA-017 | One route is unsupported for handoff and another has verified support | Attempt handoff and process success/failure/timeout | Unsupported handoff is unavailable; success is shown only after authoritative confirmation; safe fallback remains available | Route capability matrix + provider event trace | NOT RUN — route evidence open |
 | Workflow/route urgent pause | BPA-018 | Workflow and telephony route have separate control states | Authorized operator pauses workflow or requests route disable during an incident | Distinguish workflow pause from route disable and requested/pending/confirmed/unverified state | State transition + audit trace | NOT RUN — authority/state contract open |
 
+## 7. Entry criteria before a scenario can be executed
 
-## 7. Conclusion
+1. The owner has approved the applicable scope and requirement version.
+2. Required route/provider capability and supported configuration are evidenced, or the test is explicitly limited to a named mock/contract test.
+3. Any legal/privacy-dependent policy is reviewed for the target jurisdiction and data flow.
+4. Threshold, measurement boundary, sample/denominator and pass/fail rubric are approved before collecting results.
+5. Test data, access, spend caps, rollback/recovery, logging and evidence retention are defined.
+6. The test has a named responsible person and a safe stop/abort condition.
+
+## 8. Conclusion
 
 This is a future test plan, not verification evidence. Phase 0 remains incomplete. No acceptance threshold or requirement has been approved by this catalogue, and product implementation remains unauthorized.
