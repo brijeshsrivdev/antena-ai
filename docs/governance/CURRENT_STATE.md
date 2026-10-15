@@ -1,6 +1,6 @@
 # Current State
 
-Snapshot: 2026-10-13. Repository: brijeshsrivdev/antena-ai. Default branch: main.
+Snapshot: 2026-10-15. Repository: brijeshsrivdev/antena-ai. Default branch: main.
 
 - Product implementation: not started and not authorised.
 - Discovery: in progress; charter approval pending.
@@ -335,3 +335,11 @@ README and linked documents must be verified against current main after this inc
 - Added G0-21–G0-26 exit gates for business segment/workflow, tenant/workflow contract, route/event coverage, connector outcomes, dashboard metrics and business workload/pricing.
 - Added RSK-019–RSK-023 for tenant authorization, workflow abuse, missed-call overclaim, ambiguous connector writes and misleading dashboard metrics.
 - No interviews, provider outreach, quotes, route tests or other fieldwork occurred. Phase 0 remains incomplete and product implementation remains unauthorized.
+
+
+
+## Business pivot cross-document consistency pass — 2026-10-15
+- Updated the planned acceptance catalogue scope statement to include 68 original TC/NT scenarios plus 18 supplemental BPA scenarios; all 86 remain NOT RUN.
+- Added a post-pivot consistency review across requirements, scope, UX, architecture/security, validation, economics and Phase 0 governance.
+- Remaining blockers are owner selection of the first business segment/workflow, customer evidence, route/provider event coverage, connector/caller-verification decisions, jurisdiction-specific review, comparable quotes and owner approval of the complete baseline.
+- No external activity or implementation was performed. Phase 0 remains incomplete and product implementation remains unauthorized.
