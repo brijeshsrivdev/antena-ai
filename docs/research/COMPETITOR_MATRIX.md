@@ -1,6 +1,6 @@
-# Competitor Matrix — Personal AI Call Assistant
+# Competitor Matrix — AI Call Handling and Business Voice Agents
 
-**Status:** Desk-research snapshot; not a final market conclusion. **Checked:** 2026-10-11. Claims and store metadata can change. No purchase, hands-on benchmark, or independent product test has been completed.
+**Status:** Desk-research snapshot; not a final market conclusion. **Checked:** 2026-10-11. Claims and store metadata can change. No purchase, hands-on benchmark, or independent product test has been completed. The table mixes consumer call assistants, developer voice-agent platforms and B2B telephony vendors; these are adjacent categories, not directly comparable products.
 
 ## Executive take
 The category is validated by competitors, especially Equal AI and hiRobin. A generic “AI answers unknown calls and sends a summary” product is not differentiated enough. Discovery must establish whether we can deliver a more reliable/transparent call-routing experience, a narrow initial segment, or trustworthy domain actions without excessive privacy and operational risk.
@@ -50,3 +50,15 @@ Equal AI's official terms state that paid Android features may be offered throug
 
 ## Next actions
 Run a scripted, same-device comparison against Equal AI, hiRobin and Truecaller where technically and legally possible. Record device, carrier, route, call outcome, latency, language, disclosure, takeover, controls and observed cost. Do not record real third-party calls without a reviewed lawful consent process.
+
+
+## Business-first comparison boundary — 2026-10-15
+
+For the primary business phone assistant hypothesis, separate competitors and substitutes into:
+1. **Business telephony/IVR/contact-centre providers** that may be direct competitors, route providers or integration partners.
+2. **Developer voice-agent platforms** that provide infrastructure but may require product, telephony, workflow and support layers.
+3. **Consumer call assistants and OS screening** that validate adjacent caller-handling behaviors but do not establish B2B buyer demand.
+
+The next comparison pass should assess, for each relevant B2B option, business-number provisioning/porting, inbound call/event coverage, workflow builder/versioning, organization roles, connector catalog, authoritative action outcomes, call inbox/analytics, languages, support/SLA, data processing/retention, deployment constraints, minimum contract and itemized total cost. Mark unverified fields as unknown; do not infer support from marketing claims.
+
+No hands-on benchmark or provider outreach is authorized by this matrix. B2B fit, partnership potential, buyer willingness to pay and route-specific reliability remain unvalidated.
