@@ -1,75 +1,105 @@
-# Customer Discovery Interview Pack
+# Business Phone Assistant — Customer Discovery Interview Pack
 
-**Status:** Ready-to-run research instrument. **No interviews have been conducted.** A 10,000-user target is not evidence of demand.
+**Status:** Proposed research instrument for owner review. **No interviews have been conducted.** This document does not authorize recruitment or fieldwork. Product implementation remains unauthorized.
 
 ## Research objective
-Determine whether a defined segment has a frequent, painful call-handling problem and would trust an AI assistant to answer on their behalf. Test the problem before pitching the solution.
 
-## Recruit across segments
-- Professionals interrupted by unknown or low-value calls.
-- People receiving delivery/courier coordination calls.
-- Self-employed people and small business owners who miss calls while working.
-- People using regional languages or code-switching.
-- Keep hospitality/business interviews separate from consumer interviews; they may have different buyers, workflows and economics.
+Determine whether a specific type of business has a frequent, consequential inbound-call workflow that is poorly served by its current process; identify who buys, who operates the process, what callers need, what actions are safe/valuable, and whether a constrained AI phone assistant could be trusted and economically viable.
 
-Suggested first round: 12–18 interviews, 3–5 per segment, then a small diary study. This is qualitative discovery, not statistically representative validation.
+The primary hypothesis is a configurable AI business phone assistant. Personal AI call-assistant users are a separate, later candidate and must not be mixed into the same demand conclusion.
+
+## Candidate business segments to compare
+
+Treat these as hypotheses, not selected markets:
+- **Small service businesses:** repair, maintenance, local professional services and appointment-based businesses.
+- **Inbound sales/enquiry businesses:** small retailers, distributors or service providers where calls may become leads.
+- **Customer support/order status:** businesses that receive repetitive status, complaint or return calls.
+- **Hospitality operators:** guest enquiries and booking-related calls; interview separately because workflows, systems and risks may differ.
+
+Recruit decision-makers and front-line call handlers separately where possible. The person paying may not be the person handling calls. Do not assume hospitality is the first vertical.
+
+Suggested first round: 12–18 qualitative interviews across three or four segment hypotheses, with roles and segments tracked separately. This is exploratory, not statistically representative market validation. Owner approval is required before fieldwork.
 
 ## 30-minute interview guide
 
-### Opening and consent (2 min)
-Explain that this is research, not a sales pitch. Ask permission for notes. Do not record audio without separate consent and legal review. Participation is voluntary.
+### Opening and consent (2 minutes)
+Explain that this is research, not a sales pitch. Ask permission for notes. Participation is voluntary. Do not record audio, collect customer call logs or share business/customer data without separate approval, appropriate consent and privacy review.
 
-### Recent behaviour (8 min)
-1. Tell me about the last time you missed, ignored or declined a call you later wished you had answered.
-2. What happened next? How did you recover the information?
-3. In a typical week, approximately how many unknown calls do you receive? How many are useful?
-4. Which calls are disruptive? Which would be risky to delegate?
-5. How do you handle delivery, appointments, work calls, spam and urgent unknown callers?
-6. Have you tried caller-ID, spam-filter, screening or AI assistant products? Why did you keep or uninstall them?
+### Recent call workflow (8 minutes)
+1. Walk me through the last inbound business call that was difficult, missed, delayed or handled inconsistently.
+2. What was the caller trying to do? What happened from ring to resolution?
+3. Who answered, and what happens when that person is unavailable?
+4. Roughly how many inbound calls arrive on a normal day/week, and how does that vary by busy period?
+5. Which call types are repetitive? Which require judgment, private information or a human decision?
+6. What happens to calls that are abandoned, unanswered, routed incorrectly or not logged?
+7. How do you know whether a call became a lead, ticket, booking, complaint or follow-up?
 
-### Cost of the problem (5 min)
-7. What is the consequence of missing a useful call—lost money, delayed delivery, time, stress, or nothing material?
-8. How often does it happen?
-9. Have you paid for a solution or changed your workflow?
-10. What would make this problem urgent enough to solve now?
+### Current process and consequences (6 minutes)
+8. What tools are used today (mobile, business number, PBX, IVR, CRM, ticketing, WhatsApp, spreadsheets or staff)?
+9. What is the current workaround when calls are missed or queues are busy?
+10. Describe the most recent concrete consequence: lost revenue, delay, repeat work, poor customer experience, staff time or no meaningful impact.
+11. How do you measure that cost today? Which figures are reliable versus estimates?
+12. Have you tried or paid for another solution? Why did it work or fail?
 
-### Trust and control (5 min)
-11. How would you feel about an AI answering in your name?
-12. What must the caller be told?
-13. Which calls should never be answered automatically?
-14. Would you want recording, transcript, summary, or only a notification? For how long?
-15. What controls are needed to take over, pause, exclude contacts or disable the service?
-16. What would make you stop using it immediately?
+### Workflow and integration (5 minutes)
+13. If one call type could be handled consistently, which exact type would you choose first and why?
+14. What information must be collected? What must never be disclosed without verification?
+15. Which actions would be valuable (for example, structured intake or creating a case), and which must remain human-approved?
+16. What system is authoritative for customer records or ticket/case status? Who can authorize access?
+17. What should happen when the assistant is uncertain, a connector fails or a caller requests a person?
 
-### Concept test (5 min)
-After behaviour questions, describe neutrally: “An assistant can answer selected calls, ask why the person is calling, and send you a summary; you can take over where supported.”
-17. What is useful or unhelpful?
-18. What is missing?
-19. What would you not trust it to do?
-20. Which matters most: screening, summaries, simple actions or outgoing delegated calls? Why?
+### Trust, privacy and operations (5 minutes)
+18. What must callers be told about an AI assistant, recording, transcription and data use?
+19. Which languages, accents or code-switching patterns occur in real calls?
+20. Which errors would be unacceptable? What is the safe fallback?
+21. What evidence would staff need to trust a call summary or action status?
+22. What retention, access, deletion, audit or escalation requirements are essential?
+23. Who can pause handling or change a workflow, and what recovery is required if the route fails?
 
-### Price and commitment (5 min)
-21. What would you expect this to cost?
-22. At ₹99, ₹249 and ₹399 per month, what concerns or trade-offs come to mind? Ask open-ended first and randomise order if comparing.
-23. Would you prefer included minutes, pay-as-you-go, or a free allowance followed by a paid plan?
-24. Would you install and configure the actual required call route for a two-week test? What would block you?
-
-Avoid leading language and do not present competitor claims as independent facts.
+### Concept and commercial test (4 minutes)
+Only after behavior questions, describe the unbuilt concept: “A business configures a constrained inbound call workflow; callers interact with an AI assistant; authorized staff review call outcomes and any confirmed actions.” Explicitly state that provider route, integrations and missed-call coverage are not yet confirmed.
+24. What is useful, irrelevant or risky about this concept?
+25. What would need to be true before you would run a controlled trial?
+26. What budget or existing cost would this replace? Who approves spend?
+27. What pricing unit would be understandable: per number, per organization, per connected minute, included minutes or a hybrid? Ask for existing spend before showing stimuli.
+28. What would cause you to reject it immediately?
 
 ## Evidence capture
-For each participant, use a pseudonymous ID and record: segment/role; device and Android version if volunteered; carrier only with permission; last real incident and sequence; frequency and consequence; workaround/spend; current solution; trust boundary and prohibited calls; feature preference; objections; de-identified quote with consent; price reaction; pilot willingness; researcher confidence; contradictory evidence; follow-up permission.
 
-Do not collect phone numbers, contact lists, call recordings or unnecessary personal data in notes.
+Use a pseudonymous participant ID. Record business type, participant role, approximate call-volume range, workflow steps, recent concrete incident, consequence, current system/workaround, action/system-of-record needs, trust boundaries, decision process, price evidence, pilot willingness, objections, confidence, contradictory evidence and follow-up permission.
+
+Do not store customer names, real telephone numbers, call recordings, credentials, ticket contents, contact lists or other unnecessary sensitive business data in this repository. Keep raw notes in an access-controlled research workspace.
 
 ## Synthesis rubric
-Score each segment low/medium/high on problem frequency/severity, existing workaround/willingness to change, trust/setup friction, reachability, plausible unit economics, differentiation against Equal AI/hiRobin/Truecaller, and evidence quality. Enthusiasm is not purchase intent; recent behaviour, costly workarounds, pilot opt-in and retention are stronger signals.
+
+Compare each segment on:
+- recent, repeated problem evidence and consequence;
+- workflow frequency and standardizability;
+- current workaround and switching friction;
+- buyer, operator and budget authority;
+- feasibility of a supported route and authoritative event coverage;
+- privacy/security and caller-trust constraints;
+- need for a connector and availability of a trusted API;
+- measurable success outcome and plausible unit economics;
+- reachable acquisition channel and evidence quality.
+
+Do not treat polite interest, generic enthusiasm for AI or a single strong anecdote as validation. Include negative and contradictory cases.
 
 ## Proposed qualitative exit gates
-Owner should approve exact thresholds before collection. Suggested starting point:
-- At least 8 of 12 participants describe a recent concrete problem in the chosen segment.
-- At least 5 of 12 volunteer for a controlled pilot after setup/privacy requirements are explained.
-- No unresolved trust objection invalidates the intended call route or data processing.
-- At least one segment has a plausible path to variable-cost coverage at the tested price.
-- Findings include negative cases and contradictory evidence.
 
-These are qualitative gates, not statistically valid market estimates. If not met, narrow, reposition or stop.
+The owner must approve exact criteria before interviews begin. Candidate starting points for the selected segment:
+- At least 8 of 12 interviewees describe a recent concrete instance of the same high-priority workflow problem.
+- At least 5 of 12 can identify an accountable buyer and plausible budget/source of spend, not just user interest.
+- At least 5 of 12 are willing to consider a controlled trial after route, data, failure and setup limitations are explained.
+- The workflow has a measurable outcome and does not require unverified provider events or unauthorized external actions.
+- No unresolved trust, legal/privacy or unit-economics issue invalidates the proposed trial.
+
+These are proposed qualitative gates, not statistical claims or automatic authorization. If not met, narrow, reposition or stop. Fieldwork requires the separate approval checklist.
+
+## Related documents
+
+- `CUSTOMER_VALIDATION_PLAN.md`
+- `PHASE_0_EXPERIMENT_APPROVAL_CHECKLIST.md`
+- `PHASE_0_EVIDENCE_WORKBOOK.md`
+- `BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md`
+- `BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md`
