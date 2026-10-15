@@ -10,16 +10,21 @@ Consolidate the choices that must be resolved before the discovery baseline can 
 
 | ID | Decision | Current position | Evidence or action needed | Decision status |
 |---|---|---|---|---|
-| ODP-001 | Initial customer and problem | Personal AI call assistant is the leading hypothesis | Interview target users; identify high-value calls/tasks and willingness to pay | OPEN |
+| ODP-001 | Initial customer and problem | Configurable AI business phone assistant is the primary hypothesis; segment/problem are unvalidated | Compare business segments and high-value inbound workflows; interview target users and test willingness to pay | OPEN |
 | ODP-002 | First geography | Not approved | Choose launch country; review carrier route, privacy, recording/disclosure, consumer and telecom obligations | OPEN |
-| ODP-003 | Initial call route | Android-first candidate; cellular audio path unproven | Run controlled tests on selected SIM/device/operator/plan combinations; get written provider confirmation | BLOCKED BY EVIDENCE |
-| ODP-004 | MVP scope | Candidate scope in MVP_SCOPE_AND_FEATURE_GATES.md | Approve only features supported by route, legal and user evidence; decide whether takeover/history/transcript are in scope | OPEN |
+| ODP-003 | Initial business-number route | Hosted number, forwarding, SIP/PBX or another route remains undecided; event/media coverage is unproven | Compare route options for the selected segment; obtain written provider support and route-specific costs; separately verify call-event and missed-call coverage | BLOCKED BY EVIDENCE |
+| ODP-004 | MVP scope | Business-first scope matrix and proposed REQ-017–REQ-022/SCOPE-022–SCOPE-028 addenda exist; none is approved | Select the first workflow and mark every capability included, conditional, deferred or excluded; reconcile requirements, UX, API/data/security and tests | OPEN |
 | ODP-005 | Architecture and providers | Managed, programmable-telephony and self-hosted options remain open | Compare route-specific quotes, all call legs, model/media, data terms, limits, support and exit costs | BLOCKED BY QUOTES/ROUTE |
 | ODP-006 | Data and legal posture | Issue-spotting only; no legal opinion | Select jurisdiction and providers; obtain qualified review of notice, consent, retention, deletion, contracts and store policies | BLOCKED BY REVIEW |
 | ODP-007 | Economics and pricing | ₹4/₹7/₹12 per-minute are sensitivity assumptions, not costs | Obtain comparable written quotes; test usage distribution and willingness to pay; model gross margin and spend caps | OPEN |
 | ODP-008 | Service thresholds | Candidate values in ACCEPTANCE_THRESHOLD_REGISTER.md | Approve targets only after route/provider capabilities and test evidence are understood | OPEN |
 | ODP-009 | Brand and acquisition | Commercial brand not selected or cleared | Screen trademark/domain/store names; run low-cost acquisition experiments after segment selection | OPEN |
 | ODP-010 | Implementation authorisation | Explicit owner approval required | Review the completed baseline, risks, open decisions, scope, requirements, UX, architecture and launch gates | NOT AUTHORISED |
+
+| ODP-011 | First business segment and workflow | Business owner/operations/support lead and product complaint intake are illustrative only | Compare segments, inbound call volume, current workflow/tools, failure cost and willingness to pay; select one evidence-backed workflow | OPEN |
+| ODP-012 | First business connector/action | Ticket/case creation is a candidate example, not a commitment | Choose whether the first workflow needs an external action; if yes, select one system and verify typed API, scopes, idempotency, authoritative outcomes, cost and support | OPEN |
+| ODP-013 | Call observation and dashboard semantics | Missed-call coverage and metric denominators are not proven | For the selected route, define event coverage and outcome taxonomy; approve source, denominator, exclusions, freshness and unknown-state treatment for each metric | BLOCKED BY EVIDENCE |
+| ODP-014 | Client form factor | Android-first originated from the personal-assistant hypothesis; business dashboard form factor is unresolved | Compare web/dashboard and mobile needs for the chosen business segment; decide only after workflow interviews and route constraints are understood | OPEN |
 
 ## Evidence that must not be represented as complete
 
@@ -36,8 +41,8 @@ Review `PHASE_0_RESIDUAL_RISK_REGISTER.md` with this decision pack. Critical rou
 
 ## Recommended approval sequence
 
-1. Approve the discovery hypotheses and select a narrow interview segment, without authorising product code.
-2. Run customer interviews and controlled route feasibility tests as separate, owner-approved experiments.
+1. Confirm the business-assistant hypothesis and select a narrow candidate business segment/workflow for validation, without authorising product code.
+2. Run customer interviews, controlled route feasibility tests, provider outreach and participant UX validation only as separate, owner-approved experiments with distinct scopes.
 3. Obtain route-specific written provider quotes and legal issue review for the selected geography.
 4. Update requirements, architecture, data lifecycle, UX, pricing and release gates from the evidence.
 5. Review the consistency audit and unresolved risks; record explicit decisions in DECISION_LOG.md.

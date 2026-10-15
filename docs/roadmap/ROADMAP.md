@@ -30,7 +30,7 @@ Do not write product code, prototypes or implementation spikes during Phase 0. I
 
 ## Phase 1 — Approved core MVP implementation (only after separate authorization)
 
-Implement only the owner-approved minimum personal call-assistant flow, identity/configuration, call session lifecycle, necessary history/privacy controls, security, metering, observability and support fundamentals. Use TDD and requirement traceability. Start only after:
+Implement only the owner-approved minimum configurable business phone assistant flow: organization access, one verified business-number route, one constrained/versioned inbound workflow, bounded caller interaction, evidence-backed call outcomes, and only the approved summary/connector/dashboard scope. Include privacy/security controls, metering, observability and support fundamentals. Use TDD and requirement traceability. Start only after:
 - Phase 0 baseline approval is recorded;
 - the owner explicitly authorizes implementation as a separate decision;
 - route, provider, legal/privacy and spend preconditions for the first implementation slice are clear;
@@ -45,11 +45,11 @@ Use a small invite-only cohort only after the implemented MVP passes its accepta
 
 ## Phase 3 — Hospitality profile (future, separate scope)
 
-Expose selected hospitality actions through trusted Antena APIs with tenant-scoped authorization, confirmation policy, audit and idempotency. The Antena backend remains authoritative. Do not make hospitality integration a dependency of the initial personal-assistant MVP.
+Expose selected hospitality actions through trusted Antena APIs with tenant-scoped authorization, confirmation policy, audit and idempotency. The Antena backend remains authoritative. Do not make hospitality integration a dependency of the initial business phone assistant MVP.
 
 ## Phase 4 — Scale and expansion
 
-Increase capacity against measured workloads; validate the 10,000-user scenario against actual MAU, connected/AI-active minutes, peak arrivals and provider limits. Consider further professional profiles only after core product and connector governance are validated.
+Increase capacity against measured workloads; validate the 10,000-user scenario against actual MAU, connected/AI-active minutes, peak arrivals and provider limits. Consider personal call-assistant mode or further professional profiles only after the core business product, route/event coverage and connector governance are validated.
 
 ## Release gates
 
@@ -106,3 +106,20 @@ See `docs/governance/BASELINE_CONSISTENCY_AUDIT.md` for the 12 identified P0/P1 
 - Added `docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md` and linked it through the README, exit criteria, owner decision pack, audit, current state and handover.
 - The register tracks 18 risks with evidence needs and stop conditions; no risk is considered accepted or closed merely because a mitigation document exists.
 - Phase 0 remains incomplete. Route, customer, provider, legal, economics and operational evidence remain outstanding.
+
+
+
+## Business-first roadmap reconciliation — 2026-10-15
+
+The primary product hypothesis is a configurable AI business phone assistant, not the personal call-assistant flow described in earlier roadmap language. Phase 1's first slice must be derived from an owner-approved business segment/workflow and the validated route/provider contract. Candidate foundations are organization membership/authorization, a constrained versioned workflow, truthful call outcomes, safe failure/recovery, privacy controls, metering and operational visibility. Caller verification is required where the chosen workflow exposes protected customer data or actions.
+
+The following are discovery gates, not committed roadmap scope:
+- **Segment/workflow:** select one target business segment and validate the highest-value inbound workflow.
+- **Route/event coverage:** decide the number model and prove the supported call/media/event subset, including limits on missed-call visibility.
+- **Workflow contract:** approve allowed blocks, lifecycle, per-call version binding, publication authority and synthetic test boundaries.
+- **Caller verification:** approve the verification policy for the selected data/actions and its failure behavior.
+- **Connector:** select a first connector only if validated workflow value requires it; define authoritative outcome and ambiguous-write reconciliation.
+- **Dashboard:** define metric sources, denominators, exclusions, freshness and unknown states before showing success rates.
+- **Owner approval:** review the complete baseline, risks and evidence; implementation and pilot remain separate approvals.
+
+Personal-mode profile/context, contact-book access and personal call rules remain secondary-mode candidates. The roadmap does not authorize interviews, route tests, provider outreach, legal advice, spending, prototypes, implementation or deployment; those activities remain subject to their separate approval gates.
