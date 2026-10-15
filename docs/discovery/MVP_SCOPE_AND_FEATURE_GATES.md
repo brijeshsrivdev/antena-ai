@@ -71,3 +71,26 @@ The primary MVP hypothesis has shifted from a personal call assistant to a confi
 The following are business-MVP candidates, not yet approved scope: tenant-isolated workflow configuration and publishing; a proven business-number route; caller matching plus verification policy; bounded customer lookup; ticket/case creation through a selected typed connector; honest call/missed-call/route-failure outcome states; and a business dashboard for call history, summaries, confirmed actions, tickets and attention queues.
 
 **New mandatory discovery gates:** prove route and call-event coverage (including missed-call visibility), select the first target business/workflow, define workflow blocks and publication/versioning, select a first connector, define caller verification and dashboard event semantics, and revise requirements/traceability/tests. Do not infer that a ticket connector, missed-call coverage or human handoff exists. Personal-call-specific assumptions must be deferred or explicitly retained as secondary scope. This update does not authorize implementation.
+
+
+## Business-first MVP candidate matrix — 2026-10-15
+
+The earlier matrix contains inherited personal-assistant mappings. For the primary business phone assistant hypothesis, use this candidate crosswalk during discovery review; it does not approve scope or change existing requirement definitions.
+
+| Business capability | Scope / requirement mapping (draft) | Candidate disposition | Evidence / gate |
+|---|---|---|---|
+| Organization membership, roles and tenant isolation | SCOPE-001, SCOPE-022; REQ-011, REQ-016, proposed REQ-017; NFR-010 | Mandatory foundation | Approve organization/role model; negative cross-tenant access tests across APIs, search, exports, callbacks and jobs. |
+| Business-number route setup and operational status | SCOPE-004; REQ-001/002/014/015; NFR-002/004/009 | Mandatory foundation for any live call product | Written provider support, route/media/event coverage, setup/disable/recovery proof and route-specific cost basis. |
+| Constrained workflow authoring, validation and publication | SCOPE-023; REQ-003/005/012, proposed REQ-018 | Core candidate | Approved block/schema contract, lifecycle/version policy, permission model and synthetic validation tests. |
+| Caller matching and protected-data verification | SCOPE-024; REQ-004/010/011/012, proposed REQ-019 | Required where first workflow touches customer data or protected actions | Approved verification policy, data classification, failure branches and qualified privacy/security review. |
+| Call inbox, outcome and event provenance | SCOPE-025; REQ-005/013/015, proposed REQ-020 | Core candidate | Provider event matrix; canonical outcome taxonomy; do not claim complete missed-call visibility without evidence. |
+| Summary and confirmed action state | SCOPE-008, SCOPE-026; REQ-008/012/015, proposed REQ-021 | Summary candidate; connector action conditional | Labelled factuality evaluation; selected connector contract, least privilege, idempotency and authoritative result. |
+| Business dashboard and metric provenance | SCOPE-027; REQ-009/011/013/015, proposed REQ-022 | Core candidate, exact metrics open | Metric dictionary with source, denominator, exclusions, freshness, reconciliation and tenant-scoped query rules. |
+| Human handoff/transfer | SCOPE-028; REQ-007, proposed REQ-020 | Conditional or excluded | Include only after the selected route supports transfer and tests verify success, failure, timeout and fallback. |
+| Privacy, deletion, usage limits and support | SCOPE-013/014/015; REQ-009/010/014/015; NFR-005/007/009 | Mandatory foundation | Approved data-class lifecycle, metering/invoice reconciliation, safe limit exhaustion and recovery drill. |
+
+## Personal-mode carryover boundary
+
+- SCOPE-002 and SCOPE-003 remain legacy personal-assistant capabilities and are deferred for the primary business MVP unless an approved business need maps specific fields into the constrained workflow model.
+- Personal contact-book sync, personal follow-up reminders, user takeover and personal call-management assumptions must not be imported into the business MVP by default.
+- The proposed REQ-017–REQ-022 addendum and SCOPE-022–SCOPE-028 rows remain unapproved. All BPA acceptance scenarios remain NOT RUN.
