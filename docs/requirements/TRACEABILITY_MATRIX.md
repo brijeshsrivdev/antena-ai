@@ -117,3 +117,19 @@ See [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../
 ## Business assistant domain contract — 2026-10-13
 
 See [Business Assistant Domain Contract Draft](../architecture/BUSINESS_ASSISTANT_DOMAIN_CONTRACT_DRAFT.md) for the shared conceptual vocabulary and state boundaries needed to reconcile the API, data model, state/events, threat model and UX. It is not an approved architecture. Organization roles, workflow versioning, caller verification, source-provenanced call outcomes, connector reconciliation and metric definitions remain open requirements gaps; BPA-001–BPA-018 remain NOT RUN.
+
+
+## Proposed business-assistant requirement addendum — 2026-10-15
+
+See [Business Phone Assistant Requirements Addendum — Draft](BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md). Proposed REQ-017–REQ-022 cover organization authorization, constrained workflow lifecycle/version binding, caller verification, evidence-backed call outcomes, authoritative connector actions, and metric provenance. These are proposed working IDs only, not approved requirements.
+
+| Proposed ID | Coverage / planned scenarios | Existing requirement relationships | Evidence and decision still needed |
+|---|---|---|---|
+| REQ-017 Organization membership and resource authorization | BPA-001, BPA-002 | Elaborates REQ-011, REQ-016, NFR-010 | Approve role matrix, organization data model, API authorization and revocation policy. |
+| REQ-018 Constrained workflow definition/lifecycle/version binding | BPA-003, BPA-004, BPA-005, BPA-018 | Elaborates REQ-001, REQ-003, REQ-005, REQ-012, REQ-014 | Approve block/schema contract, lifecycle transitions, version policy and audit events. |
+| REQ-019 Caller matching and protected-data verification | BPA-006, BPA-007 | Elaborates REQ-004, REQ-010, REQ-011, REQ-012 | Select validated workflow and verification policy after privacy/security review. |
+| REQ-020 Evidence-backed call outcomes and observation coverage | BPA-012–BPA-015, BPA-017, BPA-018 | Elaborates REQ-001, REQ-002, REQ-005, REQ-007, REQ-013–REQ-015; NFR-002/003/009 | Select route/provider and document event coverage, outcome taxonomy and reconciliation. |
+| REQ-021 Authorized connector action and authoritative outcome | BPA-009–BPA-011 | Elaborates REQ-008, REQ-009, REQ-012, REQ-015; NFR-007/010 | Select the first connector and approve typed operation, scope, idempotency and outcome contract. |
+| REQ-022 Dashboard metric provenance and tenant-scoped reporting | BPA-016; supported by BPA-012–BPA-015 | Elaborates REQ-009, REQ-011, REQ-013, REQ-015; NFR-002/003/005/007/010 | Define metric source, denominator, exclusions, freshness, corrections and authorization. |
+
+The six proposed IDs and BPA scenarios remain unapproved and NOT RUN. This section is additive and does not silently alter the existing REQ-001–REQ-016 or NFR-001–NFR-010 definitions.

@@ -1,6 +1,10 @@
-# Core Requirements Draft — Personal AI Call Assistant
+# Core Requirements Draft — Inherited Personal Assistant Requirements
 
 **Status:** DRAFT. No formal review has started and these requirements are not approved for implementation. IDs, priorities and some acceptance thresholds remain provisional. No code is authorised.
+
+## Applicability note — business assistant pivot
+
+This file originated as a personal AI call-assistant requirements draft. The primary product hypothesis has since shifted to a configurable AI business phone assistant. REQ-001–REQ-016 and NFR-001–NFR-010 remain draft identifiers; their wording may contain personal-assistant assumptions and must not be treated as automatically applicable to the business product. Use `BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md` for proposed business-specific additions and the gap audit for required reconciliation. Neither document approves the baseline or authorizes implementation.
 
 ## Requirement lifecycle note
 

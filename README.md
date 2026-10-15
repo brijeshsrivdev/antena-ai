@@ -17,6 +17,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 - [Cross-document consistency review — findings, blockers and merge/implementation status](docs/governance/FINAL_CROSS_DOCUMENT_CONSISTENCY_REVIEW.md)
 - [Acceptance criteria testability audit — draft, no tests run and no thresholds approved](docs/governance/ACCEPTANCE_CRITERIA_TESTABILITY_AUDIT.md)
 - [Business phone assistant requirement and acceptance coverage gap audit — draft, supplemental scenarios NOT RUN](docs/governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md)
+- [Business phone assistant requirements addendum — proposed REQ-017–REQ-022, not approved](docs/requirements/BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md)
 - [UX/state contract reconciliation — lifecycle-backed UX claims and failure states](docs/governance/UX_STATE_CONTRACT_RECONCILIATION.md)
 - [Phase 0 exit criteria and evidence map — incomplete, owner review required](docs/governance/PHASE_0_EXIT_CRITERIA_AND_EVIDENCE_MAP.md)
 - [Phase 0 residual risk register — open risks, evidence and stop conditions](docs/governance/PHASE_0_RESIDUAL_RISK_REGISTER.md)
