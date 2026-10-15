@@ -9,6 +9,7 @@ This repository is for discovery and specification of a reusable AI voice platfo
 ## Start here
 - [Project charter](docs/governance/PROJECT_CHARTER.md)
 - [Business phone assistant product direction — discovery hypothesis; detailed MVP still unapproved](docs/discovery/BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md)
+- [Business-first scope and feature-gate reconciliation — proposed, not approved](docs/discovery/MVP_SCOPE_AND_FEATURE_GATES.md)
 - [Current state](docs/governance/CURRENT_STATE.md)
 - [Baseline consistency and readiness audit](docs/governance/BASELINE_CONSISTENCY_AUDIT.md)
 - [Architecture/API/data/security semantic review — findings open, baseline not approved](docs/governance/ARCHITECTURE_CONTRACT_SEMANTIC_REVIEW.md)

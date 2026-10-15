@@ -17,8 +17,8 @@ This is not yet a validated segment. Interviews must compare candidate business 
 | ID | Capability | Priority hypothesis | Why it may matter | Key uncertainty / acceptance direction |
 |---|---|---|---|---|
 | SCOPE-001 | Account, authentication and recovery | P0 | Protects personal profile and call records. | Choose authentication and recovery after threat model; acceptance includes account isolation and recovery abuse tests. |
-| SCOPE-002 | Assistant profile setup | P0 | Lets users define name, language, tone and allowed behaviour. | Keep structured and constrained; no arbitrary client tool definitions. |
-| SCOPE-003 | Personal context form | P0 | Gives the assistant relevant facts and boundaries. | Define minimum fields, sensitivity, versioning, review and deletion; context never grants permissions. |
+| SCOPE-002 | Personal assistant profile setup (legacy/secondary mode) | Deferred for primary business MVP | Personal profile fields do not by themselves configure a business workflow. | Preserve only if later personal mode is separately approved; do not substitute it for business workflow configuration. |
+| SCOPE-003 | Personal context form (legacy/secondary mode) | Deferred for primary business MVP | Personal context is not the same as tenant-owned business configuration or caller/customer data. | Preserve only if later personal mode is separately approved; business workflows need their own constrained schema and permissions. |
 | SCOPE-004 | Routing/forwarding onboarding and verification | P0 | The core experience depends on calls reaching the service. | Must be tested by carrier/SIM/device; clear activation, test call, status and deactivation. |
 | SCOPE-005 | Live call handling | P0 | Core product value. | Requires proven two-way audio route, latency, turn-taking, interruptions and fallback. |
 | SCOPE-006 | Caller disclosure and safe response policy | P0 | Protects caller trust and constrains harmful or misleading actions. | Exact wording and legal basis require review for launch jurisdiction. |
@@ -37,6 +37,14 @@ This is not yet a validated segment. Interviews must compare candidate business 
 | SCOPE-019 | Domain profiles and connectors | Deferred after core validation | Enables future specialisations. | Trusted server-side tool registry and least-privilege permissions. |
 | SCOPE-020 | Hospitality profile using Antena APIs | Future expansion | Reuses Antena domain capabilities. | Requires API capability audit and tenant-scoped auth; no direct database access. |
 | SCOPE-021 | Advocate/legal profile | Deferred | Different professional duties and sensitive data. | Requires separate discovery, professional/legal review and integration boundary. |
+
+| SCOPE-022 | Organization membership and role-based access | P0 candidate | Business configuration and records belong to an organization, not an individual profile. | Define organization membership, roles, revocation and server-side tenant authorization; no cross-tenant access. |
+| SCOPE-023 | Constrained workflow builder and version lifecycle | P0 candidate | Lets a business configure repeatable inbound call handling without granting arbitrary model powers. | Approved blocks only; schema validation, draft/test/publish/pause/retire, immutable versions and per-call version binding. |
+| SCOPE-024 | Caller matching and protected-data verification | Conditional on first workflow | A business may need to identify a customer before sharing information or taking action. | Caller ID is not authentication; choose a verification policy and safe failure branches after privacy/security review. |
+| SCOPE-025 | Evidence-backed call outcomes and missed-call visibility | P0 candidate | Businesses need to know what was handled, abandoned, failed or remains unknown. | Outcome states must cite authoritative provider/route evidence; do not promise complete missed-call capture without proven event coverage. |
+| SCOPE-026 | Typed, tenant-scoped business connector actions | Conditional; ticket creation is not yet committed | A workflow may need to look up a customer or create a ticket/case. | Select a first connector; allowlisted typed operations, least privilege, idempotency, authoritative success and ambiguous-result reconciliation. |
+| SCOPE-027 | Business call inbox and metric provenance | P0 candidate | Authorized users need actionable visibility into calls, workflow results and confirmed actions. | Define each metric's source, denominator, exclusions, freshness and unknown-state treatment; enforce tenant scope. |
+| SCOPE-028 | Human handoff or transfer | Conditional on route capability | Some calls may require a person to take over. | Advertise only after route/provider support and success/failure/timeout/fallback behavior are verified. |
 
 ## 4. Explicit first-release exclusions (proposed)
 
@@ -97,3 +105,12 @@ All priorities and scope choices in this file are proposals. Owner approval is r
 The primary MVP hypothesis is a configurable AI business phone assistant, not a personal assistant. The candidate first-release buyer is a business owner or operations/support lead; the end customer is the caller. See [`BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md`](BUSINESS_PHONE_ASSISTANT_PRODUCT_DIRECTION.md) for the detailed actor vocabulary, call journeys, workflow building blocks, complaint example, missed-call semantics and dashboard concepts.
 
 Important additions to discovery: define a versioned workflow model and safe publication lifecycle; verify caller identity before protected disclosure; choose and contract-test a first typed connector before promising ticket creation; distinguish calls not observed by the platform from calls observed but missed/failed; and give each dashboard metric an authoritative event source and denominator. These remain proposed scope and do not authorize implementation.
+
+
+## Business-first scope disposition — 2026-10-15
+
+The business phone assistant is the primary MVP hypothesis. The inherited SCOPE-002/003 personal profile/context rows are now explicitly secondary/deferred for that primary hypothesis; they must not be treated as substitutes for SCOPE-023 business workflow configuration. SCOPE-022–SCOPE-028 add proposed business-specific capabilities. All priorities and dispositions remain unapproved.
+
+For the first business workflow, treat organization access, a proven supported route, constrained workflow versioning, honest call outcomes, basic tenant-scoped call review, privacy/security controls and metering as candidate foundations. Caller verification is required before protected disclosure/actions where applicable. Connector actions, ticket/case creation and human handoff remain conditional on the selected workflow, integration/route evidence and approved contracts.
+
+See [Business Phone Assistant Requirements Addendum — Draft](../requirements/BUSINESS_ASSISTANT_REQUIREMENTS_ADDENDUM_DRAFT.md) and [Business Phone Assistant Requirement and Acceptance Coverage Gap Audit](../governance/BUSINESS_ASSISTANT_REQUIREMENT_GAP_AUDIT.md). Nothing here approves the MVP or authorizes implementation.
