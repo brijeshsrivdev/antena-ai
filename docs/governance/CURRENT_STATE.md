@@ -305,3 +305,10 @@ README and linked documents must be verified against current main after this inc
 - Added conceptual mappings for proposed REQ-017–REQ-022 across API resource families, candidate data entities, state/event contracts, business domain vocabulary and threat areas.
 - API schemas, entities, states, event names and threats remain drafts; no provider route or connector was selected, and no tests were run.
 - All BPA scenarios remain NOT RUN; Phase 0 remains incomplete and product implementation remains unauthorized.
+
+
+
+## Decision pack and roadmap business-first reconciliation — 2026-10-15
+- Updated owner decision items and decision log to reflect the business phone assistant as the primary hypothesis, while leaving segment, workflow, route, form factor, connector and metric semantics open.
+- Reconciled Phase 1 roadmap language to the business assistant and added evidence gates for first workflow, route/event coverage, workflow lifecycle, caller verification, connector and dashboard metrics.
+- No product decision was marked approved from these desk-only edits. Phase 0 remains incomplete; product implementation remains unauthorized.
