@@ -283,3 +283,11 @@ README and linked documents must be verified against current main after this inc
 - Mapped proposed requirements to BPA-001–BPA-018 in the traceability matrix. All scenarios remain NOT RUN; requirement IDs, priorities and scope remain proposed.
 - The inherited core requirement draft was explicitly labelled as personal-assistant-origin material pending semantic review. This does not approve or silently repurpose any existing requirement.
 - Phase 0 remains incomplete. Product implementation remains unauthorized.
+
+
+
+## Business-first scope reconciliation — 2026-10-15
+- Added proposed SCOPE-022–SCOPE-028 for organization authorization, constrained business workflows, caller verification, evidence-backed call outcomes, typed connector actions, dashboard metrics and conditional human handoff.
+- Marked SCOPE-002/003 personal profile/context as legacy/secondary-mode candidates, deferred for the primary business assistant hypothesis; they are not substitutes for workflow configuration.
+- Added a business-first MVP candidate matrix mapped to existing and proposed requirements. No feature, route, integration, caller verification method or threshold is approved by this documentation update.
+- All BPA scenarios remain NOT RUN; Phase 0 remains incomplete; product implementation remains unauthorized.
